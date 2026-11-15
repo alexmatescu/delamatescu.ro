@@ -330,6 +330,11 @@ export const labNav: LabPage[] = [
         label: "Când clientul ajunge pe site, alegerea a început deja",
         lead: "Cum schimbă AI traseul clientului și de ce paginile clare, serviciile bine descrise și prețurile explicate susțin o alegere informată.",
       },
+      {
+        to: "/lab/articole/viitorul-pare-evident-abia-dupa-ce-s-a-intamplat",
+        label: "Viitorul pare evident abia după ce s-a întâmplat",
+        lead: "De ce ezităm în fața tehnologiilor noi, ce au anticipat Tesla, Bush, Clarke și Goddard și de ce perspectiva trecutului nu garantează viitorul.",
+      },
     ],
   },
   {

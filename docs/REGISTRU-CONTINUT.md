@@ -7,13 +7,13 @@
 > `public/sitemap.xml`. O modificare făcută aici se pierde la următoarea rulare;
 > corectează sursa, nu registrul.
 
-Generat: 2026-11-15 · 189 intrări · **2 anomalii** în 2 intrări
+Generat: 2026-11-15 · 190 intrări · **2 anomalii** în 2 intrări
 
 ## Sinteză
 
 | Suprafață | Publicat | Draft / nepublicat | Total | Anomalii |
 |---|--:|--:|--:|--:|
-| `lab/articole` | 30 | 0 | 30 | 2 |
+| `lab/articole` | 31 | 0 | 31 | 2 |
 | `lab/studii-de-caz` | 2 | 0 | 2 | 0 |
 | `lab/metodologie` | 7 | 0 | 7 | 0 |
 | `lab/foundation` | 1 | 0 | 1 | 0 |
@@ -21,7 +21,7 @@ Generat: 2026-11-15 · 189 intrări · **2 anomalii** în 2 intrări
 | `lab/secțiuni` | 4 | 0 | 4 | 0 |
 | `blog` | 8 | 0 | 8 | 0 |
 | `blog (arhivă)` | 132 | 0 | 132 | 0 |
-| **Total** | **189** | **0** | **189** | **2** |
+| **Total** | **190** | **0** | **190** | **2** |
 
 ## Legendă
 
@@ -34,11 +34,12 @@ Generat: 2026-11-15 · 189 intrări · **2 anomalii** în 2 intrări
 - **Verificat** — `last_reviewed`, cu numărul de zile scurse. Peste
   180 de zile, materialele din Lab intră în lista de reverificare.
 
-## `lab/articole` — 30 intrări
+## `lab/articole` — 31 intrări
 
 | ID | Titlu | Categorie | Tip | Status | Creat | Publicat | Modificat | Verificat | Wiring | Sursă `.md` | Wiring `.ts` |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `LAB-30` | [Când clientul ajunge pe site, alegerea a început deja](/lab/articole/clientul-ajunge-pe-site-dupa-selectia-ai) | AI Ecosystem | Analiză | publicat | — | 2026-11-15 | 2026-11-15 | 2026-11-14 (1z) | `✓✓✓✓` | `src/content/lab/articles/30.clientul-ajunge-pe-site-dupa-selectia-ai.md` | `src/data/lab-content/30. clientul-ajunge-pe-site-dupa-selectia-ai.ts` |
+| `LAB-30` | [Când clientul ajunge pe site, alegerea a început deja](/lab/articole/clientul-ajunge-pe-site-dupa-selectia-ai) | AI Ecosystem | Analiză | publicat | 2026-11-15 | 2026-11-15 | 2026-11-15 | 2026-11-14 (1z) | `✓✓✓✓` | `src/content/lab/articles/30.clientul-ajunge-pe-site-dupa-selectia-ai.md` | `src/data/lab-content/30. clientul-ajunge-pe-site-dupa-selectia-ai.ts` |
+| `LAB-31` | [Viitorul pare evident abia după ce s-a întâmplat](/lab/articole/viitorul-pare-evident-abia-dupa-ce-s-a-intamplat) | AI Ecosystem | Analiză | publicat | — | 2026-11-15 | 2026-11-15 | 2026-11-14 (1z) | `✓✓✓✓` | `src/content/lab/articles/31.viitorul-pare-evident-abia-dupa-ce-s-a-intamplat.md` | `src/data/lab-content/31. viitorul-pare-evident-abia-dupa-ce-s-a-intamplat.ts` |
 | `LAB-29` | [Tu îți înțelegi scrisul. Cine îți înțelege afacerea?](/lab/articole/scrisul-de-mana-si-ai-visibility) | Entities & Citations | Analiză | publicat | 2026-11-13 | 2026-11-13 | 2026-11-13 | 2026-11-13 (2z) | `✓✓✓✓` | `src/content/lab/articles/29.scrisul-de-mana-si-ai-visibility.md` | `src/data/lab-content/29. scrisul-de-mana-si-ai-visibility.ts` |
 | `LAB-28` | [De departe, totul pare perfect. De aproape, începe realitatea.](/lab/articole/de-departe-totul-pare-perfect-de-aproape-incepe-realitatea) | Entities & Citations | Analiză | publicat | 2026-11-09 | 2026-11-09 | 2026-11-09 | 2026-11-09 (6z) | `✓✓✓✓` | `src/content/lab/articles/28.de-departe-totul-pare-perfect-de-aproape-incepe-realitatea.md` | `src/data/lab-content/28. de-departe-totul-pare-perfect-de-aproape-incepe-realitatea.ts` |
 | `LAB-27` | [De unde își iau informațiile sistemele AI? Ce citează ChatGPT, Gemini, Perplexity, Claude și Copilot — și ce arată datele din România](/lab/articole/de-unde-isi-iau-informatiile-ai-surse-citari-romania) | Search & Retrieval | Analiză | publicat | 2026-11-07 | 2026-11-07 | 2026-11-12 | 2026-11-07 (8z) | `✓✓✓✓` | `src/content/lab/articles/27.de-unde-isi-iau-informatiile-ai-surse-citari-romania.md` | `src/data/lab-content/27. de-unde-isi-iau-informatiile-ai-surse-citari-romania.ts` |
