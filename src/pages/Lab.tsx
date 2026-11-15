@@ -3,6 +3,7 @@ import { Link, Navigate } from "@/lib/router-compat";
 import { ArrowLeft } from "lucide-react";
 import Seo from "@/components/Seo";
 import ContentLightbox from "@/components/ContentLightbox";
+import { readingTimeFromHtml } from "@/lib/reading-time";
 import ArticleTocSidebar, {
   parseArticleToc,
 } from "@/components/ArticleTocSidebar";
@@ -466,6 +467,18 @@ export const LabDetail = ({ pathname }: { pathname: string }) => {
   // cuprinsul lateral, construit din același cuprins; celelalte rămân neschimbate.
   const tocItems = content ? parseArticleToc(content) : [];
   const hasTocSidebar = tocItems.length > 0;
+  // Timpul de citire apare doar pe articole și studii de caz, calculat din
+  // același HTML randat, cu aceeași convenție ca pe blog (@/lib/reading-time).
+  const readingTime =
+    isArticle && content ? readingTimeFromHtml(content) : null;
+  // Pe articole și studii de caz, rândul de deasupra titlului urmează blogul:
+  // categorie · data publicării · timp de citire (legătura „← Articole” arată
+  // deja secțiunea). Restul paginilor /lab păstrează eticheta de secțiune.
+  const articleMeta = isArticle
+    ? [...labArticleMeta, ...labCaseStudyMeta].find(
+        (meta) => labArticlePathname(meta) === page.to,
+      )
+    : undefined;
 
   return (
     <div>
@@ -492,9 +505,17 @@ export const LabDetail = ({ pathname }: { pathname: string }) => {
             {parent ? parent.label : "AI Visibility Lab"}
           </Link>
 
-          <p className="eyebrow mb-6">
-            AI Visibility Lab{parent ? ` · ${parent.label}` : ""}
-          </p>
+          {articleMeta ? (
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs uppercase tracking-[0.22em] text-muted-foreground mb-6">
+              <span>{articleMeta.category}</span>
+              <span>{formatLabArticleDate(articleMeta.datePublished)}</span>
+              {readingTime && <span>{readingTime} citire</span>}
+            </div>
+          ) : (
+            <p className="eyebrow mb-6">
+              AI Visibility Lab{parent ? ` · ${parent.label}` : ""}
+            </p>
+          )}
           <h1 className="font-serif text-3xl md:text-5xl leading-tight tracking-tight text-pretty">
             {page.pageTitle ?? page.label}
           </h1>
