@@ -29,7 +29,7 @@ extra_columns:
   - logged_in
 
 github:
-  repository: alexmatescu/alexmatescu-hub-reflection
+  repository: alexmatescu/delamatescu.ro
   draft: true
 
 notes: "Punctul de masurare F3 pentru Tabula Rasa: aceleasi 14 query-uri (Q01-Q14) pe 9 suprafete (Google Search, Bing Search, Google AI Mode, ChatGPT, Claude, Copilot, Gemini, Perplexity, Google AI Overviews), capturate in perioada 18-21 octombrie 2026, cu conditiile si observatiile rularii documentate in fisierul 'F3. Entitate Alex Matescu.docx' din arhiva. Primul pachet al entitatii publicat sub conventia T0/F1…Fn (AVL-200 §7). Corespondenta cu pachetele anterioare, publicate inainte de formalizarea conventiei si pastrate cu etichetele originale (AVL200-REQ-013): evidence-alex-matescu-t0-v1.0 = T0; evidence-alex-matescu-t0-v2.0 = F1 (capturi 4-6 august 2026); evidence-alex-matescu-t0-v3.0 = F2 (capturi 2-7 septembrie 2026). Evidence ID-urile F3 incep de la AM-F3-E001 si nu continua secventa AM-T0-E### a pachetelor anterioare."

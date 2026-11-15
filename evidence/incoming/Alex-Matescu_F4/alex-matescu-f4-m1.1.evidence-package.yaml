@@ -1,0 +1,48 @@
+# Evidence package config — Alex Matescu / Tabula Rasa / F4, metadata v1.1
+# Aceeasi arhiva ca v1.0 (archive.version 1.0, aceiasi bytes). Metadata v1.1
+# adauga stratul de observatie: matricea de adjudecare a celor 113 executii
+# (2026-11-15), cu Google AI Overviews derivat din capturile Google Search, si
+# regulile de adjudecare. Release-ul v1.0 e publicat si ramane neatins; v1.1
+# primeste tag propriu (release_tag), ca la F3 m1.2.
+#
+# Arhiva PNG de intrare: folderul Alex-Matescu_F4 arhivat (fara .DS_Store), cu
+# „F4 Observatii operator.docx” inclus ca log al rularii. „F4 mentiuni operator.rtf”
+# nu intra in arhiva: e un subset al docx-ului (acelasi text, fara paragraful de
+# context al rularii). STEP 1b converteste arhiva in WebP q80 (AVL200-REQ-041).
+# Vezi .claude/skills/evidence-release/references/config-schema.md.
+
+project: AI Visibility Lab
+study_name: Tabula Rasa
+entity_name: Alex Matescu
+entity_slug: alex-matescu
+entity_code: AM
+
+measurement_point: F4
+
+timezone: Europe/Bucharest
+
+archive:
+  path: ./evidence/incoming/Alex-Matescu_F4/alex-matescu_F4_png-archive_v1.0.zip
+  version: "1.0"
+
+metadata_version: "1.1"
+
+query_set:
+  path: ./evidence/incoming/Alex-Matescu_T0_1.0/alex-matescu-t0-query-set.csv
+  required: false
+
+extra_columns:
+  - model
+  - logged_in
+
+analysis_artifacts:
+  adjudication: ./evidence/work/alex-matescu/F4/adjudication/alex-matescu_F4_adjudication_v1.1.csv
+  adjudication-rules: ./evidence/work/alex-matescu/F4/adjudication/alex-matescu_F4_adjudication-rules_v1.1.md
+
+github:
+  repository: alexmatescu/delamatescu.ro
+  draft: true
+  release_tag: evidence-alex-matescu-f4-v1.0-m1.1
+  release_title: "Alex Matescu — F4 Evidence Archive v1.0 (metadata v1.1)"
+
+notes: "Punctul de masurare F4 pentru Tabula Rasa: aceleasi 14 query-uri (Q01-Q14) pe 8 foldere de suprafata (Google Search cu Google AI Overviews acolo unde au fost generate, Bing Search, Google AI Mode, ChatGPT, Claude, Copilot, Gemini, Perplexity), capturate in perioada 13-15 noiembrie 2026 (Sibiu, retea Wi-Fi de acasa), cu conditiile si observatiile rularii documentate in fisierul 'F4 Observatii operator.docx' din arhiva. Spre deosebire de F3, Google AI Overviews nu a avut o rulare dedicata: apare doar in capturile Google Search, acolo unde Google l-a generat. Corespondenta cu pachetele anterioare (AVL-200 §7): evidence-alex-matescu-t0-v1.0 = T0; evidence-alex-matescu-t0-v2.0 = F1; evidence-alex-matescu-t0-v3.0 = F2; evidence-alex-matescu-f3-v1.0 = F3. Evidence ID-urile F4 incep de la AM-F4-E001."

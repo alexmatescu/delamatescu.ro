@@ -34,7 +34,7 @@ analysis_artifacts:
   adjudication-rules: ./evidence/work/alex-matescu/F3/adjudication/alex-matescu_F3_adjudication-rules_v1.1.md
 
 github:
-  repository: alexmatescu/alexmatescu-hub-reflection
+  repository: alexmatescu/delamatescu.ro
   draft: true
   release_tag: evidence-alex-matescu-f3-v1.0-m1.1
   release_title: "Alex Matescu — F3 Evidence Archive v1.0 (metadata v1.1)"

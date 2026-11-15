@@ -30,7 +30,7 @@ extra_columns:
   - logged_in
 
 github:
-  repository: alexmatescu/alexmatescu-hub-reflection
+  repository: alexmatescu/delamatescu.ro
   draft: true
 
 notes: "A treia arhiva de dovezi pentru T0/Tabula Rasa: aceleasi 14 query-uri, cu conditii experimentale explicite pe folder (model AI, logged_in, fereastra incognito/normala) pentru ChatGPT/Claude/Copilot/Gemini/Perplexity/Google AI/Bing/Google Search. Arhiva ramane distincta de v1.0 si v2.0 (nicio amestecare de fisiere brute); Evidence ID-urile continua secventa fara coliziune (AM-T0-E645+)."

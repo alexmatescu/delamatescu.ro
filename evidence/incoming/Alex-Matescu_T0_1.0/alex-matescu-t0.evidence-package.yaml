@@ -30,7 +30,7 @@ extra_columns:
   - logged_in
 
 github:
-  repository: alexmatescu/alexmatescu-hub-reflection
+  repository: alexmatescu/delamatescu.ro
   draft: true
 
 notes: "Primul upload de baseline (T0/F0) pentru studiul Tabula Rasa. T0 este baseline-ul real al experimentului, capturat inainte ca protocolul de masurare sa fie complet maturizat (vezi sectiunea 5 si 17 din studiul de caz Tabula Rasa)."

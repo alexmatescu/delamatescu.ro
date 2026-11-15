@@ -46,7 +46,7 @@
       "status": "publicat",
       "statusNormativ": null,
       "versiune": null,
-      "dataCreare": null,
+      "dataCreare": "2026-11-15",
       "dataPublicare": "2026-11-15T10:15:00+02:00",
       "dataModificare": "2026-11-15",
       "ultimaVerificare": "2026-11-14",
@@ -982,8 +982,8 @@
       "versiune": null,
       "dataCreare": "2026-09-04",
       "dataPublicare": "2026-09-04T09:06:00+03:00",
-      "dataModificare": "2026-10-23",
-      "ultimaVerificare": "2026-10-23",
+      "dataModificare": "2026-11-15",
+      "ultimaVerificare": "2026-11-15",
       "fisierMd": "src/content/studii de caz/01. Alex Matescu/tabula-rasa-entity-resolution-studiu-de-caz.md",
       "fisierTs": "src/data/lab-content/tabula-rasa-entity-resolution-studiu-de-caz.ts",
       "wiring": {
@@ -992,11 +992,11 @@
         "nav": true,
         "sitemap": true
       },
-      "sitemapLastmod": "2026-10-23",
+      "sitemapLastmod": "2026-11-15",
       "imagine": null,
       "jsonLd": "@graph",
-      "nrCitari": 7,
-      "zileDeLaVerificare": 23,
+      "nrCitari": 9,
+      "zileDeLaVerificare": 0,
       "anomalii": []
     },
     {
