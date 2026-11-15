@@ -15,6 +15,7 @@ import { cumAlegiFurnizorulDeServiciiMeta } from "@/data/lab-content/26. cum-ale
 import { deUndeIsiIauInformatiileAiMeta } from "@/data/lab-content/27. de-unde-isi-iau-informatiile-ai-surse-citari-romania";
 import { deDeparteTotulParePerfectMeta } from "@/data/lab-content/28. de-departe-totul-pare-perfect-de-aproape-incepe-realitatea";
 import { scrisulDeManaSiAiVisibilityMeta } from "@/data/lab-content/29. scrisul-de-mana-si-ai-visibility";
+import { clientulAjungePeSiteMeta } from "@/data/lab-content/30. clientul-ajunge-pe-site-dupa-selectia-ai";
 import { auditSiteFaraAccesCodMeta } from "@/data/lab-content/7. audit-site-fara-acces-cod";
 import { catDureazaIndexareCitareAiMeta } from "@/data/lab-content/4. cat-dureaza-indexare-citare-ai";
 import { ceEsteEntitateAiStudiuDeCazMeta } from "@/data/lab-content/10. ce-este-entitate-ai-studiu-de-caz";
@@ -167,6 +168,7 @@ export const labArticleMeta: LabArticleMeta[] = [
   deUndeIsiIauInformatiileAiMeta,
   deDeparteTotulParePerfectMeta,
   scrisulDeManaSiAiVisibilityMeta,
+  clientulAjungePeSiteMeta,
 ];
 
 const findArticleMetaBySlug = (slug: string) =>

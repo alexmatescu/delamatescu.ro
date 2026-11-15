@@ -325,6 +325,11 @@ export const labNav: LabPage[] = [
         label: "Tu îți înțelegi scrisul. Cine îți înțelege afacerea?",
         lead: "Ce ne poate învăța scrisul de mână despre familiaritate, context și AI Visibility: diferența dintre ce învață un model la antrenare și ce găsește când răspunde, și de ce frecvența publicării nu ține loc de informație clară despre afacere.",
       },
+      {
+        to: "/lab/articole/clientul-ajunge-pe-site-dupa-selectia-ai",
+        label: "Când clientul ajunge pe site, alegerea a început deja",
+        lead: "Cum schimbă AI traseul clientului și de ce paginile clare, serviciile bine descrise și prețurile explicate susțin o alegere informată.",
+      },
     ],
   },
   {

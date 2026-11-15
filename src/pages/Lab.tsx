@@ -57,6 +57,7 @@ import { cumAlegiFurnizorulDeServiciiHtml } from "@/data/lab-content/26. cum-ale
 import { deUndeIsiIauInformatiileAiHtml } from "@/data/lab-content/27. de-unde-isi-iau-informatiile-ai-surse-citari-romania";
 import { deDeparteTotulParePerfectHtml } from "@/data/lab-content/28. de-departe-totul-pare-perfect-de-aproape-incepe-realitatea";
 import { scrisulDeManaSiAiVisibilityHtml } from "@/data/lab-content/29. scrisul-de-mana-si-ai-visibility";
+import { clientulAjungePeSiteHtml } from "@/data/lab-content/30. clientul-ajunge-pe-site-dupa-selectia-ai";
 import { auditSiteFaraAccesCodHtml } from "@/data/lab-content/7. audit-site-fara-acces-cod";
 import { catDureazaIndexareCitareAiHtml } from "@/data/lab-content/4. cat-dureaza-indexare-citare-ai";
 import { ceEsteEntitateAiStudiuDeCazHtml } from "@/data/lab-content/10. ce-este-entitate-ai-studiu-de-caz";
@@ -153,6 +154,8 @@ const labPageContent: Record<string, string> = {
     deDeparteTotulParePerfectHtml,
   "/lab/articole/scrisul-de-mana-si-ai-visibility":
     scrisulDeManaSiAiVisibilityHtml,
+  "/lab/articole/clientul-ajunge-pe-site-dupa-selectia-ai":
+    clientulAjungePeSiteHtml,
   "/lab/audit-ai-visibility": auditAiVisibilityHtml,
   "/lab/despre-laborator": avl501DespreLaboratorHtml,
 };
