@@ -114,7 +114,7 @@ export const costurileAiVariatiiFinantariMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const costurileAiVariatiiFinantariHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-10-28T20:33:00+02:00">28 octombrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-28">28 octombrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-10-28">28 octombrie 2026</time></p>
 
       <p><em>Documentare încheiată la 28 octombrie 2026. Cifrele în dolari sunt exprimate în USD; perioadele și limitele estimărilor sunt precizate lângă informațiile relevante.</em></p>
 

@@ -116,7 +116,7 @@ export const viitorulPareEvidentMeta: LabArticleMeta = {
 
 export const viitorulPareEvidentHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-11-15T10:15:00+02:00">15 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-14">14 noiembrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-11-14">14 noiembrie 2026</time></p>
 
       <figure>
         <img src="/images/lab/viitorul-pare-evident-abia-dupa-ce-s-a-intamplat.webp" alt="Un bărbat într-un birou din anii '80, cu telefon cu fir, calculator cu monitor monocrom, agendă și casete pe masă, privește pe geam spre un oraș actual: oameni cu telefoane și căști, un biciclist, ecrane mari, un autobuz, o dronă și o terasă unde cineva participă la un apel video pe laptop." width="1672" height="941" loading="eager" />

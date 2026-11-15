@@ -90,7 +90,7 @@ const RELEASE =
 /** Conținutul propriu-zis al studiului de caz — fără metadate tehnice. */
 export const verificareTehnicaDelamatescuRoHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-10-28T14:23:00+02:00">28 octombrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-28">28 octombrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-10-28">28 octombrie 2026</time></p>
 
       <table>
         <tbody>

@@ -54,7 +54,7 @@ export const cumAlegiFurnizorulDeServiciiMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const cumAlegiFurnizorulDeServiciiHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-11-03T09:20:00+02:00">3 noiembrie 2026</time> · Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-03">3 noiembrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-03">3 noiembrie 2026</time></p>
 
       <figure>
         <img src="/images/lab/cum-aleg-furnizorul-de-servicii.webp" alt="Într-un birou din Sibiu, o antreprenoare indică sursa unei recomandări AI de pe laptop. Consultantul din fața ei ține palma deschisă, repetând gestul creatorului de pe ecranul YouTube din fundal." width="1672" height="941" loading="lazy" />

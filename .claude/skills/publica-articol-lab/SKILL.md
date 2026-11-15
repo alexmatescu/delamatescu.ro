@@ -286,7 +286,7 @@ Pentru orice articol nou (decizia autorului, 22 octombrie 2026):
 
 1. **Ora publicării este ora la care agentul face commit și push**, la cererea userului. Nu se cere confirmare separată pentru ea.
 2. Până la commit, `date_published` are o valoare **provizorie** (momentul curent, în `Europe/Bucharest`, cu offset explicit `+02:00`/`+03:00` după sezon), necesară pentru build și pentru verificarea indexului. Raportul final o declară ca provizorie.
-3. Când userul cere commit și push, **imediat înainte de commit**: determină momentul curent în `Europe/Bucharest` (`TZ=Europe/Bucharest date '+%Y-%m-%dT%H:%M:00%z'`, cu offset scris `+03:00`), apoi actualizează-l peste tot, în aceeași trecere: `date_published` din `.md`, împreună cu `status: "Publicat"` (și `version: "1.0.0"`, dacă draftul era încă `0.9.x`); `datePublished` din Meta `.ts`; `datetime` și textul vizibil al datei „Publicat:” din byline. Dacă ziua calendaristică s-a schimbat față de valoarea provizorie, actualizează și `date_modified`/`dateModified`, `<lastmod>` din sitemap și, numai dacă verificarea factuală a fost refăcută, `last_reviewed`. Regenerează registrul și rulează `npx tsc --noEmit`, apoi commit și push.
+3. Când userul cere commit și push, **imediat înainte de commit**: determină momentul curent în `Europe/Bucharest` (`TZ=Europe/Bucharest date '+%Y-%m-%dT%H:%M:00%z'`, cu offset scris `+03:00`), apoi actualizează-l peste tot, în aceeași trecere: `date_published` din `.md`, împreună cu `status: "Publicat"` (și `version: "1.0.0"`, dacă draftul era încă `0.9.x`); `datePublished` din Meta `.ts` (data publicării din antet se actualizează singură, din `datePublished`; byline-ul nu mai conține „Publicat:”). Dacă ziua calendaristică s-a schimbat față de valoarea provizorie, actualizează și `date_modified`/`dateModified`, `<lastmod>` din sitemap și, numai dacă verificarea factuală a fost refăcută, `last_reviewed`. Regenerează registrul și rulează `npx tsc --noEmit`, apoi commit și push.
 4. Dacă userul furnizează explicit altă dată și oră, folosește exact acea informație.
 5. Nu inventa niciodată o valoare — nu `00:00`, nu `09:00`, nu ora rulării agentului „ca să fie completă”.
 
@@ -496,9 +496,8 @@ Primul element din corpul `.ts` (imediat sub titlu/lead-ul deja randat de pagin�
   <a href="/lab">AI Visibility Lab</a>
 </p>
 <p>
-  Publicat: <time datetime="{date_published ISO — legacy YYYY-MM-DD, sau ISO complet cu oră/offset pentru articole noi}">{doar data, ex. „27 august 2026” — NICIODATĂ ora}</time>
   <!-- clauza "Actualizat" apare NUMAI dacă date_modified diferă efectiv de date_published (zi calendaristică diferită) — vezi regula de mai jos -->
-  · Actualizat: <time datetime="{date_modified ISO}">{date_modified}</time>
+  Actualizat: <time datetime="{date_modified ISO}">{date_modified}</time>
   · Ultima verificare factuală: <time datetime="{last_reviewed ISO}">{last_reviewed}</time>
 </p>
 ```
@@ -510,8 +509,9 @@ Reguli fixe, fără excepție:
 - `Alex Matescu` → mereu link către `/despre` (pagina `Person` a autorului — nu `/lab/despre-laborator`, care descrie laboratorul, nu persoana), cu `rel="author"`.
 - `AI Visibility Lab` → mereu link către `/lab`.
 - Rolul afișat e mereu „Fondator și coordonator” — nu „consultant AI Visibility”, „expert GEO” sau altă titulatură; nu inventa un rol diferit per articol.
-- Fiecare dată apare dublu: text vizibil în română, **doar data, fără oră** (ex. „27 august 2026”), **și** atributul `datetime` al elementului `<time>`. Pentru `date_published` al unui articol nou, `datetime` poate și trebuie să păstreze timestampul ISO complet cu oră/offset (`"2026-08-27T20:00:00+03:00"`) chiar dacă textul vizibil arată doar data — formatează textul vizibil în timezone `Europe/Bucharest` (nu ora browserului/serverului, ca să nu afișezi accidental ziua alăturată). `date_modified`/`last_reviewed` rămân `YYYY-MM-DD` în `datetime`, ca înainte. Ce înseamnă fiecare dată și când se schimbă — vezi §6.2.
-- **Clauza „Actualizat:” e condiționată, nu fixă**: include-o doar dacă `date_modified` reprezintă efectiv o zi calendaristică diferită de `date_published` — adică articolul chiar a fost modificat după publicare. Dacă articolul n-a fost efectiv modificat după publicare (cazul obișnuit pentru un articol nou, în ziua publicării), omite complet clauza „Actualizat: ...” din byline — nu afișa un „Actualizat:” care sugerează fals o actualizare recentă, nici măcar cu aceeași dată ca „Publicat”. Vezi §6.2.
+- **Data publicării NU apare în byline** (decizia autorului, 15 noiembrie 2026): pagina o afișează deja în antet, deasupra titlului, în rândul `categorie · data publicării · timp de citire`, randat server-side din `datePublished` (Meta `.ts`) cu `formatLabArticleDate`, iar timpul de citire e calculat automat din HTML (`readingTimeFromHtml`, `@/lib/reading-time`). Nu adăuga „Publicat: …” în byline și nu completa manual timpul de citire.
+- Fiecare dată din byline apare dublu: text vizibil în română, **doar data, fără oră** (ex. „27 august 2026”), **și** atributul `datetime` al elementului `<time>`. `date_modified`/`last_reviewed` rămân `YYYY-MM-DD` în `datetime`. Ce înseamnă fiecare dată și când se schimbă — vezi §6.2.
+- **Clauza „Actualizat:” e condiționată, nu fixă**: include-o doar dacă `date_modified` reprezintă efectiv o zi calendaristică diferită de `date_published` — adică articolul chiar a fost modificat după publicare. Dacă articolul n-a fost efectiv modificat după publicare (cazul obișnuit pentru un articol nou, în ziua publicării), omite complet clauza „Actualizat: ...” din byline — nu afișa un „Actualizat:” care sugerează fals o actualizare recentă, nici măcar cu aceeași dată ca data publicării. Vezi §6.2.
 
 Pe lângă byline-ul de mai sus, fiecare articol se încheie — Faza 7, imediat după „Notă de volatilitate” — cu paragraful standardizat de footer, identic cuvânt cu cuvânt pe toate articolele publicate (uniformizat 26 august 2026):
 
@@ -527,7 +527,7 @@ Byline-ul și footerul au roluri diferite și **amândouă** trebuie păstrate �
 
 `date_published`, `date_modified` și `last_reviewed` (frontmatter, §0.3) **nu sunt sinonime** — fiecare are o regulă proprie de actualizare, valabilă atât pentru byline-ul HTML (§6.1), cât și pentru `datePublished`/`dateModified` din JSON-LD (§5.2):
 
-- **`date_published`** — momentul primei publicări (regula completă — §0.4). Nu se rescrie niciodată ulterior, indiferent de câte actualizări sau reverificări urmează. Pentru articole noi, ISO complet cu oră/offset; textul vizibil din byline și din indexul `/lab/articole` arată totuși doar data, niciodată ora (§6.1/§8).
+- **`date_published`** — momentul primei publicări (regula completă — §0.4). Nu se rescrie niciodată ulterior, indiferent de câte actualizări sau reverificări urmează. Pentru articole noi, ISO complet cu oră/offset; textul vizibil din antetul articolului și din indexul `/lab/articole` arată totuși doar data, niciodată ora (§6.1/§8).
 - **`date_modified`** — data ultimei modificări editoriale/substanțiale reale a textului. Nu se atinge doar pentru: recitirea articolului, reverificarea surselor, confirmarea că informația e încă validă, sau o simplă schimbare a `last_reviewed`. Dacă articolul a fost verificat factual dar textul n-a fost modificat substanțial, `date_modified` rămâne neschimbat — se schimbă doar `last_reviewed`.
 - **`last_reviewed`** — data ultimei verificări factuale/a surselor, efectiv realizată în task-ul curent. Nu completa automat cu data publicării sau cu data curentă „ca să fie safe” — valoarea înseamnă exact ce spune numele ei.
 
@@ -790,7 +790,7 @@ Pentru orice actualizare a unui articol publicat, raportul citează și rândul 
 - [ ] La o actualizare a textului: „Istoricul versiunilor” are rândul nou (versiune, `date_modified`, modificări concrete), rândurile vechi sunt intacte, iar secțiunea e identică în `.md` și `.ts` și stă înaintea footerului (§6.4).
 - [ ] Cuprinsul (§6.5) e după byline și imaginea principală, listează toate `<h2>` și `<h3>` (doar `<h2>` peste 40 de titluri) cu textul exact; fiecare `href="#…"` are exact un `id` corespunzător; există doar în `.ts`.
 - [ ] Byline: `Alex Matescu` → `/despre` cu `rel="author"`; rol vizibil „Fondator și coordonator”; `AI Visibility Lab` → `/lab` (§6.1).
-- [ ] Toate cele trei date din byline au text vizibil în română, doar data, fără oră; `datetime` e `YYYY-MM-DD` pentru `date_modified`/`last_reviewed`, și ISO complet cu oră/offset pentru `date_published` al unui articol nou (§6.1).
+- [ ] Byline-ul nu conține „Publicat:” (data publicării e în antet, din `datePublished`); datele din byline au text vizibil în română, doar data, fără oră, și `datetime` `YYYY-MM-DD` pentru `date_modified`/`last_reviewed` (§6.1).
 - [ ] Byline-ul apare imediat sub titlu/lead, înaintea corpului articolului; footerul standardizat apare integral, nemodificat, la coadă — ambele prezente, niciunul nu-l înlocuiește pe celălalt (§6.1).
 - [ ] JSON-LD `author` referă `{"@id": "https://delamatescu.ro/#alex-matescu"}`; `datePublished`/`dateModified` coerente cu byline-ul (§5.1/§5.2).
 - [ ] Nicio variantă veche de byline/footer (`Alex Matescu · AI Visibility Lab` fără rol, „consultant AI Visibility”, „proiectul de cercetare... al lui Alex Matescu” etc.) nu a fost regenerată.

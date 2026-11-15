@@ -117,7 +117,7 @@ export const etichetaAbonatRelatiaPrezentareAiSearchMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const etichetaAbonatRelatiaPrezentareAiSearchHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-08-27T20:00:00+03:00">27 august 2026</time> · Ultima verificare factuală: <time datetime="2026-08-27">27 august 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-08-27">27 august 2026</time></p>
 
       <figure>
         <img src="/images/blog/Subscription_highlights_Ir7y0f1.width-2000.format-webp.webp" alt="Captură de ecran din anunțul oficial Google (mai 2026, „5 new ways to explore the web with generative AI in Search”): un răspuns AI Mode pentru interogarea „I'm looking for free kid-friendly events in Nashville this summer”, în care sursa The Local Tribune apare marcată cu eticheta „Subscribed”, alături de un panou cu surse conexe recomandate de Google AI Search." width="2000" height="1088" loading="lazy" />

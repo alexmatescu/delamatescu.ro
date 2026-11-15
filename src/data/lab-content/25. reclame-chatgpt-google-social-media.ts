@@ -156,7 +156,7 @@ export const reclameChatgptGoogleSocialMediaMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const reclameChatgptGoogleSocialMediaHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-10-29T13:15:00+02:00">29 octombrie 2026</time> · Actualizat: <time datetime="2026-11-12">12 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-29">29 octombrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-11-12">12 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-29">29 octombrie 2026</time></p>
 
       <p><em>Documentare verificată la 29 octombrie 2026. Analiză pentru companii care vând în România sau folosesc România ca bază pentru alte piețe. Funcționalitățile, disponibilitatea și pragurile platformelor se pot modifica.</em></p>
 

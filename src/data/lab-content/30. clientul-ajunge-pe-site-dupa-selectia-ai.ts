@@ -122,7 +122,7 @@ export const clientulAjungePeSiteMeta: LabArticleMeta = {
 
 export const clientulAjungePeSiteHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-11-15T10:14:00+02:00">15 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-14">14 noiembrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-11-14">14 noiembrie 2026</time></p>
 
       <figure>
         <img src="/images/lab/clientul-ajunge-pe-site-dupa-selectia-ai.webp" alt="O clădire din piatră, în secțiune, cu birouri, săli de lucru și o bibliotecă vizibile pe două niveluri, în lumina de apus. Un vizitator cu geantă de piele intră pe o ușă laterală, urmând o linie luminoasă pe aleea pavată, iar înăuntru un bărbat îl întâmpină lângă o masă cu planuri, machete și mostre de materiale." width="1672" height="941" loading="eager" />

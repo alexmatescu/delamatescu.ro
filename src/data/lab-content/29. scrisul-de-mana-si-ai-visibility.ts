@@ -62,7 +62,7 @@ export const scrisulDeManaSiAiVisibilityMeta: LabArticleMeta = {
 
 export const scrisulDeManaSiAiVisibilityHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-11-13T06:39:00+02:00">13 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-13">13 noiembrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-11-13">13 noiembrie 2026</time></p>
 
       <figure>
         <img src="/images/lab/scrisul-de-mana-si-ai-visibility.webp" alt="Un robot umanoid scrie cu pana pe un sul de pergament, la o masă de lemn dintr-o curte cu arcade, sub privirea atentă a unei femei aplecate lângă el. În fundal, oameni în haine de epocă trec pe lângă ateliere și o bibliotecă." width="1672" height="941" loading="eager" />

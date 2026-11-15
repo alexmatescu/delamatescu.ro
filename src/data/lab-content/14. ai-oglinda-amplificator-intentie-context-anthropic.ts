@@ -78,7 +78,7 @@ export const aiOglindaAmplificatorMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const aiOglindaAmplificatorHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-09-14T12:10:00+03:00">14 septembrie 2026</time> · Actualizat: <time datetime="2026-09-30">30 septembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-09-30">30 septembrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-09-30">30 septembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-09-30">30 septembrie 2026</time></p>
 
       <figure>
         <img src="/images/blog/ai-oglinda-amplificator.webp" alt="Ilustrație conceptuală pentru acest articol: un bărbat lucrează concentrat la laptop, în timp ce o lupă reflectă, pe de-o parte, momente simbolice din istoria umanității (curiozitate, descoperiri, cunoaștere, progres) și, pe de altă parte, cele șapte arii de risc din raportul Anthropic „Detecting and countering misuse of AI: September 2026” — operațiuni cibernetice, operațiuni de influență, supraveghere, escrocherii și fraude, abuz biologic, dezvoltare de arme convenționale și distilare ilicită." width="1672" height="941" loading="lazy" />

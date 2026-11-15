@@ -91,7 +91,7 @@ export const tabulaRasaEntityResolutionStudiuDeCazMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al studiului de caz — fără metadate tehnice. */
 export const tabulaRasaEntityResolutionStudiuDeCazHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-09-04T09:06:00+03:00">4 septembrie 2026</time> · Actualizat: <time datetime="2026-10-23">23 octombrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-23">23 octombrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-10-23">23 octombrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-23">23 octombrie 2026</time></p>
 
       <table>
         <tbody>

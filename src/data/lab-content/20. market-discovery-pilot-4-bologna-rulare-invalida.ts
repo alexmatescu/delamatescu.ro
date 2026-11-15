@@ -66,7 +66,7 @@ const RELEASE_URL =
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const marketDiscoveryPilot4BolognaHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-10-21T13:19:00+03:00">21 octombrie 2026</time> · Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-21">21 octombrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-21">21 octombrie 2026</time></p>
 
       <nav class="article-toc" aria-labelledby="cuprins">
         <p id="cuprins" class="article-toc-title">Cuprins</p>

@@ -86,7 +86,7 @@ const RELEASE_URL = `${RELEASE_BASE}/evidence-alex-matescu-f3-v1.0`;
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const tabulaRasaF3Html = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-10-23T16:17:00+03:00">23 octombrie 2026</time> · Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-23">23 octombrie 2026</time></p>
+      <p>Actualizat: <time datetime="2026-11-09">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-10-23">23 octombrie 2026</time></p>
 
       <p><strong>Tabula Rasa · Studiul de caz #001 · Alex Matescu · F3 — 18–21 octombrie 2026</strong></p>
       <p><em>Un experiment longitudinal despre identitate digitală, căutare și inteligență artificială. De la primele confuzii de identitate la un protocol de măsurare mai riguros, care documentează nu numai răspunsurile platformelor, ci și condițiile în care acestea au fost obținute.</em></p>

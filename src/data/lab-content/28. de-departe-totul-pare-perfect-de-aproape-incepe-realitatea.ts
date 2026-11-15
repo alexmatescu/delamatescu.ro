@@ -102,7 +102,7 @@ export const deDeparteTotulParePerfectMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const deDeparteTotulParePerfectHtml = `
       <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-      <p>Publicat: <time datetime="2026-11-09T13:07:00+02:00">9 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-09">9 noiembrie 2026</time></p>
+      <p>Ultima verificare factuală: <time datetime="2026-11-09">9 noiembrie 2026</time></p>
 
       <figure>
         <img src="/images/lab/de-departe-totul-pare-perfect-de-aproape-incepe-realitatea.webp" alt="Un deal înverzit la apus, cu un copac singuratic și o stână de piatră părăsită, cu acoperișul prăbușit. Dedesubt, în vale, un oraș cu blocuri, un stadion și un bulevard, sub un cer cu nori." width="1600" height="901" loading="eager" />

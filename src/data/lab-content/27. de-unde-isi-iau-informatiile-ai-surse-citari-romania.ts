@@ -149,7 +149,7 @@ export const deUndeIsiIauInformatiileAiMeta: LabArticleMeta = {
 /** Conținutul propriu-zis al articolului — fără metadate tehnice. */
 export const deUndeIsiIauInformatiileAiHtml = `
 <p><a href="/despre" rel="author">Alex Matescu</a> · Fondator și coordonator <a href="/lab">AI Visibility Lab</a></p>
-<p>Publicat: <time datetime="2026-11-07T09:12:00+02:00">7 noiembrie 2026</time> · Actualizat: <time datetime="2026-11-12">12 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-07">7 noiembrie 2026</time></p>
+<p>Actualizat: <time datetime="2026-11-12">12 noiembrie 2026</time> · Ultima verificare factuală: <time datetime="2026-11-07">7 noiembrie 2026</time></p>
 
 <nav class="article-toc" aria-labelledby="cuprins">
   <p id="cuprins" class="article-toc-title">Cuprins</p>
