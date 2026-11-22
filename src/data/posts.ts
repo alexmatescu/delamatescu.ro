@@ -8,6 +8,7 @@ import { aiSchimbaLumeaEuCeFacIntreTimpPost } from "@/data/blog-content/ai-schim
 import { imbatranesteSiSufletulOdataCuTrupulPost } from "@/data/blog-content/imbatraneste-si-sufletul-odata-cu-trupul";
 import { amCrezutCaLucrurileAuUnSingurSensPost } from "@/data/blog-content/am-crezut-ca-lucrurile-au-un-singur-sens";
 import { toataLumeaStieToataLumeaPoatePost } from "@/data/blog-content/toata-lumea-stie-toata-lumea-poate";
+import { nuNeAmPierdutMemoriaPost } from "@/data/blog-content/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul";
 
 /**
  * Structura articolelor de blog — câmpurile de mai jos sunt grupate și ordonate
@@ -150,6 +151,7 @@ const newPosts: Post[] = (
     imbatranesteSiSufletulOdataCuTrupulPost,
     amCrezutCaLucrurileAuUnSingurSensPost,
     toataLumeaStieToataLumeaPoatePost,
+    nuNeAmPierdutMemoriaPost,
   ] satisfies NewPost[]
 ).map(withReadingTime);
 

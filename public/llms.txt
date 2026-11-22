@@ -22,7 +22,7 @@ Acest fișier este întreținut de Alex Matescu și oferă un punct de referinț
 
 - [Despre](https://delamatescu.ro/despre): biografie, parcurs profesional în inginerie, antreprenoriat și scris
 - [Călătoria](https://delamatescu.ro/calatoria): parcursul de la Strâmba Jiu și Gorj la Craiova, Timișoara, București și Sibiu
-- [Blog](https://delamatescu.ro/blog): peste 130 de eseuri, activ din 2014 — Reflecții, Leadership, Experiențe, Jurnal de bord, Habits, Dragoste, Dreaming moments, Sfaturi utile
+- [Blog](https://delamatescu.ro/blog): peste 140 de eseuri, activ din 2014 — Reflecții, Leadership, Experiențe, Jurnal de bord, Habits, Dragoste, Dreaming moments, Sfaturi utile
 - [CRANDIT — Mitul succesului peste noapte](https://delamatescu.ro/carte): carte despre succes durabil, construită din experiențe trăite, disciplină și costuri asumate (manuscris finalizat, în corectură)
 - [Proiecte](https://delamatescu.ro/proiecte): toate proiectele antreprenoriale, trecute și curente
 - [Ichnometria](https://delamatescu.ro/proiecte/ichnometria): servicii GEO, AEO și AI Visibility pentru afaceri, din Sibiu, la nivel național; site activ la [ichnometria.ro](https://ichnometria.ro/), cu servicii și prețuri publicate (comenzile, plățile și programarea nu sunt încă activate)
