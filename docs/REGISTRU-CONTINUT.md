@@ -7,7 +7,7 @@
 > `public/sitemap.xml`. O modificare făcută aici se pierde la următoarea rulare;
 > corectează sursa, nu registrul.
 
-Generat: 2026-11-22 · 191 intrări · **2 anomalii** în 2 intrări
+Generat: 2026-11-22 · 192 intrări · **2 anomalii** în 2 intrări
 
 ## Sinteză
 
@@ -19,9 +19,9 @@ Generat: 2026-11-22 · 191 intrări · **2 anomalii** în 2 intrări
 | `lab/foundation` | 1 | 0 | 1 | 0 |
 | `lab/cercetare` | 5 | 0 | 5 | 0 |
 | `lab/secțiuni` | 4 | 0 | 4 | 0 |
-| `blog` | 9 | 0 | 9 | 0 |
+| `blog` | 10 | 0 | 10 | 0 |
 | `blog (arhivă)` | 132 | 0 | 132 | 0 |
-| **Total** | **191** | **0** | **191** | **2** |
+| **Total** | **192** | **0** | **192** | **2** |
 
 ## Legendă
 
@@ -114,11 +114,12 @@ Generat: 2026-11-22 · 191 intrări · **2 anomalii** în 2 intrări
 | `AVL-401` | AVL-401 — Articole | E — Articole | 2.0.1 | În derulare | 2026-11-05 | — | 2026-08-26 | — | `·✓✓✓` | `src/content/lab/AVL/AVL-401_Articole_v2.0.1.md` | `src/data/lab-content/avl-401.ts` |
 | `AVL-501` | AVL-501 — Despre AI Visibility Lab | F — Despre laborator | 2.0.0 | Activ | 2026-10-13 | 2026-07-22 | 2026-10-13 | — | `·✓✓✓` | `src/content/lab/AVL/AVL-501_Despre_AI_Visibility_Lab.md` | `src/data/lab-content/avl-501.ts` |
 
-## `blog` — 9 intrări
+## `blog` — 10 intrări
 
 | ID | Titlu | Categorie | Tip | Status | Creat | Publicat | Modificat | Verificat | Wiring | Sursă `.md` | Wiring `.ts` |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul` | [Nu ne-am pierdut memoria. Am uitat să privim contextul.](/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul) | Reflecții | Eseu | publicat | — | 2026-11-22 | 2026-11-22 | 2026-11-22 (0z) | `✓✓·✓` | `src/content/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.md` | `src/data/blog-content/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.ts` |
+| `nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul` | [Nu ne-am pierdut memoria. Am uitat să privim contextul.](/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul) | Reflecții | Eseu | publicat | 2026-11-22 | 2026-11-22 | 2026-11-22 | 2026-11-22 (0z) | `✓✓·✓` | `src/content/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.md` | `src/data/blog-content/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.ts` |
+| `trenul-si-urcarea-in-tren` | [Trenul și urcarea în tren](/blog/trenul-si-urcarea-in-tren) | Reflecții | Eseu | publicat | — | 2026-11-22 | 2026-11-22 | — | `✓✓·✓` | `src/content/blog/trenul-si-urcarea-in-tren.md` | `src/data/blog-content/trenul-si-urcarea-in-tren.ts` |
 | `toata-lumea-stie-toata-lumea-poate` | [Toată lumea știe. Toată lumea poate. Toată lumea se pricepe.](/blog/toata-lumea-stie-toata-lumea-poate) | Reflecții | Eseu | publicat | 2026-11-13 | 2026-11-13 | 2026-11-13 | 2026-11-12 (10z) | `✓✓·✓` | `src/content/blog/toata-lumea-stie-toata-lumea-poate.md` | `src/data/blog-content/toata-lumea-stie-toata-lumea-poate.ts` |
 | `am-crezut-ca-lucrurile-au-un-singur-sens` | [Am crezut că lucrurile au un singur sens](/blog/am-crezut-ca-lucrurile-au-un-singur-sens) | Reflecții | Eseu | publicat | 2026-11-07 | 2026-11-07 | 2026-11-07 | 2026-11-07 (15z) | `✓✓·✓` | `src/content/blog/am-crezut-ca-lucrurile-au-un-singur-sens.md` | `src/data/blog-content/am-crezut-ca-lucrurile-au-un-singur-sens.ts` |
 | `ai-schimba-lumea-eu-ce-fac-intre-timp` | [AI schimbă lumea. Eu ce fac între timp?](/blog/ai-schimba-lumea-eu-ce-fac-intre-timp) | Reflecții | Eseu | publicat | 2026-10-25 | 2026-10-26 | 2026-10-26 | 2026-10-26 (27z) | `✓✓·✓` | `src/content/blog/ai-schimba-lumea-eu-ce-fac-intre-timp.md` | `src/data/blog-content/ai-schimba-lumea-eu-ce-fac-intre-timp.ts` |
@@ -234,7 +235,7 @@ Generat: 2026-11-22 · 191 intrări · **2 anomalii** în 2 intrări
 | `cum-sa-fii-barbat-part-2` | ”Cum să fii bărbat”- Part 2 | Dragoste | publicat | 2016-07-18 | — | `✓✓·✓` | — |
 | `cine-sunt-ce-vreau-de-ce-fac-asta-nu` | ”Cine sunt? Ce vreau? De ce fac asta? Nu știu. Dar știu că nu știu ce vreau.” | Reflecții | publicat | 2016-06-14 | — | `✓✓·✓` | — |
 | `dreaming-moments-part-vii` | "Dreaming moments, part VII" | Dreaming moments | publicat | 2016-04-09 | — | `✓✓·✓` | — |
-| `si-zile` | &quot;Zile și zile&quot; | Reflecții | publicat | 2016-02-28 | — | `✓✓·✓` | — |
+| `si-zile` | „Zile și zile” | Reflecții | publicat | 2016-02-28 | — | `✓✓·✓` | — |
 | `another-day` | „Another day” | Reflecții | publicat | 2016-02-19 | — | `✓✓·✓` | — |
 | `take-care-of-your-mind` | ”Take care of your mind” | Reflecții | publicat | 2016-02-17 | — | `✓✓·✓` | — |
 | `dreaming-moments-part-vi` | "Dreaming moments, part VI" | Dreaming moments | publicat | 2016-01-04 | — | `✓✓·✓` | — |

@@ -1,7 +1,7 @@
 {
   "generat": "2026-11-22",
   "pragReverificareZile": 180,
-  "totalIntrari": 191,
+  "totalIntrari": 192,
   "totalAnomalii": 2,
   "anomaliiGlobale": [],
   "intrari": [
@@ -1507,7 +1507,7 @@
       "status": "publicat",
       "statusNormativ": null,
       "versiune": null,
-      "dataCreare": null,
+      "dataCreare": "2026-11-22",
       "dataPublicare": "2026-11-22",
       "dataModificare": "2026-11-22",
       "ultimaVerificare": "2026-11-22",
@@ -1522,6 +1522,34 @@
       "sitemapLastmod": "2026-11-22",
       "imagine": "/images/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.webp",
       "zileDeLaVerificare": 0,
+      "anomalii": []
+    },
+    {
+      "id": "trenul-si-urcarea-in-tren",
+      "titlu": "Trenul și urcarea în tren",
+      "suprafata": "blog",
+      "ruta": "/blog/trenul-si-urcarea-in-tren",
+      "slug": "trenul-si-urcarea-in-tren",
+      "categorie": "Reflecții",
+      "tip": "Eseu",
+      "status": "publicat",
+      "statusNormativ": null,
+      "versiune": null,
+      "dataCreare": null,
+      "dataPublicare": "2026-11-22",
+      "dataModificare": "2026-11-22",
+      "ultimaVerificare": null,
+      "fisierMd": "src/content/blog/trenul-si-urcarea-in-tren.md",
+      "fisierTs": "src/data/blog-content/trenul-si-urcarea-in-tren.ts",
+      "wiring": {
+        "registru": true,
+        "pagina": true,
+        "nav": null,
+        "sitemap": true
+      },
+      "sitemapLastmod": "2026-11-22",
+      "imagine": "/images/blog/trenul-si-urcarea-in-tren.webp",
+      "zileDeLaVerificare": null,
       "anomalii": []
     },
     {
@@ -4606,7 +4634,7 @@
     },
     {
       "id": "si-zile",
-      "titlu": "&quot;Zile și zile&quot;",
+      "titlu": "„Zile și zile”",
       "suprafata": "blog (arhivă)",
       "ruta": "/blog/si-zile",
       "slug": "si-zile",
