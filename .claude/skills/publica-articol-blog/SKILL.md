@@ -729,7 +729,7 @@ Această verificare de existență este permisă și nu reprezintă comparație 
 
 # 12.6 `date`
 
-Pentru articol nou, data publicării este data commitului și push-ului (decizia autorului, 22 octombrie 2026). Până atunci, valoarea e provizorie și se declară ca atare în raport. Dacă userul cere explicit commit și push după încheierea skill-ului, agentul fixează data curentă în `Europe/Bucharest` imediat înainte de commit, fără confirmare separată. Deploy-ul îl face userul, manual: agentul nu generează comenzi sau pași de deploy.
+Pentru articol nou, data publicării este data commitului și push-ului (decizia autorului, 22 octombrie 2026). Până atunci, valoarea e provizorie și se declară ca atare în raport. Dacă userul cere explicit commit și push după încheierea skill-ului, agentul fixează data curentă în `Europe/Bucharest` imediat înainte de commit, fără confirmare separată. Dacă ziua s-a schimbat față de valoarea provizorie, actualizează `date`/`dateModified` în `.ts` și `date_published`/`date_modified` în `.md`, apoi rulează `node scripts/sync-sitemap.mjs` (care aliniază `<lastmod>`) și `npx tsc --noEmit` înainte de commit. Deploy-ul îl face userul, manual: agentul nu generează comenzi sau pași de deploy.
 
 Nu backdata fără instrucțiune explicită.
 
@@ -741,7 +741,7 @@ Pentru articol nou urmează convenția reală a proiectului.
 
 Nu inventa modificări.
 
-În viitor, acest câmp se schimbă numai când conținutul public s-a modificat material.
+În viitor, acest câmp se schimbă numai când conținutul public s-a modificat material. Inclusiv la o corecție punctuală făcută în afara acestui pipeline (ex. un titlu din arhiva Blogger reparat): dacă modificarea e vizibilă public și materială, setează `dateModified` în sursă — și pentru articolele din `blogger-posts.json`, unde câmpul se adaugă doar intrării corectate — apoi rulează `node scripts/sync-sitemap.mjs`.
 
 ---
 
@@ -1475,11 +1475,19 @@ actualizează numai intrarea articolului nou.
 
 # 25. SITEMAP
 
-Verifică:
+**Sitemap-ul nu se mai editează de mână (decizia lui Alex, 22 noiembrie 2026).** Rulează:
 
-`public/sitemap.xml`
+```bash
+node scripts/sync-sitemap.mjs
+```
 
-sau generatorul real.
+Scriptul citește registrul de conținut (deci datele reale din sursă) și, pentru fiecare material publicat: adaugă `<url>`-ul lipsă înaintea primei intrări de pe aceeași suprafață (convenția fișierului: cel mai nou primul), cu formatul suprafeței (cu/fără `<lastmod>`, aceleași `changefreq`/`priority`), și aliniază `<lastmod>` la `dateModified` (sau la data publicării). Nu șterge intrări, nu adaugă `<lastmod>` unde suprafața nu-l folosește și nu atinge paginile din afara registrului (Home, /despre, /proiecte/*). Regenerează registrul înainte și după.
+
+`node scripts/sync-sitemap.mjs --check` doar raportează și dă exit 1 dacă sitemap-ul nu e sincronizat — rulează-l la verificarea finală. Dacă scriptul propune modificări pe alte materiale decât cel la care lucrezi, nu le scrie fără să le înțelegi: înseamnă o dată greșită în sursă sau o modificare anterioară nesincronizată; raportează-le.
+
+Consecința practică: `<lastmod>` urmează `dateModified`. Ca să se schimbe `<lastmod>`, schimbi `dateModified` în sursă (numai la o modificare materială reală) și rulezi scriptul; nu edita data direct în sitemap.
+
+Verifică apoi:
 
 URL-ul articolului trebuie să apară conform arhitecturii actuale.
 
@@ -2128,7 +2136,7 @@ NU:
 [ ] Ruta articolului este validă.
 [ ] Articolul nu este noindex accidental.
 [ ] robots nu introduce blocaj accidental.
-[ ] sitemap este actualizat/corect.
+[ ] sitemap sincronizat prin `node scripts/sync-sitemap.mjs`; `--check` dă exit 0.
 [ ] `<loc>` corespunde canonical.
 [ ] lastmod este corect.
 [ ] llms.txt verificat la final (§27): linia „Blog” actualizată numai dacă devenise falsă; nicio linie individuală pentru articol; `node scripts/check-llms.mjs` a dat exit 0.

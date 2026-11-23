@@ -416,8 +416,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://delamatescu.ro/blog/toata-lumea-stie-toata-lumea-poate</loc>
-    <lastmod>2026-11-13</lastmod>
+    <loc>https://delamatescu.ro/blog/trenul-si-urcarea-in-tren</loc>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -428,8 +428,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://delamatescu.ro/blog/trenul-si-urcarea-in-tren</loc>
-    <lastmod>2026-11-22</lastmod>
+    <loc>https://delamatescu.ro/blog/toata-lumea-stie-toata-lumea-poate</loc>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1089,7 +1089,7 @@
   </url>
   <url>
     <loc>https://delamatescu.ro/blog/si-zile</loc>
-    <lastmod>2016-02-28</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

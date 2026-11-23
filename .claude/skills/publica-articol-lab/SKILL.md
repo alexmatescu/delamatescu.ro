@@ -286,7 +286,7 @@ Pentru orice articol nou (decizia autorului, 22 octombrie 2026):
 
 1. **Ora publicării este ora la care agentul face commit și push**, la cererea userului. Nu se cere confirmare separată pentru ea.
 2. Până la commit, `date_published` are o valoare **provizorie** (momentul curent, în `Europe/Bucharest`, cu offset explicit `+02:00`/`+03:00` după sezon), necesară pentru build și pentru verificarea indexului. Raportul final o declară ca provizorie.
-3. Când userul cere commit și push, **imediat înainte de commit**: determină momentul curent în `Europe/Bucharest` (`TZ=Europe/Bucharest date '+%Y-%m-%dT%H:%M:00%z'`, cu offset scris `+03:00`), apoi actualizează-l peste tot, în aceeași trecere: `date_published` din `.md`, împreună cu `status: "Publicat"` (și `version: "1.0.0"`, dacă draftul era încă `0.9.x`); `datePublished` din Meta `.ts` (data publicării din antet se actualizează singură, din `datePublished`; byline-ul nu mai conține „Publicat:”). Dacă ziua calendaristică s-a schimbat față de valoarea provizorie, actualizează și `date_modified`/`dateModified`, `<lastmod>` din sitemap și, numai dacă verificarea factuală a fost refăcută, `last_reviewed`. Regenerează registrul și rulează `npx tsc --noEmit`, apoi commit și push.
+3. Când userul cere commit și push, **imediat înainte de commit**: determină momentul curent în `Europe/Bucharest` (`TZ=Europe/Bucharest date '+%Y-%m-%dT%H:%M:00%z'`, cu offset scris `+03:00`), apoi actualizează-l peste tot, în aceeași trecere: `date_published` din `.md`, împreună cu `status: "Publicat"` (și `version: "1.0.0"`, dacă draftul era încă `0.9.x`); `datePublished` din Meta `.ts` (data publicării din antet se actualizează singură, din `datePublished`; byline-ul nu mai conține „Publicat:”). Dacă ziua calendaristică s-a schimbat față de valoarea provizorie, actualizează și `date_modified`/`dateModified` și, numai dacă verificarea factuală a fost refăcută, `last_reviewed`. Rulează `node scripts/sync-sitemap.mjs` (aliniază `<lastmod>` și regenerează registrul) și `npx tsc --noEmit`, apoi commit și push.
 4. Dacă userul furnizează explicit altă dată și oră, folosește exact acea informație.
 5. Nu inventa niciodată o valoare — nu `00:00`, nu `09:00`, nu ora rulării agentului „ca să fie completă”.
 
@@ -662,6 +662,20 @@ Pagina index `/lab/articole` (componenta `LabArticleIndex`, `src/pages/Lab.tsx`)
 
 ### 8.2 — Sitemap
 
+**Sitemap-ul nu se mai editează de mână (decizia lui Alex, 22 noiembrie 2026).** Rulează:
+
+```bash
+node scripts/sync-sitemap.mjs
+```
+
+Scriptul citește registrul de conținut (deci datele reale din sursă) și, pentru fiecare material publicat: adaugă `<url>`-ul lipsă înaintea primei intrări de pe aceeași suprafață (convenția fișierului: cel mai nou primul), cu formatul suprafeței (cu/fără `<lastmod>`, aceleași `changefreq`/`priority`), și aliniază `<lastmod>` la `dateModified` (sau la data publicării). Nu șterge intrări, nu adaugă `<lastmod>` unde suprafața nu-l folosește și nu atinge paginile din afara registrului (Home, /despre, /proiecte/*). Regenerează registrul înainte și după.
+
+`node scripts/sync-sitemap.mjs --check` doar raportează și dă exit 1 dacă sitemap-ul nu e sincronizat — rulează-l la verificarea finală. Dacă scriptul propune modificări pe alte materiale decât cel la care lucrezi, nu le scrie fără să le înțelegi: înseamnă o dată greșită în sursă sau o modificare anterioară nesincronizată; raportează-le.
+
+Consecința practică: `<lastmod>` urmează `dateModified`. Ca să se schimbe `<lastmod>`, schimbi `dateModified` în sursă (numai la o modificare materială reală) și rulezi scriptul; nu edita data direct în sitemap.
+
+Formatul rezultat pentru un articol Lab (generat de script, nu scris de mână):
+
 ```xml
 <url>
   <loc>https://delamatescu.ro/lab/articole/{slug}</loc>
@@ -781,7 +795,7 @@ Pentru orice actualizare a unui articol publicat, raportul citează și rândul 
 - [ ] `citation` (dacă există) conține doar surse efectiv relevante.
 - [ ] FAQ folosit doar dacă e util; FAQ vizibil == FAQ în JSON-LD.
 - [ ] Canonical == rută == sitemap == wiring (`lab.ts`/`Lab.tsx`/`lab-seo.ts`).
-- [ ] `lastmod` din sitemap nu e falsificat.
+- [ ] `lastmod` din sitemap nu e falsificat; sitemap sincronizat prin `node scripts/sync-sitemap.mjs`, `--check` dă exit 0.
 - [ ] `public/llms.txt` actualizat la final (Pasul final 2): linia articolului adăugată sau corectată în secțiunea articolelor, fără alte linii atinse; `node scripts/check-llms.mjs --require {canonical}` a dat exit 0.
 - [ ] Draftul de lucru e închis (Pasul final 3): nicio copie a articolului în `docs/drafts/`, în afară de `outdated/`; textul existent doar în draft a fost semnalat userului.
 - [ ] Nu se pretinde că `llms.txt`/schema/FAQ/metadata garantează citarea AI (§11.1).

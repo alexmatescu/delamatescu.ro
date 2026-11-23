@@ -467,7 +467,7 @@ Actualizează exact:
 3. **`src/pages/Lab.tsx`** — import `{slug}Html`, adaugă în `labPageContent` cu cheia `/lab/studii-de-caz/{slug}`. (`labPageJsonLdOverrides` deja include `labCaseStudyMeta` prin spread — nu necesită pas separat, doar verificare.)
 4. **`src/data/lab.ts`** — adaugă un copil nou în `children` al nodului `/lab/studii-de-caz` din `labNav`: `{ to: "/lab/studii-de-caz/{slug}", label: title, lead: description }`. **Obligatoriu tehnic** (nu opțional ca la articole): fără acest nod, `findLabPage` nu găsește ruta și `LabDetail` redirecționează spre `/lab` (`Navigate to="/lab"`). De la 2026-09-04, acest nod servește **exclusiv routing-ul** (`findLabPage`/`findLabParent`) — **nu** mai alimentează și lista vizibilă de pe `/lab/studii-de-caz`: pagina index randează o componentă dedicată, `LabCaseStudyIndex` (`src/pages/Lab.tsx`), sortată automat din `sortedLabCaseStudies`/`latestLabCaseStudy` (`src/data/lab-seo.ts`) — exact simetric cu `LabArticleIndex`/`sortedLabArticles` de la `/lab/articole`. Nu adăuga nimic manual pentru afișare — un studiu de caz nou apare automat, la poziția corectă (cel mai recent `datePublished` primul), doar din pasul 2 de mai sus (`labCaseStudyMeta`).
 5. **`public/images/lab/{slug}/`** — confirmă că toate evidence figures au fost copiate (§8).
-6. **`public/sitemap.xml`** — adaugă `<url><loc>https://delamatescu.ro/lab/studii-de-caz/{slug}</loc><lastmod>YYYY-MM-DD</lastmod>...</url>`, urmând formatul `changefreq`/`priority` deja folosit de restul intrărilor `/lab`.
+6. **`public/sitemap.xml`** — nu se editează de mână: rulează `node scripts/sync-sitemap.mjs` după pașii 1–5 (adaugă `<url>`-ul cu formatul suprafeței și aliniază `<lastmod>` la `dateModified`; regula completă în `publica-articol-lab` §8.2). La o fază nouă peste un caz existent, scriptul actualizează `<lastmod>` din `dateModified`. La verificarea finală, `node scripts/sync-sitemap.mjs --check` trebuie să dea exit 0.
 
 **Nu edita** `src/data/lab-content/avl-350.ts` (textul de poziționare al secțiunii `/lab/studii-de-caz`) pentru publicarea de rutină a unui studiu de caz nou sau a unei faze noi — e document normativ, atins doar la o schimbare reală de politică editorială a secțiunii, decizie separată și explicită, nu un efect automat al publicării de conținut.
 
@@ -572,7 +572,7 @@ Pentru **update minor**: rezumat de 2–3 rânduri, fișierele atinse, doar afir
 - [ ] `labCaseStudyMeta` actualizat (nu amestecat cu `labArticleMeta`).
 - [ ] `labPageContent` actualizat cu cheia `/lab/studii-de-caz/{slug}`.
 - [ ] Nod copil adăugat în `labNav` sub `/lab/studii-de-caz` (obligatoriu tehnic pentru routing).
-- [ ] `sitemap.xml` actualizat.
+- [ ] `sitemap.xml` sincronizat prin `node scripts/sync-sitemap.mjs`; `--check` dă exit 0.
 - [ ] AVL-350 (`avl-350.ts`) neatins, cu excepția unei decizii editoriale explicite separate.
 
 **Tehnic**

@@ -313,7 +313,7 @@ Actualizează exact (confirmă fiecare cale la Faza 0, nu presupune):
 1. **`src/data/lab-content/avl-{NNN}.ts`** (sau slug echivalent, urmând convenția reală a fișierelor deja prezente) — `export const {const}Html = \`...\`;`.
 2. **`src/pages/Lab.tsx`** — import + intrare nouă în `labPageContent["/lab/metodologie/{slug}"]`.
 3. **`src/data/lab.ts`** — nod copil nou în `children` al nodului `/lab/metodologie` din `labNav`: `{ to, label, lead }` — **obligatoriu tehnic** pentru routing (`findLabPage`/`findLabParent`), identic cu regula de la `publica-studiu-de-caz` §9 pas 4.
-4. **`public/sitemap.xml`** — `<url><loc>https://delamatescu.ro/lab/metodologie/{slug}</loc>...</url>`, urmând formatul deja folosit de intrările `/lab/metodologie*` la data execuției (verifică dacă au sau nu `<lastmod>` — nu presupune).
+4. **`public/sitemap.xml`** — nu se editează de mână: rulează `node scripts/sync-sitemap.mjs` după pașii 1–3. Scriptul adaugă `<url>`-ul cu formatul real al intrărilor `/lab/metodologie*` (la 22 noiembrie 2026: fără `<lastmod>`; scriptul nu îl adaugă unde suprafața nu-l folosește). Regula completă în `publica-articol-lab` §8.2. La verificarea finală, `node scripts/sync-sitemap.mjs --check` trebuie să dea exit 0.
 5. **AVL-202** (dacă aplicabil, §5) — pas separat, semnalat explicit în raport, niciodată implicit.
 6. **Nu adăuga documentul în `labArticleMeta` sau `labCaseStudyMeta`** (`src/data/lab-seo.ts`) — un document Nivel C nu e articol nici studiu de caz; arhitectura lui de JSON-LD e diferită (`@graph` generic cu `CreativeWork` via `buildLabPageHead`, confirmat la Faza 0) — dacă la momentul execuției arhitectura reală diverge de asta, urmeaz-o pe cea reală, nu presupunerea din acest document.
 
@@ -381,7 +381,7 @@ Identic cu `publica-articol-lab` Faza 11/11.1, plus specific documentelor normat
 - [ ] Dacă AVL-202 e afectat: modificarea lui a fost semnalată explicit, ca pas separat.
 - [ ] Documentul nu a fost adăugat în `labArticleMeta`/`labCaseStudyMeta`.
 - [ ] Nod copil adăugat în `labNav` sub `/lab/metodologie` (obligatoriu tehnic pentru routing).
-- [ ] `sitemap.xml` actualizat, urmând formatul real observat.
+- [ ] `sitemap.xml` sincronizat prin `node scripts/sync-sitemap.mjs` (formatul real, fără `<lastmod>` adăugat unde suprafața nu-l folosește); `--check` dă exit 0.
 - [ ] Typecheck, lint, build trec; runtime verificat dacă mediul permite.
 - [ ] `public/llms.txt` actualizat la final (Pasul final 2): linia documentului adăugată sau corectată (prefixul „draft pentru revizuire — ” corect față de statut), fără alte linii atinse; `node scripts/check-llms.mjs --require {canonical}` a dat exit 0.
 - [ ] Draftul de lucru e închis (Pasul final 3): nicio copie a documentului în `docs/drafts/`, în afară de `outdated/` și de fișierele citate ca surse (excepția 4); textul existent doar în draft a fost semnalat userului.
