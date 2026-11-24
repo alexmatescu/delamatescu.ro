@@ -10,6 +10,7 @@ import { amCrezutCaLucrurileAuUnSingurSensPost } from "@/data/blog-content/am-cr
 import { toataLumeaStieToataLumeaPoatePost } from "@/data/blog-content/toata-lumea-stie-toata-lumea-poate";
 import { nuNeAmPierdutMemoriaPost } from "@/data/blog-content/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul";
 import { trenulSiUrcareaInTrenPost } from "@/data/blog-content/trenul-si-urcarea-in-tren";
+import { abundentaAbundentaPost } from "@/data/blog-content/abundenta-abundenta";
 
 /**
  * Structura articolelor de blog — câmpurile de mai jos sunt grupate și ordonate
@@ -154,6 +155,7 @@ const newPosts: Post[] = (
     toataLumeaStieToataLumeaPoatePost,
     nuNeAmPierdutMemoriaPost,
     trenulSiUrcareaInTrenPost,
+    abundentaAbundentaPost,
   ] satisfies NewPost[]
 ).map(withReadingTime);
 
