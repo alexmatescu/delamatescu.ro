@@ -57,6 +57,8 @@ Suntem lipsiți de recunoștință, de lideri, de scrupule și de înțelegere, 
 
 Părerile noastre sunt, de multe ori, apa din pahar: umplu un spațiu gol. Stau acolo, iau forma recipientului și par să aibă un rost pentru simplul fapt că se văd. Desigur, apa nu este ceva rău. Apa este sursa vieții. Poate că tocmai aici începe încurcătura, fiindcă nici părerile nu sunt rele în sine, iar eu mă folosesc de apă ca să spun că nu au nimic în ele, deși fără apă n-ar mai avea cine să spună nimic. Dar mă uit la paharele noastre pline, așezate pe mese în jurul cărora vorbim ore întregi, și mă întreb cum se face că plecăm de fiecare dată de acolo cu aceeași sete.
 
+## Cine vorbește în locul nostru?
+
 Îl ascult pe Buhnici. Îmi place filtrul lui, îmi place că produce, că pune întrebări, că poate ține o discuție și poate aduce oameni în fața altor oameni. Cinste lui pentru asta. Din ceea ce lasă să se vadă, găsesc mai mult interes pentru sustenabilitate, sănătate, ritm și un anumit fel de a trăi decât pentru opulența aceea obosită care trebuie fotografiată din toate unghiurile ca să existe. Dar îl văd judecându-i pe Dan, pe Bolojan, pe Trump și pe oricine intră în raza subiectului zilei, și mă întreb unde se termină dorința de a înțelege și unde începe nevoia ca episodul să meargă bine. Nu spun că știu. Spun că, la capătul unei discuții care mi-a plăcut, rămâne uneori senzația că și de data asta am ajuns în locul din care trebuia să plecăm: la încă un motiv să fim nemulțumiți și la promisiunea că vom avea ce urmări și mâine.
 
 Îl ascult și pe Sima, cu lumea lui de piețe, bani, mișcări mari și consecințe care ajung, până la urmă, în buzunarele unor oameni care nu au știut niciodată cine a apăsat primul buton. Îl privesc ca pe un bătrânel simpatic care mai are de spus și care și-a găsit în lumea digitală o încăpere cu foarte multe scaune. Vorbește, explică, judecă, iar eu ascult și învăț câte ceva. Dar mă uit și la încăperea aceea, la felul în care trebuie umplută, la ușa care trebuie ținută deschisă, la nevoia ca oamenii să revină. O platformă are nevoie să crească. O audiență trebuie păstrată. Și mă întreb cât timp poate rămâne o explicație doar o explicație înainte să aibă nevoie de un pericol, de un vinovat, de ceva suficient de mare încât să nu închidem ecranul.
@@ -67,6 +69,8 @@ Avem nevoie de astfel de lideri? Probabil că da, din moment ce îi căutăm. Av
 
 Până la urmă, aceasta este și democrația: ei au dreptul să vorbească, noi avem dreptul să-i ascultăm, să-i simpatizăm, să-i contrazicem și să ne construim propriile păreri din părerile lor. Putem petrece ani întregi în această circulație liberă a nemulțumirii, fără să ne oprească nimeni. Și atunci mă întreb dacă nu cumva libertatea noastră a devenit foarte pricepută la comentariu și foarte timidă când vine vorba de răspundere. Așteptăm oameni care să ne ducă spre mai bine, dar le cerem să facă drumul în așa fel încât noi să nu fim deranjați, să nu pierdem nimic, să nu ne schimbăm obiceiurile și, dacă se poate, să ajungem înaintea lor.
 
+## Ce fel de lider cerem?
+
 Trump este, pentru mulți, întruchiparea conducătorului greșit: vanitos, brutal, preocupat de sine, de putere și de câștig. Îl privesc și eu și sunt lucruri care mă irită, mă neliniștesc, mă fac să mă întreb cât din lumea noastră poate încăpea în orgoliul unui singur om. Dar apoi mă uit spre China, spre ambiția unei puteri care nu pare dispusă să aștepte aprobarea noastră ca să-și lărgească locul în lume, și mă întreb dacă omul pe care îl condamnăm pentru felul lui de a fi nu este tocmai omul pe care o asemenea confruntare îl cere. Dacă, într-un duel în care celălalt împinge cu toată greutatea statului său, noi continuăm să căutăm pe cineva care să nu ridice vocea și să nu ne tulbure sensibilitățile, ce anume apărăm și cât timp îl mai putem apăra?
 
 Oare nu aveam nevoie tocmai de cineva suficient de imprevizibil încât să nu poată fi împins liniștit până la margine? Suficient de îndrăgostit de propria imagine încât să nu suporte ideea unei înfrângeri? Mă surprind cerând unui om defecte pe care, în altă conversație, le-aș folosi ca să demonstrez că nu merită puterea. Și totuși întrebarea rămâne. În fața unui adversar care ar folosi orice mijloc, cât din ceea ce numim cumpătare mai este înțelepciune și de unde începe teama noastră de a face ceva care nu va arăta bine a doua zi?
@@ -74,6 +78,8 @@ Oare nu aveam nevoie tocmai de cineva suficient de imprevizibil încât să nu p
 Mă uit la Rusia și la războiul din Ucraina, la secolul acesta în care avem atâta tehnologie și tot ajungem la pământ luat cu forța, la oameni scoși din case, la vieți împinse sub șenilele aceleiași ambiții vechi. Cum oprești un om care înaintează fiindcă socotește că ceilalți nu vor îndrăzni să-l oprească? Cât timp poți să-i explici că nu este frumos, că nu este corect, că istoria îl va judeca, în timp ce el își face calculele pentru următoarea mișcare? Nu trebuie, la un moment dat, să creadă că ești dispus să mergi până la capăt? Și cine poate face credibil un asemenea capăt: cel care îți spune de la început că va evita cu orice preț confruntarea sau cel despre care nu ești sigur cât de departe ar merge?
 
 Nu știu dacă Trump este răspunsul. Dar nici nu mă mulțumește siguranța celor pentru care el este explicația tuturor relelor. Deciziile lui mă ating și pe mine, direct sau pe ocolite, prin prețuri, prin incertitudine, prin felul în care se mișcă lumea în care încerc să-mi construiesc viața. Nu stau în afara consecințelor. Tocmai de aceea vreau să pot privi și partea care nu încape într-o condamnare confortabilă. Vreau să mă pot întreba dacă există ceva util în toată această nebunie fără să mi se ceară imediat să semnez pentru tot ce a făcut și pentru tot ce va mai face omul.
+
+## Cine ar vrea locul, cu tot cu nota de plată?
 
 Mă întorc în România și îl văd pe Bolojan așezat, luni întregi, pe masa discuțiilor noastre, întors pe toate părțile, tăiat în declarații, în imagini, în propoziții suficient de scurte încât să încapă între două reclame. Și mă întreb cine ar fi vrut locul acela cu adevărat, cu tot cu nota de plată. Cine ar fi venit să ne spună că urmează să ne fie mai rău, într-o țară în care ne-am obișnuit ca fiecare om care cere puterea să ne promită că ne va fi mai bine? Poate că a greșit. Poate că unele lucruri puteau fi făcute altfel. Dar în mintea mea rămâne întrebarea aceea neplăcută: dacă durerea nu mai putea fi evitată, pe cine am fi acceptat să ne-o anunțe?
 
@@ -87,6 +93,8 @@ Pentru mine, aici se despart studentul și urmăritorul. Studentul ascultă, ana
 
 Eu pe cine apăr în felul acesta? Cât din îngăduința mea pentru omul care ia decizii grele vine din înțelegere și cât vine din nevoia de a crede că există cineva care știe ce face? Nu am un răspuns pe care să-l pot așeza aici fără să-l suspectez. Îmi este mai ușor să continui să privesc în jur.
 
+## Câtă siguranță ne trebuie?
+
 Fiindcă nimic nu ne mulțumește până la capăt. Oricât de bine ar fi, mai există o comparație, o lipsă, un om căruia îi merge mai bine și un detaliu care ne strică întreaga imagine. În căsnicie, totuși, alegem un om cu defecte. Învățăm să trăim cu ele, le punem lângă ce ne oferă bun, lângă felul în care ne ține aproape, lângă lucrurile pe care le construim împreună. Uneori ajungem chiar să le privim cu o tandrețe pe care n-am fi crezut-o posibilă. De ce, când ieșim din casă, ne întoarcem la pretenția ca toți ceilalți să fie întregi, consecvenți, impecabili? De ce imperfecțiunea celui iubit are o poveste, iar imperfecțiunea celui care conduce are imediat un verdict?
 
 Dar mă uit și la liniștea aceea de acasă și nu sunt sigur că este întotdeauna ceea ce pare. Mă întreb cât din ea vine din apropiere și cât vine din faptul că sunt bani. Că facturile pot fi plătite. Că frigiderul este plin. Că există o rezervă și că mâine nu ne va scoate nimeni din casă. Când ajungem aici, parcă ne permitem să spunem despre omul de lângă noi că așa este el, că ne scoate din minți, că nu avem ce să-i facem. Și continuăm. Există vacanțe, există planuri, există suficiente lucruri care merg pentru ca lucrurile care nu merg să poată fi lăsate pentru mai târziu. Poate pentru totdeauna.
@@ -96,6 +104,8 @@ Nu știu ce este în casele oamenilor. Dar mă uit la felul în care vorbim desp
 Și eu vreau suma aceea. Vreau să nu-mi fie frică. Vreau siguranță pentru familia mea, vreau să pot spune nu, vreau să nu depind de fiecare dispoziție a unui om care îmi poate încurca viața. Muncesc pentru asta și nu mă prefac că aș renunța bucuros la ea doar ca să-mi iasă mai curată ideea. Dar mă sperie cât de ușor aș putea ajunge acolo și aș numi împlinire simplul fapt că, în sfârșit, nu mă mai poate deranja nimeni. Cât de ușor aș putea confunda pacea cu izolarea și maturitatea cu lipsa nevoii de a mai asculta.
 
 Și, până la urmă, câtă siguranță ne trebuie ca să ne simțim în siguranță? Cât trebuie să avem în cont, câte încuietori pe ușă, câte confirmări din partea unor oameni mai pricepuți decât noi, înainte să ne dăm voie să trecem printr-o zi fără să verificăm dacă nu cumva se pregătește ceva care o va strica?
+
+## Ce căutăm când mergem la medic?
 
 Mă gândesc la felul în care mergem la medic. Te duci pentru că ai nevoie de tratament sau pentru că ai nevoie să-ți spună cineva ce înseamnă ceea ce simți? Te duci să afli că ai ceva sau să primești, în sfârșit, permisiunea de a nu avea nimic? Când intri în cabinet, ce răspuns aștepți de fapt? Și dacă răspunsul nu seamănă cu cel pe care l-ai repetat în minte până ai ajuns acolo, îl mai poți primi?
 
@@ -113,6 +123,8 @@ Iar medicul, după ce termină cu toți, pleacă și el acasă într-un corp car
 
 Poate că nici banii nu trebuie să facă altceva în mintea noastră. Poate că le cerem aceeași ștampilă.
 
+## Ce păzim când încuiem ușa?
+
 Și mă uit la grijile pe care le purtăm pentru lucruri, la atenția aceea încordată cu care păzim ce am reușit să strângem. Recunosc în unele voci tonul bătrânilor: ai grijă, nu lăsa, pune deoparte, închide bine, poate nu mai găsești, poate nu mai ai. Parcă obiectele s-au schimbat, dar propozițiile au rămas. În locul lucrurilor pe care le păzeau ei, avem altele, mai noi și mai scumpe, iar în jurul lor circulă aceeași teamă, învățată atât de devreme încât ni se pare pur și simplu felul firesc de a fi atent.
 
 Un om apropiat, care își câștigă existența filmând evenimente, îmi povestea despre grija de a avea mereu casa încuiată, ca nu cumva să intre cineva și să-i fure echipamentele. Îl înțeleg. În camerele și obiectivele acelea sunt bani munciți, contracte, zile care trebuie duse până la capăt, oameni care se așteaptă ca el să apară și să-și facă treaba. Un furt nu i-ar lua doar niște obiecte de pe un raft. I-ar lovi direct felul în care își câștigă traiul.
@@ -128,6 +140,8 @@ Am muncit ca să cumpărăm lucrurile care ne vor face viața mai bună. Apoi ne
 O viață împlinită nu înseamnă și să simți liniște? Când vine partea aceea? După următoarea achiziție? După încă un an bun? După încă o confirmare că totul este în regulă? Cât mai trebuie să pregătim viața înainte să ne permitem să fim în ea?
 
 Eu încă îmi fac planurile. Mai calculez o sumă, mai caut o soluție, mai închid o posibilitate prin care ceva ar putea merge prost. Și de fiecare dată îmi spun același lucru: după asta o să pot sta liniștit. Cu aceeași convingere cu care îi privesc pe ceilalți și mă întreb de ce nu se pot opri.
+
+## Ce ar face Iisus și Buddha printre noi?
 
 Mă gândesc la Iisus, la Buddha, la oamenii de la care ne-au rămas învățături pe care le cităm când vrem să dăm adâncime unei conversații. Ce ar face printre noi, cu toate aceste lucruri pe care le avem și cu toată această liniște pe care continuăm să o amânăm? S-ar cruci, îmi vine să spun, și imediat mă întreb dacă ar face-o în fața camerei. Ar avea un podcast? Ar tăia cineva din vorbele lor secvențe de treizeci de secunde? Ar exista un om care să le explice că începutul este prea lent, că trebuie să spună ceva mai puternic în primele trei secunde, că publicul pleacă înainte să ajungă la idee? Și dacă ar refuza, le-am spune că nu înțeleg lumea în care trăiesc și că își irosesc șansa de a ajuta?
 
