@@ -1,8 +1,10 @@
-# Matricea de conformitate — implementarea v0.5.1
+# Matricea de conformitate — implementarea v0.5.2
 
-Implementare candidată pentru draftul AVL-203 v0.6.2 / AVL-204 v0.3.2, **nevalidată** ca implementare de referință (AVL-203 §19.4). Matricea arată ce acoperă codul, prin ce test și ce rămâne în afara lui. Nu este o declarație de conformitate cu o versiune 1.0.0.
+Implementare candidată pentru draftul AVL-203 v0.6.3 / AVL-204 v0.3.3, **nevalidată** ca implementare de referință (AVL-203 §19.4). Matricea arată ce acoperă codul, prin ce test și ce rămâne în afara lui. Nu este o declarație de conformitate cu o versiune 1.0.0.
 
 Stare la 26 octombrie 2026, după 152 de teste locale (server pe 127.0.0.1). Rulări pe un site real (delamatescu.ro): `TEST` cu v0.3.0 (grila 0.1.0) și `T0` (`AVL203-delamatescu-ro-T0-20261026T085234Z`) cu v0.4.0 (grila 0.2.0); aceeași rulare `T0`, reanalizată offline cu v0.5.0 și grila 0.3.0 în `derived/analysis-20261026T121156Z`.
+
+Modificări v0.5.2 (25 noiembrie 2026): versiunile înregistrate în plan, rulare, diagnostic și raport trec la AVL-203 0.6.3 și AVL-204 0.3.3. Cele două patch-uri doar trimit politica crawlere la anexa „Politici tehnice ale site-ului” din AVL-205 0.3.0 și corectează versiunea curentă din „Controlul documentului”; nicio cerință sau regulă nu s-a schimbat, deci comportamentul codului e identic. Planurile înghețate sub 0.6.2/0.3.2 se reîngheață. Rulările făcute rămân cu versiunile lor.
 
 Modificări v0.5.1 (5 noiembrie 2026): versiunile înregistrate în plan, rulare, diagnostic și raport trec la AVL-203 0.6.2 și AVL-204 0.3.2. Între 0.6.0/0.3.0 și 0.6.2/0.3.2 nu s-a schimbat nicio cerință sau regulă (patch-uri pentru CS-002 și AVL-205), deci comportamentul codului e identic. Planurile înghețate sub 0.6.0/0.3.0 se reîngheață. Rularea `T0` rămâne cu versiunile ei.
 

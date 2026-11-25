@@ -73,17 +73,17 @@ export const labNav: LabPage[] = [
       {
         to: "/lab/metodologie/fisa-entitatii",
         label: "AVL-205 — Fișa entității",
-        lead: "Draft pentru revizuire, v0.2.0. Fișa prin care entitatea evaluată declară, înaintea baseline-ului T0, informațiile oficiale despre ea: forma canonică, rolul, locația, activele oficiale, relațiile, harta coliziunilor și politica crawlere, cu definiția fiecărui câmp, cine îl completează și cum se verifică reprezentarea lui în surse.",
+        lead: "Draft pentru revizuire, v0.3.0. Documentul de identitate al entității evaluate, redactat de operator și confirmat de client înaintea baseline-ului T0: forma canonică, rolul, locația, activele oficiale, relațiile, harta coliziunilor și, în anexa de politici tehnice, politica crawlere, cu definiția fiecărui câmp și cine dă informația.",
       },
       {
         to: "/lab/metodologie/protocol-verificare-tehnica",
         label: "AVL-203 — Protocolul minim de verificare tehnică a unui site",
-        lead: "Draft pentru revizuire, v0.6.2. Setul minim, repetabil, de verificări tehnice (HTTP, redirecturi, robots.txt, sitemap, semnale raw HTML, conținut în HTML-ul brut, paritatea răspunsurilor pe User-Agent, integritatea dovezilor) care documentează ce livrează un server, fără a o confunda cu indexarea sau citarea AI, plus trecerea de la observații la diagnostic și recomandări.",
+        lead: "Draft pentru revizuire, v0.6.3. Setul minim, repetabil, de verificări tehnice (HTTP, redirecturi, robots.txt, sitemap, semnale raw HTML, conținut în HTML-ul brut, paritatea răspunsurilor pe User-Agent, integritatea dovezilor) care documentează ce livrează un server, fără a o confunda cu indexarea sau citarea AI, plus trecerea de la observații la diagnostic și recomandări.",
       },
       {
         to: "/lab/metodologie/grila-interpretare-verificare-tehnica",
         label: "AVL-204 — Grila de interpretare a verificării tehnice",
-        lead: "Draft pentru revizuire, v0.3.2. Regulile publice, fixate înaintea rulării, prin care observațiile AVL-203 devin diagnostic și recomandări: stări, zone, reguli de diagnostic, prioritizare, afirmații excluse și aplicare identică pentru orice entitate evaluată.",
+        lead: "Draft pentru revizuire, v0.3.3. Regulile publice, fixate înaintea rulării, prin care observațiile AVL-203 devin diagnostic și recomandări: stări, zone, reguli de diagnostic, prioritizare, afirmații excluse și aplicare identică pentru orice entitate evaluată.",
       },
       {
         to: "/lab/metodologie/protocol-delimitare-piata-eligibilitate",

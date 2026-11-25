@@ -8,14 +8,14 @@ export const avl205FisaEntitatiiHtml = `
         <tbody>
         <tr><th scope="row">Document ID</th><td>AVL-205</td></tr>
         <tr><th scope="row">Nivel</th><td>C — Methodology</td></tr>
-        <tr><th scope="row">Versiune</th><td>0.2.0</td></tr>
+        <tr><th scope="row">Versiune</th><td>0.3.0</td></tr>
         <tr><th scope="row">Statut</th><td>Draft pentru revizuire</td></tr>
         <tr><th scope="row">Autor</th><td><a href="/despre">Alex Matescu</a></td></tr>
         <tr><th scope="row">Organizație</th><td><a href="/lab">AI Visibility Lab</a></td></tr>
         <tr><th scope="row">Data creării</th><td>3 noiembrie 2026</td></tr>
         <tr><th scope="row">Data publicării</th><td>4 noiembrie 2026</td></tr>
-        <tr><th scope="row">Ultima actualizare</th><td>4 noiembrie 2026</td></tr>
-        <tr><th scope="row">Ultima verificare</th><td>4 noiembrie 2026</td></tr>
+        <tr><th scope="row">Ultima actualizare</th><td>25 noiembrie 2026</td></tr>
+        <tr><th scope="row">Ultima verificare</th><td>25 noiembrie 2026</td></tr>
         <tr><th scope="row">Limbă</th><td>română</td></tr>
         <tr><th scope="row">URL canonic</th><td><a href="https://delamatescu.ro/lab/metodologie/fisa-entitatii">https://delamatescu.ro/lab/metodologie/fisa-entitatii</a></td></tr>
         <tr><th scope="row">Dependențe normative</th><td><a href="/lab/introducere">AVL-001 — AI Visibility Lab Foundation</a>, <a href="/lab/metodologie">AVL-202 — Cadrul metodologic AI Visibility Lab</a>, <a href="/lab/metodologie/standard-dovezi-masurare-trasabilitate">AVL-200 — Standardul de dovezi, măsurare și trasabilitate</a>, <a href="/lab/metodologie/tabula-rasa-f0">AVL-201 — Tabula Rasa F0</a> (§6.4, §7, §10.1; v1.6.0)</td></tr>
@@ -32,9 +32,13 @@ export const avl205FisaEntitatiiHtml = `
           <li><a href="#2-ce-nu-este-fisa-entitatii">2. Ce nu este fișa entității?</a></li>
           <li><a href="#3-cum-se-completeaza-fisa">3. Cum se completează fișa?</a>
             <ol>
-              <li><a href="#cine-completeaza">Cine completează</a></li>
+              <li><a href="#cine-completeaza">Cine dă informația</a></li>
               <li><a href="#continutul-minim">Conținutul minim</a></li>
+              <li><a href="#fluxul-fisei">Fluxul fișei</a></li>
+              <li><a href="#fisa-minima">Fișa minimă</a></li>
+              <li><a href="#verificarea-preliminara">Verificarea preliminară</a></li>
               <li><a href="#ce-se-noteaza-la-fiecare-informatie">Ce se notează la fiecare informație</a></li>
+              <li><a href="#chestionarul-clientului">Chestionarul clientului</a></li>
               <li><a href="#ce-isi-asuma-reprezentantul">Ce își asumă reprezentantul</a></li>
               <li><a href="#ce-nu-se-trece-in-fisa">Ce nu se trece în fișă</a></li>
             </ol>
@@ -81,6 +85,14 @@ export const avl205FisaEntitatiiHtml = `
           <li><a href="#19-revizuire-si-aprobare-inainte-de-publicare">19. Revizuire și aprobare înainte de publicare</a></li>
           <li><a href="#20-confirmarea-reprezentantului">20. Confirmarea reprezentantului</a></li>
           <li><a href="#21-istoricul-fisei">21. Istoricul fișei</a></li>
+          <li><a href="#note">Note</a></li>
+          <li><a href="#anexa-politici-tehnice-ale-site-ului">Anexa — Politici tehnice ale site-ului</a>
+            <ol>
+              <li><a href="#anexa-politica-crawlere">Politica crawlere</a></li>
+              <li><a href="#anexa-indexare-si-raspunsuri-declarate-intentionat">Indexare și răspunsuri declarate intenționat</a></li>
+            </ol>
+          </li>
+          <li><a href="#anexa-de-predare-a-website-ului">Anexa de predare a website-ului</a></li>
           <li><a href="#22-provenienta-campurilor">22. Proveniența câmpurilor</a></li>
           <li><a href="#23-documente-asociate">23. Documente asociate</a>
             <ol>
@@ -100,13 +112,13 @@ export const avl205FisaEntitatiiHtml = `
 
       <h2 id="controlul-documentului">Controlul documentului</h2>
 
-      <p>AVL-205 este un document de nivel C — Methodology în corpusul AI Visibility Lab Documentation. Descrie fișa entității: documentul prin care entitatea evaluată, împreună cu Alex Matescu, declară informațiile oficiale despre ea înaintea baseline-ului <code>T0</code>. Explică fiecare câmp: ce înseamnă, cum se completează și cine îl completează.</p>
+      <p>AVL-205 este un document de nivel C — Methodology în corpusul AI Visibility Lab Documentation. Descrie fișa entității: documentul de identitate al entității evaluate, redactat de operator din informațiile date de client și confirmat de client înaintea baseline-ului <code>T0</code>. Explică fiecare câmp: ce înseamnă, cum se completează și cine dă informația.</p>
 
-      <p>Conținutul minim al fișei este stabilit de <a href="/lab/metodologie/tabula-rasa-f0">AVL-201 §7</a>: forma canonică, variante, rol, locație, domeniu, URL-uri oficiale, atribute verificabile, politica crawlere. AVL-205 nu schimbă acest minim. Îl detaliază și adaugă câmpurile care fac fișa folosibilă în lucrul cu clientul. Dacă AVL-205 și AVL-201 diferă, prevalează AVL-201. Pentru politica crawlere (§15), prevalează <a href="/lab/metodologie/grila-interpretare-verificare-tehnica">AVL-204 §3.1</a>.</p>
+      <p>Conținutul minim al fișei este stabilit de <a href="/lab/metodologie/tabula-rasa-f0">AVL-201 §7</a>: forma canonică, variante, rol, locație, domeniu, URL-uri oficiale, atribute verificabile, politica crawlere. AVL-205 nu schimbă acest minim. Îl detaliază și adaugă câmpurile care fac fișa folosibilă în lucrul cu clientul. Dacă AVL-205 și AVL-201 diferă, prevalează AVL-201. Pentru politica crawlere (§15 și „Anexa — Politici tehnice ale site-ului”), prevalează <a href="/lab/metodologie/grila-interpretare-verificare-tehnica">AVL-204 §3.1</a>.</p>
 
       <p>Din versiunea 1.6.0 (4 noiembrie 2026), AVL-201 trimite la AVL-205 din §7, unde definește fișa entității, și din §10.1, unde cere fișa completă. Tot de la această dată, <a href="/lab/metodologie">AVL-202</a> (1.8.0) include AVL-205 în arhitectura metodologiei, în ordinea de lectură și în lista documentelor.</p>
 
-      <p>Versiunea curentă, <strong>0.2.0</strong>, este un <strong>draft pentru revizuire</strong> și nu este activă. Deciziile rămase deschise înainte de activare sunt enumerate în §25.</p>
+      <p>Versiunea curentă, <strong>0.3.0</strong>, este un <strong>draft pentru revizuire</strong> și nu este activă. Deciziile rămase deschise înainte de activare sunt enumerate în §25.</p>
 
       <p>Identificatorul AVL-205 a fost alocat la 4 noiembrie 2026 ca următorul număr liber din seria documentelor Nivelului C, după scanarea registrului de conținut, și confirmat de Alex Matescu.</p>
 
@@ -114,19 +126,19 @@ export const avl205FisaEntitatiiHtml = `
 
       <h2 id="1-ce-este-fisa-entitatii">1. Ce este fișa entității?</h2>
 
-      <p><strong>Fișa entității adună, într-un singur loc, informațiile oficiale despre entitatea evaluată: cine este, cum se numește, ce face, unde activează, ce surse controlează, cu cine poate fi confundată și ce acces vrea pentru crawlere.</strong></p>
+      <p><strong>Fișa entității este documentul de identitate al entității evaluate: cine este, cum se numește, ce face, unde activează, ce surse controlează, cu cine poate fi confundată și, în anexa de politici tehnice, ce acces vrea pentru crawlere. Se confirmă cu clientul și nu conține nimic din măsurare.</strong></p>
 
-      <p>Entitatea poate fi o persoană, o companie, o organizație, o instituție, o marcă, un produs, un serviciu, un proiect, o publicație sau un site (AVL-201 §3). Fișa se completează de client (sau de reprezentantul lui) împreună cu Alex Matescu, înainte de baseline-ul <code>T0</code>.</p>
+      <p>Entitatea poate fi o persoană, o companie, o organizație, o instituție, o marcă, un produs, un serviciu, un proiect, o publicație sau un site (AVL-201 §3). Operatorul care aplică metoda redactează fișa din informațiile date de client (sau de reprezentantul lui), iar clientul o confirmă înainte de baseline-ul <code>T0</code>. <code>T0</code> se pregătește și se documentează separat, după confirmarea fișei. Ce ține de etape ulterioare stă în anexele fișei sau în registre proprii.</p>
 
       <p>Fișa are trei roluri:</p>
 
       <ol>
-        <li><strong>referința măsurării</strong> — în <code>T0</code>, informațiile din fișă se verifică în mediile digitale: site, profiluri, directoare, registre, publicații, Search și răspunsurile AI. Fără fișă nu se poate decide dacă un răspuns descrie entitatea corectă (AVL-201 §10.1);</li>
+        <li><strong>referința măsurării</strong> — în <code>T0</code>, informațiile din fișă se verifică în mediile digitale: site, profiluri, directoare, registre, publicații, Search și răspunsurile AI. Rezultatele verificării se înregistrează în documentele măsurării, nu în fișă. Fără fișă nu se poate decide dacă un răspuns descrie entitatea corectă (AVL-201 §10.1);</li>
         <li><strong>condiția verificării tehnice</strong> — o rulare AVL-203 privește numai entități pentru care există o fișă completată de reprezentant (AVL203-REQ-043, AVL204-REQ-015);</li>
-        <li><strong>baza intervențiilor de după <code>T0</code></strong> — relațiile dintre profiluri, articole, știri și alte surse, definite sau actualizate în etapa sursei canonice și în etapa prezenței distribuite (<a href="/lab/metodologie/standard-dovezi-masurare-trasabilitate">AVL-200 §7.1</a>), și informațiile pentru website-ul entității, numai pentru clienții care aleg acest serviciu (§18).</li>
+        <li><strong>baza intervențiilor de după <code>T0</code></strong> — relațiile dintre profiluri, articole, știri și alte surse, definite sau actualizate în etapa sursei canonice și în etapa prezenței distribuite (<a href="/lab/metodologie/standard-dovezi-masurare-trasabilitate">AVL-200 §7.1</a>). Informațiile pentru website-ul entității, numai pentru clienții care aleg acest serviciu, se predau în anexa de predare a website-ului (§18).</li>
       </ol>
 
-      <p>Nimic din fișă nu se publică înainte ca informațiile să fie revizuite și aprobate împreună cu clientul (§19).</p>
+      <p>Nimic din fișă nu se publică fără aprobarea clientului, înregistrată în registrul aprobărilor de publicare (§19).</p>
 
       <h2 id="2-ce-nu-este-fisa-entitatii">2. Ce nu este fișa entității?</h2>
 
@@ -134,34 +146,68 @@ export const avl205FisaEntitatiiHtml = `
 
       <ul>
         <li><strong>Nu este setul de interogări.</strong> Clientul spune pentru ce întrebări vrea să apară (§16), dar setul se construiește de laborator înainte de examinarea rezultatelor și se îngheață la <code>T0</code> (AVL-201 §10.2).</li>
-        <li><strong>Nu este planul de măsurare.</strong> Țara, limba, motoarele, fereastra de măsurare și planul de dovezi sunt intrări separate ale <code>T0</code> (AVL-201 §7). Fișa le poate propune, planul le fixează.</li>
-        <li><strong>Nu este un rezultat.</strong> Coloana „Stare la <code>T0</code>” consemnează ce arată sursele publice despre fiecare informație, nu o evaluare a entității.</li>
+        <li><strong>Nu este planul de măsurare.</strong> Țara, limba, motoarele, fereastra de măsurare, planul de dovezi și declarația de îngheț sunt intrări separate ale <code>T0</code> (AVL-201 §7). Fișa poate propune piața și motoarele, planul le fixează. Angajamentele pentru durata <code>T0</code> țin de planul de măsurare (§17).</li>
+        <li><strong>Nu este un rezultat și nu conține măsurarea.</strong> Starea informațiilor în surse la <code>T0</code> și dovezile ei se înregistrează în documentele măsurării <code>T0</code> (§4), nu în fișă.</li>
         <li><strong>Nu este fișa furnizorului din Market Measurement.</strong> Entitățile identificate într-o instanță de piață se descriu prin fișa furnizorului (<a href="/lab/metodologie/protocol-delimitare-piata-eligibilitate">AVL-MKT-001 §10</a>), completată de laborator din surse publice, fără participarea entității.</li>
         <li><strong>Nu se completează pentru concurenții unei entități evaluate.</strong> Aceștia pot apărea în harta coliziunilor (§13) sau în sursele citate, dar nu primesc fișă proprie (AVL-203 §1).</li>
       </ul>
 
       <h2 id="3-cum-se-completeaza-fisa">3. Cum se completează fișa?</h2>
 
-      <p><strong>Fiecare câmp are o definiție, un exemplu și un marcaj care spune cine îl completează. Câmpurile cerute de AVL-201 §7 sunt marcate [min].</strong></p>
+      <p><strong>Fiecare câmp are o definiție, un exemplu și un marcaj care spune cine dă informația. Câmpurile cerute de AVL-201 §7 sunt marcate [min].</strong></p>
 
-      <h3 id="cine-completeaza">Cine completează</h3>
+      <p>Secțiunile §1–§4 explică fișa și nu au câmpuri. Formularul începe la §5, cuprinde §5–§21 și se încheie cu secțiunea „Note”, fără număr. Îi urmează „Anexa — Politici tehnice ale site-ului”, care face parte din fișă, și, numai în serviciul de website, „Anexa de predare a website-ului”. §15, §15.1, §17, §18 și §19 au rămas în formular doar ca titluri care trimit la anexa sau la documentul în care au fost mutate. Numerotarea nu s-a schimbat, ca trimiterile existente (de exemplu „§12”, „§20”) să rămână valabile.</p>
+
+      <h3 id="cine-completeaza">Cine dă informația</h3>
+
+      <p>Marcajul arată cine dă informația, nu cine poate edita fișa. Forma de afișare în fișă este „Informația o dă: clientul / împreună / operatorul”.</p>
 
       <table>
         <thead>
-          <tr><th>Marcaj</th><th>Cine completează</th></tr>
+          <tr><th>Marcaj</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>C</strong></td><td>clientul sau reprezentantul entității</td></tr>
-          <tr><td><strong>Î</strong></td><td>împreună: clientul declară, Alex Matescu formulează și verifică formularea, nu adevărul declarației</td></tr>
-          <tr><td><strong>L</strong></td><td>Alex Matescu (laboratorul), după verificare</td></tr>
+          <tr><td><strong>C</strong></td><td>clientul: clientul sau reprezentantul entității</td></tr>
+          <tr><td><strong>Î</strong></td><td>împreună: clientul declară, operatorul formulează și verifică formularea, nu adevărul declarației</td></tr>
+          <tr><td><strong>L</strong></td><td>operatorul: operatorul care aplică metoda, după verificare; în seriile AI Visibility Lab, Alex Matescu, iar în aplicarea Ichnometria se afișează „Ichnometria”</td></tr>
         </tbody>
       </table>
 
+      <p><strong>Cine redactează și cine confirmă.</strong> Operatorul redactează fișa, inclusiv câmpurile marcate C, din informațiile date de client. Clientul confirmă fișa integral sau contestă câmpurile cu care nu e de acord (§20).</p>
+
       <h3 id="continutul-minim">Conținutul minim</h3>
 
-      <p>Câmpurile marcate <strong>[min]</strong> acoperă conținutul minim din AVL-201 §7: forma canonică (§7), variantele (§7.1), rolul (§8), locația (§9), domeniul (§8), URL-urile oficiale (§11.1), atributele verificabile (§10) și politica crawlere (§15). <strong>Domeniul</strong> înseamnă domeniul de activitate al serviciilor entității, nu domeniul web; site-ul intră la URL-urile oficiale. AVL-201 folosește din versiunea 1.6.0 formularea „domeniul de activitate”.</p>
+      <p>Câmpurile marcate <strong>[min]</strong> acoperă conținutul minim din AVL-201 §7: forma canonică (§7), variantele (§7.1), rolul (§8), locația (§9), domeniul (§8), URL-urile oficiale (§11.1), atributele verificabile (§10) și politica crawlere (§15, completată în „Anexa — Politici tehnice ale site-ului”). <strong>Domeniul</strong> înseamnă domeniul de activitate al serviciilor entității, nu domeniul web; site-ul intră la URL-urile oficiale. AVL-201 folosește din versiunea 1.6.0 formularea „domeniul de activitate”.</p>
 
       <p>Fișa cuprinde și <strong>harta coliziunilor</strong> (§13) și <strong>lista activelor oficiale</strong> (§11). AVL-201 §7 le tratează ca intrări distincte, dar §8 le livrează împreună cu fișa, iar §6.4 cere subiectului să declare activele controlate. În AVL-205 sunt păstrate în același document.</p>
+
+      <p>Anexa de politici tehnice face parte din fișă: se completează împreună cu clientul la revizuire și se confirmă odată cu fișa, înainte de <code>T0</code>. Astfel, politica crawlere rămâne în fișă, cum cer AVL-201 §7 și AVL204-REQ-017.</p>
+
+      <h3 id="fluxul-fisei">Fluxul fișei</h3>
+
+      <ol>
+        <li><strong>Chestionarul clientului</strong> (Documentul A) se trimite clientului, care îl completează.</li>
+        <li><strong>Importul în fișă:</strong> răspunsurile din chestionar devin valorile câmpurilor.</li>
+        <li><strong>Verificarea preliminară</strong> a operatorului (mai jos).</li>
+        <li><strong>„Trimite clientului spre revizuire”:</strong> fișa, cu câmpurile [min] completate, ajunge la client. La revizuire se lămuresc clarificările și se completează împreună anexa de politici tehnice.</li>
+        <li><strong>Confirmarea:</strong> clientul confirmă fișa integral sau cu contestații (§20).</li>
+      </ol>
+
+      <p>După confirmare, <code>T0</code> se pregătește separat, iar planul de măsurare preia versiunea confirmată a fișei.</p>
+
+      <h3 id="fisa-minima">Fișa minimă</h3>
+
+      <p>O fișă se trimite clientului spre revizuire numai cu toate câmpurile [min] completate. Excepția este permisă numai cu un motiv obligatoriu, înregistrat împreună cu lista câmpurilor [min] care lipseau. Pentru politica crawlere, la trimitere este suficient răspunsul din chestionar la întrebarea despre restricțiile pentru roboți; detaliile se completează la revizuire, în anexa de politici tehnice.</p>
+
+      <h3 id="verificarea-preliminara">Verificarea preliminară</h3>
+
+      <p><strong>După importul chestionarului și înainte de revizuirea cu clientul, operatorul verifică informațiile, fără proces de dovezi și fără valoare de măsurare.</strong> Scopul este să confirme informațiile și să pregătească clarificările pentru revizuire.</p>
+
+      <ul>
+        <li>Valorile completate atunci primesc proveniența „verificare preliminară”, distinctă de „măsurare”.</li>
+        <li>La verificarea preliminară se completează §13 („Coliziuni identificate în verificări”) și coloanele operatorului din §14.</li>
+        <li>O valoare din verificarea preliminară nu este o observație a măsurării: nu are Evidence ID, nu primește o stare din §4 și nu se raportează ca rezultat. Măsurarea documentată rămâne la <code>T0</code>, unde fiecare observație materială se leagă de dovada ei (AVL200-REQ-019).</li>
+      </ul>
 
       <h3 id="ce-se-noteaza-la-fiecare-informatie">Ce se notează la fiecare informație</h3>
 
@@ -170,18 +216,30 @@ export const avl205FisaEntitatiiHtml = `
           <tr><th>Coloană</th><th>Ce înseamnă</th></tr>
         </thead>
         <tbody>
-          <tr><td>Valoare</td><td>informația declarată de entitate</td></tr>
-          <tr><td>Sursa oficială</td><td>pagina, documentul sau registrul care o susține; dacă nu există, „declarația reprezentantului, [data]”</td></tr>
-          <tr><td>Stare la <code>T0</code></td><td>ce arată sursele publice la verificare (§4)</td></tr>
-          <tr><td>Evidence ID</td><td>identificatorul capturii care documentează starea, dacă există (<a href="/lab/metodologie/standard-dovezi-masurare-trasabilitate">AVL-200 §11</a>)</td></tr>
+          <tr><td>Valoare</td><td>informația dată de client sau formulată împreună</td></tr>
+          <tr><td>Sursa</td><td>pagina, documentul sau registrul care susține informația, notate pe rândul ei; dacă nu există, „declarația reprezentantului, [data]”. Niciun tabel nu are o sursă comună pentru toate rândurile.</td></tr>
+          <tr><td>Proveniența</td><td>de unde vine valoarea: chestionarul clientului, revizuirea cu clientul sau verificarea preliminară. Nicio valoare din fișă nu are proveniența „măsurare”.</td></tr>
         </tbody>
       </table>
 
+      <p>Starea informației în surse la <code>T0</code> și Evidence ID-ul ei nu se notează în fișă. Se înregistrează în documentele măsurării <code>T0</code> (§4).</p>
+
+      <h3 id="chestionarul-clientului">Chestionarul clientului</h3>
+
+      <p>Informațiile clientului intră în fișă prin chestionarul clientului (Documentul A). Versiunea 3 a chestionarului:</p>
+
+      <ul>
+        <li><strong>Accesul roboților:</strong> o singură întrebare obligatorie, „Aveți restricții pentru roboți sau pagini ascunse intenționat? Da / Nu / Nu știu”. Ea înlocuiește cele trei întrebări anterioare: preferința generală, ce e blocat și de ce, paginile excluse. Detaliile se lămuresc la revizuire, în anexa de politici tehnice.</li>
+        <li><strong>Înghețul:</strong> cele patru întrebări despre înghețul pe durata <code>T0</code> ies din chestionar și trec în pregătirea <code>T0</code> (§17): nu modific nimic pe durata măsurării inițiale; până la ce dată; anunț schimbările neplanificate; forma înghețului între măsurări.</li>
+        <li><strong>Schimbările programate:</strong> întrebarea „Schimbări deja programate, care nu pot fi amânate” rămâne, în secțiunea „Schimbări planificate”.</li>
+        <li><strong>Versiunea aplicată:</strong> un chestionar început pe versiunea anterioară rămâne pe ea; versiunea 3 se aplică chestionarelor create după publicarea ei.</li>
+      </ul>
+
       <h3 id="ce-isi-asuma-reprezentantul">Ce își asumă reprezentantul</h3>
 
-      <p><strong>Ce declară reprezentantul în fișă este asumat de el și considerat corect.</strong> Laboratorul nu verifică veridicitatea declarațiilor, de exemplu angajatorul, studiile sau certificările: verificarea lor nu face parte din măsurare. Alex Matescu verifică formularea, adică dacă informația e clară, completă și scrisă la fel în toată fișa, nu adevărul ei.</p>
+      <p><strong>Ce declară reprezentantul în fișă este asumat de el și considerat corect.</strong> Laboratorul nu verifică veridicitatea declarațiilor, de exemplu angajatorul, studiile sau certificările: verificarea lor nu face parte din măsurare. Operatorul verifică formularea, adică dacă informația e clară, completă și scrisă la fel în toată fișa, nu adevărul ei.</p>
 
-      <p>Fișa rămâne referința măsurării. Când o sursă publică afirmă altceva decât fișa, starea descrie sursa (§4), nu entitatea. Excepția este entitatea ambiguă sau suspectă (<a href="#4-1-entitate-ambigua-sau-suspecta">§4.1</a>).</p>
+      <p>Fișa rămâne referința măsurării. Când o sursă publică afirmă altceva decât fișa, starea înregistrată la măsurare descrie sursa (§4), nu entitatea. Excepția este entitatea ambiguă sau suspectă (<a href="#4-1-entitate-ambigua-sau-suspecta">§4.1</a>).</p>
 
       <h3 id="ce-nu-se-trece-in-fisa">Ce nu se trece în fișă</h3>
 
@@ -189,7 +247,9 @@ export const avl205FisaEntitatiiHtml = `
 
       <h2 id="4-cum-se-verifica-fisa-in-t0">4. Cum se verifică reprezentarea fișei în surse?</h2>
 
-      <p><strong>Pentru fiecare informație declarată, verificarea <code>T0</code> notează ce afirmă sursele publice despre ea, cu sursa și data verificării. Se verifică reprezentarea informației în surse, nu adevărul ei (<a href="#ce-isi-asuma-reprezentantul">§3, „Ce își asumă reprezentantul”</a>).</strong></p>
+      <p><strong>Pentru fiecare informație din fișă, verificarea <code>T0</code> notează ce afirmă sursele publice despre ea, cu sursa și data verificării. Se verifică reprezentarea informației în surse, nu adevărul ei (<a href="#ce-isi-asuma-reprezentantul">§3, „Ce își asumă reprezentantul”</a>).</strong></p>
+
+      <p>Capitolul arată la ce servește fișa în măsurare. Stările de mai jos nu sunt câmpuri ale fișei: se înregistrează în documentele măsurării <code>T0</code>, cu Evidence ID-ul fiecărei observații (<a href="/lab/metodologie/standard-dovezi-masurare-trasabilitate">AVL-200 §11</a>). Verificarea preliminară (§3) nu folosește aceste stări.</p>
 
       <p>Stările preiau categoriile din AVL-201 §10.6 („atribute corecte, lipsă, vechi sau false”) și semantica valorilor necunoscute din AVL-200 §6.</p>
 
@@ -208,7 +268,8 @@ export const avl205FisaEntitatiiHtml = `
       </table>
 
       <p><code>LIPSĂ</code> descrie sursa, nu entitatea: faptul că o informație nu apare online nu o face falsă (AVL-200 §6, AVL200-REQ-010). Starea se notează pe sursă: aceeași informație poate fi <code>CORECT</code> pe site și <code>VECHI</code> pe un profil.</p>
-      <p><strong>La punctele următoare (<code>F1</code> … <code>Fn</code>), verificarea se repetă pe aceleași surse și cu aceleași stări, față de fișa valabilă la acel punct.</strong> Schimbările de stare dintre puncte se notează pe sursă, cu Evidence ID-ul fiecărui punct. Pentru o fișă completată retroactiv (§17.1), prima verificare pe surse se face la primul punct de măsurare de după completare și devine referința stărilor pentru punctele următoare; starea de la <code>T0</code> nu se reconstituie. Coloana „Stare la <code>T0</code>” se citește atunci ca stare la punctul verificării, cu punctul notat (de exemplu, <code>F4</code>).</p>
+
+      <p><strong>La punctele următoare (<code>F1</code> … <code>Fn</code>), verificarea se repetă pe aceleași surse și cu aceleași stări, față de fișa valabilă la acel punct.</strong> Schimbările de stare dintre puncte se notează pe sursă, cu Evidence ID-ul fiecărui punct, în documentele fiecărui punct de măsurare. Pentru o fișă completată retroactiv (§17.1), prima verificare pe surse se face la primul punct de măsurare de după completare și devine referința stărilor pentru punctele următoare; starea de la <code>T0</code> nu se reconstituie. Documentele acelui punct notează punctul verificării (de exemplu, <code>F4</code>).</p>
 
       <h3 id="4-1-entitate-ambigua-sau-suspecta">4.1. Entitate ambiguă sau suspectă</h3>
 
@@ -220,7 +281,7 @@ export const avl205FisaEntitatiiHtml = `
         <li>entității îi sunt aduse public acuzații.</li>
       </ol>
 
-      <p>Statutul poate apărea la completarea fișei, în <code>T0</code> sau în orice etapă ulterioară. Când este constatat:</p>
+      <p>Statutul poate apărea la completarea fișei, la verificarea preliminară, în <code>T0</code> sau în orice etapă ulterioară. Când este constatat:</p>
 
       <ul>
         <li>colaborarea se închide;</li>
@@ -236,7 +297,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>ID fișă</td><td>identificatorul documentului, cu versiunea</td><td><code>FE-exemplu-srl-v1</code></td><td>L</td></tr>
@@ -244,11 +305,11 @@ export const avl205FisaEntitatiiHtml = `
           <tr><td>ID entitate</td><td>identificator scurt, stabil, fără diacritice, folosit în plan, dovezi și rapoarte</td><td><code>exemplu-srl</code>, <code>delamatescu-ro</code></td><td>L</td></tr>
           <tr><td>Relația cu laboratorul</td><td>proiect, client sau laborator (site propriu); o rulare AVL-203 se face numai pentru aceste relații (AVL203-REQ-043)</td><td>client</td><td>Î</td></tr>
           <tr><td>Reprezentantul entității</td><td>persoana care declară informațiile și politica crawlere în numele entității, cu calitatea ei</td><td>Ion Popescu, administrator</td><td>C</td></tr>
-          <tr><td>Data completării</td><td>ziua în care reprezentantul confirmă versiunea curentă</td><td>4 noiembrie 2026</td><td>Î</td></tr>
-          <tr><td>Responsabilul de metodologie</td><td>aprobă fișa și confirmă forma canonică și domeniul de activitate (AVL-201 §6.1)</td><td>Alex Matescu</td><td>L</td></tr>
-          <tr><td>Operatorul de măsurare</td><td>cine execută rulările <code>T0</code> (AVL-201 §6.2)</td><td>Alex Matescu</td><td>L</td></tr>
+          <tr><td>Data completării</td><td>ziua în care reprezentantul confirmă versiunea curentă (§20)</td><td>4 noiembrie 2026</td><td>Î</td></tr>
+          <tr><td>Responsabilul de metodologie</td><td>aprobă fișa și confirmă forma canonică și domeniul de activitate (AVL-201 §6.1), înainte de trimiterea spre revizuire</td><td>Alex Matescu</td><td>L</td></tr>
+          <tr><td>Operatorul de măsurare</td><td>cine execută verificările (AVL-201 §6.2)</td><td>Alex Matescu</td><td>L</td></tr>
           <tr><td>Conflict de interese</td><td>relația comercială, de control sau de participare cu entitatea; se declară dacă rezultatele se publică (<a href="/lab/introducere">AVL-001 §21</a>, AVL-202 „Independență și conflict de interese”)</td><td>„Site-ul propriu al laboratorului”</td><td>L</td></tr>
-          <tr><td>Serviciul contractat</td><td>ce s-a cerut: audit, baseline <code>T0</code>, etapa sursei canonice, etapa prezenței distribuite, website sau alt serviciu</td><td>audit AI Visibility</td><td>Î</td></tr>
+          <tr><td>Serviciul contractat</td><td>ce s-a cerut: audit, etapa sursei canonice, etapa prezenței distribuite, website sau alt serviciu</td><td>audit AI Visibility</td><td>Î</td></tr>
         </tbody>
       </table>
 
@@ -258,7 +319,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Tipul de entitate</td><td>categoria din AVL-201 §3: persoană, companie, organizație, instituție, marcă, produs, serviciu, proiect, publicație, site</td><td>persoană</td><td>Î</td></tr>
@@ -277,7 +338,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Forma canonică a numelui [min]</td><td>numele principal, scris exact cum îl folosește entitatea public</td><td>„Alex Matescu”</td><td>Î</td></tr>
@@ -292,7 +353,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Variantă</td><td>numele alternativ, exact cum apare</td><td>„Alexandru Matescu”</td><td>C</td></tr>
@@ -303,11 +364,11 @@ export const avl205FisaEntitatiiHtml = `
 
       <h3 id="7-2-forme-gresite-observate">7.2. Forme greșite observate</h3>
 
-      <p><strong>Grafiile greșite sau apropiate care pot produce confuzii, de exemplu o literă dublată sau o diacritică omisă.</strong> Nu sunt forme ale entității. Se folosesc în interogările de dezambiguizare și în harta coliziunilor (§13).</p>
+      <p><strong>Grafiile greșite sau apropiate care pot produce confuzii, de exemplu o literă dublată sau o diacritică omisă.</strong> Nu sunt forme ale entității. Se folosesc în interogările de dezambiguizare și în harta coliziunilor (§13). Coloanele operatorului se completează la verificarea preliminară (§3), cu proveniența „verificare preliminară”.</p>
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Formă greșită</td><td>grafia care nu aparține entității, dar o poate atrage în rezultate</td><td>„Alex Mateescu”</td><td>Î</td></tr>
@@ -322,7 +383,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Descrierea principală</td><td>o propoziție: cine este și ce face entitatea acum</td><td>„Exemplu SRL oferă audit energetic pentru clădiri rezidențiale în Sibiu.”</td><td>Î</td></tr>
@@ -342,7 +403,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Țara [min]</td><td>țara în care activează entitatea</td><td>România</td><td>C</td></tr>
@@ -361,7 +422,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Data înființării sau anul de început al activității</td><td>când a început entitatea să existe sau să activeze</td><td>2018</td><td>C</td></tr>
@@ -378,7 +439,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <h2 id="11-activele-oficiale-min">11. Activele oficiale [min]</h2>
 
-      <p><strong>Sursele controlate direct de entitate și profilurile pe care le administrează.</strong> Ele formează sursa canonică: site-ul oficial, paginile canonice, datele structurate și textele de identificare (AVL-200 §7.1). Clientul le declară (AVL-201 §6.4). La <code>T0</code>, laboratorul verifică dacă fiecare există, ce afirmă și dacă trimite înapoi la sursa canonică.</p>
+      <p><strong>Sursele controlate direct de entitate și profilurile pe care le administrează.</strong> Ele formează sursa canonică: site-ul oficial, paginile canonice, datele structurate și textele de identificare (AVL-200 §7.1). Clientul le declară (AVL-201 §6.4). Dacă fiecare există, ce afirmă și dacă trimite înapoi la sursa canonică se verifică la <code>T0</code> și se înregistrează în documentele măsurării (§4).</p>
 
       <h3 id="11-1-site-si-pagini-canonice-min">11.1. Site și pagini canonice [min]</h3>
 
@@ -386,7 +447,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Originea canonică (domeniul web)</td><td>adresa oficială a site-ului, cu varianta aleasă: cu sau fără <code>www</code>, cu <code>https</code></td><td><code>https://delamatescu.ro</code></td><td>C</td></tr>
@@ -406,7 +467,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>LinkedIn</td><td>profilul personal sau pagina companiei</td><td><code>https://www.linkedin.com/in/…</code></td><td>C</td></tr>
@@ -434,7 +495,6 @@ export const avl205FisaEntitatiiHtml = `
           <tr><td>Descrierea (bio)</td><td>textul de prezentare al profilului; de comparat cu descrierea principală (§8)</td></tr>
           <tr><td>Trimite la site?</td><td>dacă profilul are link către site-ul entității</td></tr>
           <tr><td>Cine îl administrează</td><td>entitatea, o agenție sau altă persoană</td></tr>
-          <tr><td>Stare la <code>T0</code></td><td>ce arată profilul la verificare (§4)</td></tr>
         </tbody>
       </table>
 
@@ -444,7 +504,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Fotografia de profil sau logo-ul</td><td>imaginea oficială, ca URL sau fișier</td><td><code>https://exemplu.ro/logo.svg</code></td><td>C</td></tr>
@@ -456,15 +516,17 @@ export const avl205FisaEntitatiiHtml = `
 
       <p><strong>Instrumentele la care entitatea dă acces, ca observațiile externe să fie completate cu date interne.</strong> Se notează doar dacă accesul a fost acordat și prin ce canal, niciodată parola.</p>
 
+      <p>Google Search Console și Bing Webmaster Tools sunt utile. Logurile serverului sau ale CDN-ului și Analytics sunt <strong>opționale</strong>: conțin date ale vizitatorilor site-ului clientului (adrese IP, identificatori), deci se folosesc numai după acordul de prelucrare a datelor dintre client și operator.</p>
+
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Google Search Console</td><td>datele de indexare și căutare ale site-ului în Google</td><td>da, invitație pe contul operatorului</td><td>C</td></tr>
           <tr><td>Bing Webmaster Tools</td><td>datele site-ului în Bing</td><td>nu</td><td>C</td></tr>
-          <tr><td>Logurile serverului sau ale CDN-ului</td><td>cererile primite de site, inclusiv de la crawlere</td><td>da, export lunar</td><td>C</td></tr>
-          <tr><td>Analytics</td><td>traficul site-ului, inclusiv vizitele venite din sisteme AI</td><td>da, acces de citire</td><td>C</td></tr>
+          <tr><td>Logurile serverului sau ale CDN-ului (opțional)</td><td>cererile primite de site, inclusiv de la crawlere; numai după acordul de prelucrare a datelor</td><td>da, export lunar, după semnarea acordului</td><td>C</td></tr>
+          <tr><td>Analytics (opțional)</td><td>traficul site-ului, inclusiv vizitele venite din sisteme AI; numai după acordul de prelucrare a datelor</td><td>nu</td><td>C</td></tr>
         </tbody>
       </table>
 
@@ -472,31 +534,44 @@ export const avl205FisaEntitatiiHtml = `
 
       <p><strong>Legăturile dintre entitate și oameni, organizații, locuri și surse.</strong> Relațiile arată că mai multe surse descriu aceeași entitate. Tot ele pot servi drept ancore de dezambiguizare: contexte precum orașul, compania sau domeniul web, după care un sistem găsește entitatea corectă (<a href="/lab/studii-de-caz/tabula-rasa-entity-resolution-studiu-de-caz">studiul Tabula Rasa</a>, §1).</p>
 
-      <p>Fiecare relație se scrie ca o propoziție scurtă: entitate, relație, entitate legată, sursa care o confirmă.</p>
+      <p>Fiecare relație se scrie pe un rând, în forma subiect — relație — obiect, cu sursa care o confirmă. Subiectul este implicit entitatea fișei și se schimbă numai când relația aparține altcuiva, de exemplu fondatorului.</p>
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
-          <tr><td>Entitate</td><td>entitatea din fișă sau o entitate legată de ea</td><td>Ion Popescu</td><td>Î</td></tr>
-          <tr><td>Relație</td><td>legătura, formulată ca verb</td><td>este administrator al</td><td>Î</td></tr>
-          <tr><td>Entitate legată</td><td>persoana, organizația, locul, domeniul sau publicația</td><td>Exemplu SRL</td><td>Î</td></tr>
-          <tr><td>Sursa care confirmă relația</td><td>pagina sau registrul în care relația apare explicit</td><td>pagina „Despre” a firmei</td><td>Î</td></tr>
+          <tr><td>Subiect</td><td>implicit entitatea fișei; altă entitate numai când relația îi aparține</td><td>Exemplu SRL; Ion Popescu, pentru o relație a fondatorului</td><td>Î</td></tr>
+          <tr><td>Relație</td><td>legătura, formulată ca verb</td><td>are sediul în</td><td>Î</td></tr>
+          <tr><td>Obiect</td><td>persoana, organizația, locul, domeniul sau publicația</td><td>Sibiu</td><td>Î</td></tr>
+          <tr><td>Sursa</td><td>pagina sau registrul în care relația apare explicit, pe rândul relației</td><td>pagina „Despre” a firmei</td><td>Î</td></tr>
         </tbody>
       </table>
 
       <p>Exemple de relații: are sediul în, locuiește în, lucrează la, este fondator al, deține domeniul, este autor al, este membru al.</p>
 
+      <p>Ancorele pe care clientul le cunoaște deja se trec într-un câmp separat:</p>
+
+      <table>
+        <thead>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Profiluri și pagini prin care vă recunosc deja motoarele de căutare (dacă le știți)</td><td>profilurile și paginile externe pe care clientul știe că motoarele le asociază deja cu entitatea</td><td>Google Business Profile, LinkedIn, Wikidata sau Wikipedia, ONRC, articole de presă</td><td>C</td></tr>
+        </tbody>
+      </table>
+
       <h2 id="13-harta-coliziunilor">13. Harta coliziunilor</h2>
 
       <p><strong>Entitățile cu nume identic sau asemănător, cu sursele lor dominante (AVL-201 §7).</strong> Harta servește la interogările de dezambiguizare și la clasificarea <code>COLIZIUNE</code> (AVL-201 §13). Auditul de coliziune verifică cine altcineva „răspunde” la numele entității (<a href="/lab/cercetare/seo-vs-geo">AVL-103</a>).</p>
+
+      <p>În formular, lista se numește „Coliziuni identificate în verificări”. O completează operatorul la verificarea preliminară (§3), cu proveniența „verificare preliminară”, iar clientul o confirmă la revizuire. Coliziunile observate la măsurare se documentează în documentele <code>T0</code>.</p>
 
       <p>Despre alte persoane se notează numai informația publică necesară pentru a le distinge de entitate. Ele nu se publică fără anonimizare (AVL-001 §21).</p>
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Entitatea concurentă</td><td>cine mai poartă numele sau un nume apropiat</td><td>o firmă cu nume asemănător</td><td>L</td></tr>
@@ -510,11 +585,11 @@ export const avl205FisaEntitatiiHtml = `
 
       <h2 id="14-prezenta-distribuita">14. Prezența distribuită</h2>
 
-      <p><strong>Informațiile despre entitate din afara sursei canonice: publicații, știri, interviuri, directoare, registre și mențiuni, controlate sau independente (AVL-200 §7.1, AVL-201 §10.8).</strong> Clientul declară ce cunoaște. Laboratorul completează în <code>T0</code> ce găsește. Aceasta este baza matricei prezenței distribuite.</p>
+      <p><strong>Informațiile despre entitate din afara sursei canonice: publicații, știri, interviuri, directoare, registre și mențiuni, controlate sau independente (AVL-200 §7.1, AVL-201 §10.8).</strong> În formular, câmpul se numește „Lista surselor externe”. Clientul declară ce cunoaște. Operatorul completează coloanele lui (marcate L) la verificarea preliminară (§3), cu proveniența „verificare preliminară”; starea fiecărei surse la <code>T0</code> se documentează în măsurare. Lista este baza matricei prezenței distribuite.</p>
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Sursa</td><td>publicația, directorul sau registrul</td><td>o publicație locală</td><td>Î</td></tr>
@@ -527,9 +602,99 @@ export const avl205FisaEntitatiiHtml = `
         </tbody>
       </table>
 
-      <p>Acțiunea propusă se notează în <code>T0</code>, dar nu se execută până la închiderea baseline-ului (AVL-201 §10.9, F0-REQ-001).</p>
+      <p>Acțiunea propusă se notează în fișă, dar nu se execută până la închiderea baseline-ului (AVL-201 §10.9, F0-REQ-001).</p>
 
       <h2 id="15-politica-crawlere-min">15. Politica crawlere [min]</h2>
+
+      <p><strong>Mutată în <a href="#anexa-politica-crawlere">„Anexa — Politici tehnice ale site-ului”, la „Politica crawlere”</a>.</strong> Politica rămâne în conținutul minim al fișei (AVL-201 §7): anexa face parte din fișă, se completează împreună cu clientul la revizuire și se confirmă odată cu fișa, înainte de <code>T0</code>.</p>
+
+      <h3 id="15-1-indexare-si-raspunsuri-declarate-intentionat">15.1. Indexare și răspunsuri declarate intenționat</h3>
+
+      <p><strong>Mutată în <a href="#anexa-indexare-si-raspunsuri-declarate-intentionat">„Anexa — Politici tehnice ale site-ului”, la „Indexare și răspunsuri declarate intenționat”</a>.</strong></p>
+
+      <h2 id="16-ce-vrea-entitatea-sa-i-se-recunoasca">16. Ce vrea entitatea să i se recunoască</h2>
+
+      <p><strong>Ce întrebări contează pentru entitate și ce ar trebui să spună un răspuns corect despre ea.</strong> Este informație de intrare pentru setul de interogări, nu setul însuși. Setul se construiește de laborator înainte de examinarea rezultatelor, pe intenții (identitate, rol, informație factuală, comparație, recomandare), și se îngheață la <code>T0</code> (AVL-201 §10.2, F0-REQ-008; <a href="/lab/cercetare/cum-se-masoara-ai-visibility">AVL-104</a>).</p>
+
+      <table>
+        <thead>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Întrebările pentru care vrea să apară</td><td>formulările pe care le folosesc clienții ei</td><td>„cine face audit energetic în Sibiu?”</td><td>C</td></tr>
+          <tr><td>Ce ar trebui să spună corect un răspuns</td><td>3–5 fapte esențiale despre entitate</td><td>rolul, localitatea, serviciul principal</td><td>Î</td></tr>
+          <tr><td>Informații greșite sau vechi deja observate</td><td>ce a văzut entitatea până acum, cu exemplu și dată</td><td>un răspuns AI care o descrie cu rolul vechi</td><td>C</td></tr>
+          <tr><td>Recomandarea pentru care vrea să fie aleasă</td><td>rol + domeniu de activitate + zonă geografică</td><td>auditor energetic în județul Sibiu</td><td>C</td></tr>
+          <tr><td>Piața și limbile de măsurat</td><td>propunere pentru planul <code>T0</code> (AVL-201 §7, „Țara și limba”)</td><td>România, română și engleză</td><td>Î</td></tr>
+          <tr><td>Motoarele de interes</td><td>propunere; lista finală o stabilește laboratorul în planul <code>T0</code></td><td>ChatGPT, Google AI Mode</td><td>Î</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="17-angajamente-pentru-durata-t0">17. Angajamente pentru durata <code>T0</code></h2>
+
+      <p><strong>Mutată în pregătirea <code>T0</code>, în planul de măsurare.</strong> Angajamentele pentru durata <code>T0</code> nu fac parte din fișă. Planul de măsurare le fixează: înghețul pe durata <code>T0</code> (F0-REQ-001; „Declarația de îngheț”, intrare distinctă în AVL-201 §7), forma înghețului între punctele de măsurare și anunțarea schimbărilor neplanificate (F0-REQ-002). Schimbările deja programate, declarate în chestionar la „Schimbări planificate” (§3), se preiau în planul de măsurare.</p>
+
+      <h3 id="17-1-completarea-retroactiva">17.1. Completarea retroactivă</h3>
+
+      <p><strong>Când fișa se completează după un <code>T0</code> deja făcut, de exemplu pentru o serie începută înaintea AVL-205, ea devine referința punctelor următoare (<code>F1</code> … <code>Fn</code>).</strong> Completarea retroactivă nu schimbă rezultatele <code>T0</code> și nici referința folosită atunci (AVL200-REQ-013). Fișa notează că a fost completată după <code>T0</code> și data completării. Prima verificare pe surse a unei fișe completate retroactiv se face la punctul următor (§4). Exemplu: fișa pentru delamatescu.ro și Alex Matescu (§25, deciziile 1 și 4), verificată pe surse la <code>F4</code> Tabula Rasa.</p>
+
+      <h2 id="18-informatii-pentru-website-serviciu-optional">18. Informații pentru website (serviciu opțional)</h2>
+
+      <p><strong>Mutată în <a href="#anexa-de-predare-a-website-ului">„Anexa de predare a website-ului”</a>.</strong></p>
+
+      <h2 id="19-revizuire-si-aprobare-inainte-de-publicare">19. Revizuire și aprobare înainte de publicare</h2>
+
+      <p><strong>Mutată în registrul aprobărilor de publicare.</strong> Aprobarea formei exacte a unui text despre client, înainte de publicare, o dă clientul ca înregistrare proprie în registrul aprobărilor de publicare, nu ca tabel completat de mână în fișă. În aplicarea Ichnometria, registrul este ținut în portalul clientului. Publicarea nu este niciodată permisă implicit.</p>
+
+      <p>Nicio informație din fișă nu se publică pe site, în profiluri, în articole sau într-un studiu de caz fără această aprobare. Un audit privat nu devine automat studiu de caz public (AVL-201 §3; <a href="/lab/audit-ai-visibility">Auditul AI Visibility</a>). Informațiile confidențiale ale clientului nu se publică fără acord explicit (AVL-001 §21).</p>
+
+      <h2 id="20-confirmarea-reprezentantului">20. Confirmarea reprezentantului</h2>
+
+      <p><strong>Reprezentantul confirmă sau contestă factual fișa (AVL-201 §6.4).</strong> Confirmarea nu este un câmp de completat. O dă numai clientul, pe versiunea transmisă spre revizuire, integral sau cu contestații. Fișa afișează doar decizia înregistrată.</p>
+
+      <table>
+        <thead>
+          <tr><th>Ce se afișează</th><th>Ce înseamnă</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Reprezentantul și calitatea</td><td>cine a decis și în ce calitate</td></tr>
+          <tr><td>Data și ora</td><td>momentul deciziei</td></tr>
+          <tr><td>Decizia</td><td>confirmare integrală sau confirmare cu contestații</td></tr>
+          <tr><td>Câmpurile contestate</td><td>lista câmpurilor cu care reprezentantul nu e de acord</td></tr>
+          <tr><td>Observațiile</td><td>ce a notat reprezentantul, de exemplu valoarea propusă și sursa ei</td></tr>
+        </tbody>
+      </table>
+
+      <p>Până la confirmare, fișa afișează „Așteaptă confirmarea clientului”.</p>
+
+      <h2 id="21-istoricul-fisei">21. Istoricul fișei</h2>
+
+      <p><strong>Fișa se versionează.</strong> O corectură păstrează valoarea anterioară, valoarea corectată, data, motivul și sursa (AVL-MKT-001 §19). Valorile folosite într-o măsurare deja făcută nu se schimbă retroactiv (AVL200-REQ-013). Versiunea fișei folosită la <code>T0</code> se menționează în planul de măsurare și în raport (AVL-201 §20); fișa nu marchează ea însăși o versiune ca reper <code>T0</code>.</p>
+
+      <p>Istoricul se afișează doar în citire, din versiunile înregistrate. Comparația câmp cu câmp între versiuni este o etapă ulterioară.</p>
+
+      <table>
+        <thead>
+          <tr><th>Ce se afișează</th><th>Ce înseamnă</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Versiunea fișei</td><td>numărul versiunii</td></tr>
+          <tr><td>Data</td><td>ziua înregistrării versiunii</td></tr>
+          <tr><td>Motivul schimbării</td><td>de ce s-a creat versiunea, de exemplu schimbarea activității, anunțată de reprezentant</td></tr>
+          <tr><td>Cine a confirmat sau a contestat</td><td>reprezentantul care a decis asupra versiunii</td></tr>
+          <tr><td>Ce anume</td><td>câmpurile confirmate sau contestate</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="note">Note</h2>
+
+      <p><strong>Secțiunea finală a formularului, fără număr.</strong> Aici se trec observațiile care nu au loc într-un câmp anume.</p>
+
+      <h2 id="anexa-politici-tehnice-ale-site-ului">Anexa — Politici tehnice ale site-ului</h2>
+
+      <p><strong>Se completează împreună cu clientul, la revizuirea fișei, înainte de <code>T0</code>, și se confirmă odată cu fișa.</strong> Anexa face parte din fișă (§3, „Conținutul minim”). Cuprinde politica crawlere și declarația paginilor intenționat neindexate, redirecționate, cu erori sau cu canonical spre altă pagină, ca auditul tehnic să nu le raporteze greșit ca probleme. Punctul de plecare este răspunsul din chestionar la întrebarea despre restricțiile pentru roboți (§3, „Chestionarul clientului”).</p>
+
+      <h3 id="anexa-politica-crawlere">Politica crawlere</h3>
 
       <p><strong>Accesul pe care entitatea îl vrea pentru crawlerele de căutare, de antrenare și de fetch la cererea utilizatorului (AVL-201 §7, AVL-204 §3.1).</strong> Îl completează reprezentantul entității. AI Visibility Lab recomandă accesul total pentru toate crawlerele.</p>
 
@@ -537,7 +702,7 @@ export const avl205FisaEntitatiiHtml = `
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Opțiunea reprezentantului</td><td>acceptă recomandarea (acces total) sau declară o politică diferită</td><td>accept recomandarea</td><td>C</td></tr>
@@ -564,13 +729,13 @@ export const avl205FisaEntitatiiHtml = `
 
       <p>Crawlerele de fetch la cererea utilizatorului se raportează numai ca observație, pentru că furnizorii lor declară că regulile din <code>robots.txt</code> pot să nu li se aplice (<a href="/lab/metodologie/protocol-verificare-tehnica">AVL-203 §6</a>, AVL204-REQ-018). Lista se reverifică la fiecare versiune a protocolului AVL-203.</p>
 
-      <h3 id="15-1-indexare-si-raspunsuri-declarate-intentionat">15.1. Indexare și răspunsuri declarate intenționat</h3>
+      <h3 id="anexa-indexare-si-raspunsuri-declarate-intentionat">Indexare și răspunsuri declarate intenționat</h3>
 
       <p><strong>Paginile pe care entitatea nu vrea să le indexeze și răspunsurile pe care le-a configurat deliberat.</strong> Un răspuns declarat aici nu se raportează drept problemă în verificarea tehnică (AVL-204 §6.2, §6.5).</p>
 
       <table>
         <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
+          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Informația o dă</th></tr>
         </thead>
         <tbody>
           <tr><td>Pagina sau zona</td><td>URL-ul sau grupul de pagini</td><td><code>/cont/</code></td><td>C</td></tr>
@@ -580,47 +745,9 @@ export const avl205FisaEntitatiiHtml = `
         </tbody>
       </table>
 
-      <h2 id="16-ce-vrea-entitatea-sa-i-se-recunoasca">16. Ce vrea entitatea să i se recunoască</h2>
+      <h2 id="anexa-de-predare-a-website-ului">Anexa de predare a website-ului</h2>
 
-      <p><strong>Ce întrebări contează pentru entitate și ce ar trebui să spună un răspuns corect despre ea.</strong> Este informație de intrare pentru setul de interogări, nu setul însuși. Setul se construiește de laborator înainte de examinarea rezultatelor, pe intenții (identitate, rol, informație factuală, comparație, recomandare), și se îngheață la <code>T0</code> (AVL-201 §10.2, F0-REQ-008; <a href="/lab/cercetare/cum-se-masoara-ai-visibility">AVL-104</a>).</p>
-
-      <table>
-        <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Întrebările pentru care vrea să apară</td><td>formulările pe care le folosesc clienții ei</td><td>„cine face audit energetic în Sibiu?”</td><td>C</td></tr>
-          <tr><td>Ce ar trebui să spună corect un răspuns</td><td>3–5 fapte esențiale despre entitate</td><td>rolul, localitatea, serviciul principal</td><td>Î</td></tr>
-          <tr><td>Informații greșite sau vechi deja observate</td><td>ce a văzut entitatea până acum, cu exemplu și dată</td><td>un răspuns AI care o descrie cu rolul vechi</td><td>C</td></tr>
-          <tr><td>Recomandarea pentru care vrea să fie aleasă</td><td>rol + domeniu de activitate + zonă geografică</td><td>auditor energetic în județul Sibiu</td><td>C</td></tr>
-          <tr><td>Piața și limbile de măsurat</td><td>propunere pentru planul <code>T0</code> (AVL-201 §7, „Țara și limba”)</td><td>România, română și engleză</td><td>Î</td></tr>
-          <tr><td>Motoarele de interes</td><td>propunere; lista finală o stabilește laboratorul în planul <code>T0</code></td><td>ChatGPT, Google AI Mode</td><td>Î</td></tr>
-        </tbody>
-      </table>
-
-      <h2 id="17-angajamente-pentru-durata-t0">17. Angajamente pentru durata <code>T0</code></h2>
-
-      <p><strong>Ce se angajează entitatea să nu schimbe cât timp se măsoară starea inițială.</strong> O intervenție făcută în timpul <code>T0</code> amestecă starea inițială cu efectul intervenției.</p>
-
-      <table>
-        <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Declarația de îngheț</td><td>entitatea nu modifică site-ul, profilurile, datele structurate sau prezența externă de la începutul <code>T0</code> până la închiderea lui (F0-REQ-001; AVL-201 §7)</td><td>confirmat, cu data</td><td>C</td></tr>
-          <tr><td>Anunțarea schimbărilor neplanificate</td><td>orice schimbare care apare totuși se anunță, ca să fie consemnată ca incident (F0-REQ-002)</td><td>confirmat</td><td>C</td></tr>
-          <tr><td>Schimbări deja programate</td><td>modificări care nu pot fi amânate, cu data lor</td><td>lansarea unui produs pe 15 noiembrie</td><td>C</td></tr>
-          <tr><td>Forma înghețului între punctele de măsurare</td><td>după închiderea <code>T0</code> și până la punctul următor, entitatea poate declara fie îngheț complet, fie îngheț al identității: numele, rolul, locația, profilurile, datele structurate și paginile de identitate rămân neschimbate, iar conținutul nou (articole, documentație) se poate publica. În timpul <code>T0</code> se aplică integral F0-REQ-001.</td><td>îngheț al identității, conținut nou permis</td><td>C</td></tr>
-        </tbody>
-      </table>
-
-      <h3 id="17-1-completarea-retroactiva">17.1. Completarea retroactivă</h3>
-
-      <p><strong>Când fișa se completează după un <code>T0</code> deja făcut, de exemplu pentru o serie începută înaintea AVL-205, ea devine referința punctelor următoare (<code>F1</code> … <code>Fn</code>).</strong> Completarea retroactivă nu schimbă rezultatele <code>T0</code> și nici referința folosită atunci (AVL200-REQ-013). Fișa notează că a fost completată după <code>T0</code> și data completării. Prima verificare pe surse a unei fișe completate retroactiv se face la punctul următor (§4). Exemplu: fișa pentru delamatescu.ro și Alex Matescu (§25, deciziile 1 și 4), verificată pe surse la <code>F4</code> Tabula Rasa.</p>
-
-      <h2 id="18-informatii-pentru-website-serviciu-optional">18. Informații pentru website (serviciu opțional)</h2>
-
-      <p><strong>Numai pentru clienții care aleg serviciul de website sau etapa sursei canonice.</strong> Informațiile se preiau din fișă după verificarea <code>T0</code> și devin propuneri, aprobate de client înainte de publicare (§19). Etapa sursei canonice nu are încă un document normativ propriu (AVL-001), deci secțiunea aceasta este operațională, nu normativă.</p>
+      <p><strong>Se completează numai în serviciul de website și se predă clientului la lansare, cu datele structurate exact cum sunt pe site.</strong> Informațiile se preiau din fișa confirmată, iar textele despre client se publică numai cu aprobarea din registrul aprobărilor de publicare (§19). Etapa sursei canonice nu are încă un document normativ propriu (AVL-001), deci anexa este operațională, nu normativă. Tabelul arată de unde vine fiecare proprietate.</p>
 
       <p>Datele structurate descriu doar ce apare vizibil pe pagină. Nu garantează indexarea, menționarea sau citarea (<a href="/lab/metodologie">AVL-202 §7</a>).</p>
 
@@ -651,58 +778,6 @@ export const avl205FisaEntitatiiHtml = `
 
       <p>Proprietățile și tipurile cărora li se aplică au fost verificate pe schema.org la 4 noiembrie 2026 (<a href="https://schema.org/Person" target="_blank" rel="noopener noreferrer">Person</a>, <a href="https://schema.org/Organization" target="_blank" rel="noopener noreferrer">Organization</a>).</p>
 
-      <h2 id="19-revizuire-si-aprobare-inainte-de-publicare">19. Revizuire și aprobare înainte de publicare</h2>
-
-      <p><strong>Nicio informație din fișă nu se publică pe site, în profiluri, în articole sau într-un studiu de caz fără aprobarea clientului.</strong> Un audit privat nu devine automat studiu de caz public (AVL-201 §3; <a href="/lab/audit-ai-visibility">Auditul AI Visibility</a>). Informațiile confidențiale ale clientului nu se publică fără acord explicit (AVL-001 §21).</p>
-
-      <table>
-        <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Ce se publică</td><td>informația sau textul propus</td><td>descrierea principală nouă</td><td>Î</td></tr>
-          <tr><td>Unde</td><td>pagina, profilul sau publicația</td><td>pagina „Despre”</td><td>Î</td></tr>
-          <tr><td>Versiunea revizuită</td><td>textul exact aprobat</td><td>versiunea 2 a textului</td><td>Î</td></tr>
-          <tr><td>Aprobat de</td><td>reprezentantul care aprobă</td><td>Ion Popescu</td><td>C</td></tr>
-          <tr><td>Data aprobării</td><td>ziua aprobării</td><td>20 noiembrie 2026</td><td>C</td></tr>
-        </tbody>
-      </table>
-
-      <h2 id="20-confirmarea-reprezentantului">20. Confirmarea reprezentantului</h2>
-
-      <p><strong>Reprezentantul confirmă sau contestă factual fișa (AVL-201 §6.4).</strong> O contestare se notează cu valoarea contestată, valoarea propusă și sursa. Fișa se semnează de reprezentant și de responsabilul de metodologie.</p>
-
-      <table>
-        <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Secțiunea sau câmpul</td><td>ce se confirmă sau se contestă</td><td>§9, localitatea</td><td>C</td></tr>
-          <tr><td>Confirmat sau contestat</td><td>decizia reprezentantului</td><td>contestat</td><td>C</td></tr>
-          <tr><td>Valoarea propusă</td><td>valoarea corectă, după reprezentant</td><td>Mediaș</td><td>C</td></tr>
-          <tr><td>Sursa</td><td>documentul care susține valoarea propusă</td><td>certificatul de înregistrare</td><td>C</td></tr>
-          <tr><td>Semnăturile</td><td>reprezentantul entității și responsabilul de metodologie, cu data</td><td>—</td><td>C, L</td></tr>
-        </tbody>
-      </table>
-
-      <h2 id="21-istoricul-fisei">21. Istoricul fișei</h2>
-
-      <p><strong>Fișa se versionează.</strong> O corectură păstrează valoarea anterioară, valoarea corectată, data, motivul și sursa (AVL-MKT-001 §19). Valorile folosite într-o măsurare deja făcută nu se schimbă retroactiv (AVL200-REQ-013). Versiunea fișei folosită la <code>T0</code> se menționează în plan și în raport (AVL-201 §20).</p>
-
-      <table>
-        <thead>
-          <tr><th>Câmp</th><th>Ce înseamnă</th><th>Exemplu sau cum se completează</th><th>Cine</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Versiunea fișei</td><td>numărul versiunii noi</td><td>2</td><td>L</td></tr>
-          <tr><td>Data</td><td>ziua modificării</td><td>5 decembrie 2026</td><td>L</td></tr>
-          <tr><td>Ce s-a schimbat</td><td>câmpul modificat</td><td>rolul principal</td><td>L</td></tr>
-          <tr><td>Valoarea anterioară</td><td>ce scria înainte</td><td>proiectant</td><td>L</td></tr>
-          <tr><td>Motiv și sursă</td><td>de ce s-a schimbat și pe ce bază</td><td>schimbarea activității, anunțată de reprezentant</td><td>Î</td></tr>
-          <tr><td>Aprobat de</td><td>cine a aprobat modificarea</td><td>reprezentantul și responsabilul de metodologie</td><td>C, L</td></tr>
-        </tbody>
-      </table>
-
       <h2 id="22-provenienta-campurilor">22. Proveniența câmpurilor</h2>
 
       <p><strong>De unde provine fiecare secțiune a fișei.</strong> Secțiunile fără bază normativă sunt marcate „operațional”.</p>
@@ -714,24 +789,25 @@ export const avl205FisaEntitatiiHtml = `
         <tbody>
           <tr><td>Conținutul minim [min]</td><td>AVL-201 §7</td></tr>
           <tr><td>§3 „Ce își asumă reprezentantul”, §4.1 Entitate ambiguă sau suspectă</td><td>operațional; decizii Alex Matescu, 4 noiembrie 2026; AVL-001 §21; AVL-200 §11</td></tr>
+          <tr><td>§1–§3: fișa fără măsurare, cine dă informația, fluxul fișei, fișa minimă, verificarea preliminară, chestionarul clientului (versiunea 3), sursa pe fiecare rând</td><td>operațional; decizii Alex Matescu, 25 noiembrie 2026, după testul V-33 din aplicarea Ichnometria; AVL-201 §6.4, §7; AVL200-REQ-019; AVL204-REQ-017</td></tr>
           <tr><td>§4 Verificarea la <code>F1</code> … <code>Fn</code> și a fișei completate retroactiv</td><td>operațional; decizie Alex Matescu, 4 noiembrie 2026; AVL-200 §7, AVL200-REQ-013</td></tr>
-          <tr><td>§5 Identificarea fișei</td><td>AVL-201 §6.1–6.4; AVL-203 §1, AVL203-REQ-043; AVL-204 AVL204-REQ-015; AVL-001 §21; AVL-202 „Independență și conflict de interese”</td></tr>
+          <tr><td>§5 Identificarea fișei</td><td>AVL-201 §6.1–6.4; AVL-203 §1, AVL203-REQ-043; AVL-204 AVL204-REQ-015; AVL-001 §21; AVL-202 „Independență și conflict de interese”; confirmarea responsabilului înainte de trimiterea spre revizuire: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
           <tr><td>§6 Tipul entității</td><td>AVL-201 §3, §5; AVL-203 §1.1; AVL-204 §11</td></tr>
-          <tr><td>§7 Forma canonică și variantele</td><td>AVL-201 §5, §10.1; AVL-102; articolul „Ce este o entitate pentru AI”</td></tr>
+          <tr><td>§7 Forma canonică și variantele</td><td>AVL-201 §5, §10.1; AVL-102; articolul „Ce este o entitate pentru AI”; §7.2, completarea la verificarea preliminară: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
           <tr><td>§8 Rolul și activitatea</td><td>AVL-201 §7, §10.6; AVL-MKT-001 §17; articolul „Ce este o entitate pentru AI”; documentul de lucru „Audit F0 — Tabula Rasa” (2 iulie 2026), din pachetul de dovezi <code>T0</code> pentru Alex Matescu</td></tr>
           <tr><td>§9 Locația și piața</td><td>AVL-201 §7; AVL-102; AVL-204 §11</td></tr>
           <tr><td>§10 Atribute verificabile</td><td>AVL-201 §7, §10.1, §10.6; articolul „Ce este o entitate pentru AI”</td></tr>
-          <tr><td>§11 Activele oficiale</td><td>AVL-200 §7.1, §18.3; AVL-201 §6.4, §7, §10.8; AVL-203 §1.1, AVL203-REQ-042; pagina Auditul AI Visibility; studiul Tabula Rasa §11</td></tr>
-          <tr><td>§12 Relații și ancore</td><td>studiul Tabula Rasa §1; articolul „Ce este o entitate pentru AI”; AVL-202 §7</td></tr>
-          <tr><td>§13 Harta coliziunilor</td><td>AVL-201 §7, §13; AVL-103; AVL-001 §21</td></tr>
-          <tr><td>§14 Prezența distribuită</td><td>AVL-200 §7.1; AVL-201 §10.8, §10.9; AVL-202 §7</td></tr>
-          <tr><td>§15 Politica crawlere</td><td>AVL-201 §6.4, §7; AVL-203 §1.1, §6; AVL-204 §3.1, §6.2, §6.3, §6.5, AVL204-REQ-017, AVL204-REQ-018; CS-002</td></tr>
+          <tr><td>§11 Activele oficiale</td><td>AVL-200 §7.1, §18.3; AVL-201 §6.4, §7, §9, §10.8; AVL-203 §1.1, AVL203-REQ-042; pagina Auditul AI Visibility; studiul Tabula Rasa §11; §11.4, logurile și Analytics opționale: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§12 Relații și ancore</td><td>studiul Tabula Rasa §1; articolul „Ce este o entitate pentru AI”; AVL-202 §7; forma subiect — relație — obiect și câmpul ancorelor: operațional, decizii Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§13 Harta coliziunilor</td><td>AVL-201 §7, §13; AVL-103; AVL-001 §21; completarea la verificarea preliminară: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§14 Prezența distribuită</td><td>AVL-200 §7.1; AVL-201 §10.8, §10.9; AVL-202 §7; „Lista surselor externe” și completarea la verificarea preliminară: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§15 Politica crawlere și „Anexa — Politici tehnice ale site-ului”</td><td>anexa, parte a fișei: operațional, decizie Alex Matescu, 25 noiembrie 2026; AVL-201 §6.4, §7; AVL-203 §1.1, §6; AVL-204 §3.1, §6.2, §6.3, §6.5, AVL204-REQ-017, AVL204-REQ-018; CS-002</td></tr>
           <tr><td>§16 Ce vrea entitatea să i se recunoască</td><td>AVL-201 §7, §10.2, F0-REQ-008; AVL-104; pagina Auditul AI Visibility</td></tr>
-          <tr><td>§17 Angajamente pentru <code>T0</code></td><td>AVL-201 §6.4, §7, F0-REQ-001, F0-REQ-002; forma înghețului între puncte și §17.1: operațional, decizii Alex Matescu, 4 noiembrie 2026; AVL200-REQ-013</td></tr>
-          <tr><td>§18 Informații pentru website</td><td>operațional; AVL-200 §7.1; AVL-202 §7; articolul „Ce este o entitate pentru AI”; schema.org</td></tr>
-          <tr><td>§19 Revizuire și aprobare</td><td>AVL-201 §3; AVL-001 §21; pagina Auditul AI Visibility</td></tr>
-          <tr><td>§20 Confirmarea reprezentantului</td><td>AVL-201 §6.4</td></tr>
-          <tr><td>§21 Istoricul fișei</td><td>AVL-MKT-001 §19; AVL200-REQ-013; AVL-201 §20</td></tr>
+          <tr><td>§17 Angajamente pentru <code>T0</code> (în planul de măsurare din 0.3.0)</td><td>AVL-201 §6.4, §7, F0-REQ-001, F0-REQ-002; forma înghețului între puncte și §17.1: operațional, decizii Alex Matescu, 4 noiembrie 2026; mutarea în planul de măsurare: decizie Alex Matescu, 25 noiembrie 2026; AVL200-REQ-013</td></tr>
+          <tr><td>§18 și „Anexa de predare a website-ului”</td><td>operațional; mutarea în anexă: decizie Alex Matescu, 25 noiembrie 2026; AVL-200 §7.1; AVL-202 §7; articolul „Ce este o entitate pentru AI”; schema.org</td></tr>
+          <tr><td>§19 Revizuire și aprobare (registrul aprobărilor de publicare)</td><td>AVL-201 §3; AVL-001 §21; pagina Auditul AI Visibility; registrul: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§20 Confirmarea reprezentantului</td><td>AVL-201 §6.4; afișarea deciziei înregistrate: operațional, decizie Alex Matescu, 25 noiembrie 2026</td></tr>
+          <tr><td>§21 Istoricul fișei</td><td>AVL-MKT-001 §19; AVL200-REQ-013; AVL200-REQ-030; AVL-201 §20</td></tr>
         </tbody>
       </table>
 
@@ -779,6 +855,7 @@ export const avl205FisaEntitatiiHtml = `
           <tr><td>0.1.0</td><td>4 noiembrie 2026</td><td>Draft pentru revizuire</td><td>Primul draft. Descrie fișa entității cerută de AVL-201 §7: rolul ei, ce nu este, cum se completează, stările verificării <code>T0</code> și definițiile tuturor câmpurilor, în 17 secțiuni (§5–§21), cu proveniența fiecărei secțiuni. Precizează că „domeniu” din AVL-201 §7 înseamnă domeniul de activitate al serviciilor (decizie Alex Matescu, 4 noiembrie 2026). Nu introduce cerințe proprii.</td></tr>
           <tr><td>0.1.1</td><td>4 noiembrie 2026</td><td>Draft pentru revizuire</td><td>PATCH: trimiteri la AVL-201 1.6.0, care trimite la AVL-205 din §7 și §10.1 și folosește formularea „domeniul de activitate”, și la AVL-202 1.8.0, care include AVL-205 în corpus. Deciziile deschise 2 (închisă), 3 și 6 (parțial închise) sunt actualizate. Fără schimbări ale câmpurilor fișei.</td></tr>
           <tr><td>0.2.0</td><td>4 noiembrie 2026</td><td>Draft pentru revizuire</td><td>MINOR, decizii Alex Matescu din 4 noiembrie 2026, după prima fișă completă. §3: marcajul „Î” precizează că Alex Matescu verifică formularea, nu adevărul declarației; subsecțiune nouă „Ce își asumă reprezentantul”: declarațiile reprezentantului sunt asumate de el și considerate corecte. §4 se numește „Cum se verifică reprezentarea fișei în surse?”. Subsecțiune nouă §4.1 „Entitate ambiguă sau suspectă”: criteriile, închiderea colaborării, documentarea internă și comunicarea către client. §6: o singură fișă pentru profesionistul independent cu site propriu. §11.2: ce se notează pentru fiecare profil, cu numele afișat. §17: forma înghețului între punctele de măsurare; subsecțiune nouă §17.1 „Completarea retroactivă”. §4: verificarea pe surse la punctele <code>F1</code> … <code>Fn</code> și prima verificare a unei fișe completate retroactiv. Deciziile deschise 1 (parțial) și 3 (integral) sunt închise; decizia 4: testul stărilor se face la <code>F4</code> Tabula Rasa; trimitere la fișa FE-delamatescu-ro-v1. Nu introduce cerințe proprii.</td></tr>
+          <tr><td>0.3.0</td><td>25 noiembrie 2026</td><td>Draft pentru revizuire</td><td>MINOR, decizii Alex Matescu din 25 noiembrie 2026, după testul V-33 din aplicarea Ichnometria. Fișa devine documentul de identitate al entității, confirmat cu clientul, fără nimic din măsurare; <code>T0</code> se pregătește și se documentează separat, după confirmarea fișei. Numerotarea nu se schimbă: §15, §15.1, §17, §18 și §19 rămân titluri care trimit la locul nou. §1–§4 rămân explicative; formularul începe la §5 și se încheie cu secțiunea „Note”, fără număr. Coloana „Stare la <code>T0</code>” și Evidence ID-ul ies din fișă (§3, §11.2) și se înregistrează în documentele măsurării <code>T0</code> (§4). §3: marcajul C/Î/L arată cine dă informația, iar L este operatorul care aplică metoda; operatorul redactează fișa, clientul o confirmă sau contestă câmpuri; subsecțiuni noi: fluxul fișei, fișa minimă (trimiterea spre revizuire numai cu câmpurile [min] completate sau cu motiv înregistrat), verificarea preliminară (proveniența „verificare preliminară”, fără dovezi și fără valoare de măsurare), chestionarul clientului, versiunea 3; sursa se notează pe fiecare rând. §5: operatorul execută verificările; serviciul contractat nu mai pomenește „baseline <code>T0</code>”; responsabilul de metodologie confirmă înainte de trimiterea spre revizuire. §11.4: logurile și Analytics sunt opționale, numai după acordul de prelucrare a datelor. §12: relațiile în forma subiect — relație — obiect; câmp nou „Profiluri și pagini prin care vă recunosc deja motoarele de căutare (dacă le știți)”. §7.2 (coloanele operatorului), §13 și §14 se completează la verificarea preliminară; câmpul din §14 se numește „Lista surselor externe”. §15 și §15.1 trec în „Anexa — Politici tehnice ale site-ului”, parte a fișei; §17 trece în planul de măsurare; §18 trece în „Anexa de predare a website-ului”, numai pentru serviciul de website; §19 trece în registrul aprobărilor de publicare. §20: fișa afișează doar decizia înregistrată a clientului. §21: istoricul se afișează doar în citire. Nu introduce cerințe proprii.</td></tr>
         </tbody>
       </table>
 
@@ -788,7 +865,7 @@ export const avl205FisaEntitatiiHtml = `
         <li><strong>Primul test pe o entitate reală.</strong> Fișa se completează integral pentru delamatescu.ro și Alex Matescu, entitatea primei rulări AVL-203. Parțial închisă la 4 noiembrie 2026: prima fișă completă, <a href="https://github.com/alexmatescu/alexmatescu-hub-reflection/blob/main/docs/fise-entitate/FE-delamatescu-ro-v1.md" target="_blank" rel="noopener noreferrer"><code>FE-delamatescu-ro-v1</code></a>, a fost confirmată de reprezentant și publicată, completată retroactiv (§17.1). Din observațiile completării, versiunea 0.2.0 a preluat coloanele profilurilor (§11.2), fișa unică pentru profesionistul independent (§6), forma înghețului între puncte și completarea retroactivă (§17). Rămân de discutat înainte de activare rolul principal diferit între surse și ancorele folosite de motoare, dar absente din sursa canonică.</li>
         <li><strong>Precizarea „domeniu” în AVL-201.</strong> Închisă la 4 noiembrie 2026 (decizie Alex Matescu): AVL-201 1.6.0 folosește „domeniul de activitate” la §6.1 și §7, cu același sens ca AVL-205 §3.</li>
         <li><strong>Trimiterea din AVL-201, AVL-203 și AVL-204.</strong> Închisă la 4 noiembrie 2026 (decizie Alex Matescu): AVL-201 1.6.0 trimite la AVL-205 din §7 și §10.1, iar AVL-203 0.6.2 și AVL-204 0.3.2 trimit direct la AVL-205, ca dependență informativă; conținutul minim rămâne cel din AVL-201 §7.</li>
-        <li><strong>Stările verificării (§4).</strong> Vocabularul <code>CORECT</code>, <code>VECHI</code>, <code>FALS</code>, <code>LIPSĂ</code>, <code>UNKNOWN</code>, <code>NEVERIFICAT</code> se testează pe o fișă completă reală. Decizie Alex Matescu, 4 noiembrie 2026: primul test se face pe seria Tabula Rasa (<code>T0</code> din 2 iulie 2026), la <code>F4</code>, pe fișa <a href="https://github.com/alexmatescu/alexmatescu-hub-reflection/blob/main/docs/fise-entitate/FE-delamatescu-ro-v1.md"><code>FE-delamatescu-ro-v1</code></a>. Verificarea pe surse face parte din măsurarea <code>F4</code>, iar dovezile ei intră în pachetul <code>F4</code>. Decizia se închide după <code>F4</code>, cu observațiile testului.</li>
+        <li><strong>Stările verificării (§4).</strong> Vocabularul <code>CORECT</code>, <code>VECHI</code>, <code>FALS</code>, <code>LIPSĂ</code>, <code>UNKNOWN</code>, <code>NEVERIFICAT</code> se testează pe o fișă completă reală. Decizie Alex Matescu, 4 noiembrie 2026: primul test se face pe seria Tabula Rasa (<code>T0</code> din 2 iulie 2026), la <code>F4</code>, pe fișa <a href="https://github.com/alexmatescu/alexmatescu-hub-reflection/blob/main/docs/fise-entitate/FE-delamatescu-ro-v1.md" target="_blank" rel="noopener noreferrer"><code>FE-delamatescu-ro-v1</code></a>. Verificarea pe surse face parte din măsurarea <code>F4</code>, iar dovezile ei intră în pachetul <code>F4</code>. Decizia se închide după <code>F4</code>, cu observațiile testului.</li>
         <li><strong>Cerințe proprii.</strong> Rămâne de decis dacă AVL-205 primește cerințe <code>AVL205-REQ-*</code>, de exemplu pentru conținutul minim sau pentru versionarea fișei, sau rămâne un document descriptiv.</li>
         <li><strong>Locul în corpus.</strong> Parțial închisă la 4 noiembrie 2026: AVL-202 1.8.0 menționează AVL-205 în arhitectura metodologiei, în ordinea de lectură, în ordinea din hub și în lista documentelor. La activare rămân de făcut actualizarea statutului în AVL-202 și includerea în lista Nivelului C din AVL-001.</li>
       </ol>

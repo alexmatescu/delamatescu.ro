@@ -8,13 +8,13 @@ export const avl204GrilaInterpretareVerificareTehnicaHtml = `
         <tbody>
         <tr><th scope="row">Document ID</th><td>AVL-204</td></tr>
         <tr><th scope="row">Nivel</th><td>C — Methodology</td></tr>
-        <tr><th scope="row">Versiune</th><td>0.3.2</td></tr>
+        <tr><th scope="row">Versiune</th><td>0.3.3</td></tr>
         <tr><th scope="row">Statut</th><td>Draft pentru revizuire</td></tr>
         <tr><th scope="row">Autor</th><td><a href="/despre">Alex Matescu</a></td></tr>
         <tr><th scope="row">Organizație</th><td><a href="/lab">AI Visibility Lab</a></td></tr>
         <tr><th scope="row">Data creării</th><td>22 octombrie 2026</td></tr>
         <tr><th scope="row">Data publicării</th><td>26 octombrie 2026</td></tr>
-        <tr><th scope="row">Ultima actualizare</th><td>4 noiembrie 2026</td></tr>
+        <tr><th scope="row">Ultima actualizare</th><td>25 noiembrie 2026</td></tr>
         <tr><th scope="row">Ultima verificare</th><td>26 octombrie 2026</td></tr>
         <tr><th scope="row">Limbă</th><td>română</td></tr>
         <tr><th scope="row">URL canonic</th><td><a href="https://delamatescu.ro/lab/metodologie/grila-interpretare-verificare-tehnica">https://delamatescu.ro/lab/metodologie/grila-interpretare-verificare-tehnica</a></td></tr>
@@ -31,7 +31,7 @@ export const avl204GrilaInterpretareVerificareTehnicaHtml = `
 
       <p>AVL-204 este un document de nivel C — Methodology în corpusul AI Visibility Lab Documentation. Definește regulile prin care observațiile produse de <a href="/lab/metodologie/protocol-verificare-tehnica">AVL-203</a> devin diagnostic și recomandări (AVL-203 §12).</p>
 
-      <p>Versiunea curentă, <strong>0.3.1</strong>, este un <strong>draft pentru revizuire</strong> și nu este activă. Regulile de diagnostic din §6 și criteriile de prioritizare din §7 sunt propuneri de lucru, revizuite după prima implementare candidată, o rulare de test și prima rulare T0; deciziile rămase deschise înainte de activare sunt enumerate în §15.</p>
+      <p>Versiunea curentă, <strong>0.3.3</strong>, este un <strong>draft pentru revizuire</strong> și nu este activă. Regulile de diagnostic din §6 și criteriile de prioritizare din §7 sunt propuneri de lucru, revizuite după prima implementare candidată, o rulare de test și prima rulare T0; deciziile rămase deschise înainte de activare sunt enumerate în §15.</p>
 
       <blockquote>
         <p><strong>Exemplu aplicat.</strong> Diagnosticul primei rulări <code>T0</code>, pe delamatescu.ro, cu fiecare zonă și raportul pentru client, e documentat în studiul de caz <a href="/lab/studii-de-caz/verificare-tehnica-delamatescu-ro">CS-002</a>.</p>
@@ -99,7 +99,7 @@ export const avl204GrilaInterpretareVerificareTehnicaHtml = `
 
       <h3>3.1. Politica de acces declarată</h3>
 
-      <p>AI Visibility Lab recomandă accesul total pentru toate crawlerele: de căutare, de antrenare și de fetch la cererea utilizatorului. Politica de acces a entității evaluate face parte din fișa entității (AVL-201 §7; câmpul e descris în <a href="/lab/metodologie/fisa-entitatii">AVL-205 §15</a>), sub numele „Politica crawlere”, și este completată de reprezentantul entității. Dacă reprezentantul nu declară o politică diferită, politica înregistrată este accesul total, cu sursa „recomandarea AI Visibility Lab, nemodificată de reprezentant”. O politică diferită se documentează pentru fiecare crawler (sau categorie de crawlere), cu sursa și data declarării, și se copiază în planul de măsurare înaintea rulării (AVL-203 §1.1).</p>
+      <p>AI Visibility Lab recomandă accesul total pentru toate crawlerele: de căutare, de antrenare și de fetch la cererea utilizatorului. Politica de acces a entității evaluate face parte din fișa entității (AVL-201 §7; câmpul e descris în <a href="/lab/metodologie/fisa-entitatii#anexa-politica-crawlere">AVL-205 §15, anexa „Politici tehnice ale site-ului”</a>), sub numele „Politica crawlere”, și este completată de reprezentantul entității. Dacă reprezentantul nu declară o politică diferită, politica înregistrată este accesul total, cu sursa „recomandarea AI Visibility Lab, nemodificată de reprezentant”. O politică diferită se documentează pentru fiecare crawler (sau categorie de crawlere), cu sursa și data declarării, și se copiază în planul de măsurare înaintea rulării (AVL-203 §1.1).</p>
 
       <p>Politica intenționată nu se deduce din <code>robots.txt</code> sau din alte observații ale rulării: ea descrie ce vrea entitatea, iar observațiile arată ce livrează serverul.</p>
 
@@ -435,7 +435,7 @@ export const avl204GrilaInterpretareVerificareTehnicaHtml = `
 
       <ul>
         <li><a href="/lab/metodologie/protocol-delimitare-piata-eligibilitate">AVL-MKT-001 — Market Scope &amp; Eligibility Protocol</a> (entitățile din Market Discovery nu intră în domeniul grilei).</li>
-        <li><a href="/lab/metodologie/fisa-entitatii">AVL-205 — Fișa entității</a> (câmpurile fișei cerute de AVL204-REQ-015; §15 Politica crawlere, preluată conform AVL204-REQ-017).</li>
+        <li><a href="/lab/metodologie/fisa-entitatii">AVL-205 — Fișa entității</a> (câmpurile fișei cerute de AVL204-REQ-015; §15 Politica crawlere, în anexa „Politici tehnice ale site-ului”, preluată conform AVL204-REQ-017).</li>
       </ul>
 
       <h3>Exemplu aplicat</h3>
@@ -468,6 +468,7 @@ export const avl204GrilaInterpretareVerificareTehnicaHtml = `
           <tr><td>0.3.0</td><td>26 octombrie 2026</td><td>Draft pentru revizuire</td><td>MINOR: deciziile Alex Matescu din 26 octombrie 2026, după prima rulare T0 pe un site propriu. <code>R-Z1-05</code> devine problemă posibilă numai peste două redirecturi, iar <code>R-Z1-08</code> acceptă cel mult două. <code>R-Z4-06</code> retrasă: lipsa JSON-LD pe pagina despre entitate rămâne observație TC-05, conform documentației Google pentru funcțiile AI. Zona Z2 se aplică și crawlerelor de antrenare declarate în plan; crawlerele de fetch la cererea utilizatorului se raportează numai ca observație (<code>AVL204-REQ-018</code>, nouă). §11: categoriile suplimentare sunt recomandate, iar absența paginii de identitate rămâne observație. <code>R-Z3-03</code>, <code>R-Z4-07</code>, <code>R-Z2-08</code>, <code>R-Z2-09</code> și <code>R-Z4-10</code> confirmate ca „problemă posibilă”. Decizii deschise 1 (parțial), 4 și 7 (nouă) închise. Sursă externă verificată la 26 octombrie 2026: Google, „AI features and your website”.</td></tr>
           <tr><td>0.3.1</td><td>28 octombrie 2026</td><td>Draft pentru revizuire</td><td>PATCH: §13 — subsecțiune nouă „Exemplu aplicat”, cu trimitere la studiul de caz CS-002 (prima rulare <code>T0</code>, delamatescu.ro); trimitere la același exemplu în „Controlul documentului”. Fără modificări ale regulilor.</td></tr>
           <tr><td>0.3.2</td><td>4 noiembrie 2026</td><td>Draft pentru revizuire</td><td>PATCH: trimiteri directe la AVL-205 — Fișa entității (dependență informativă, tabelul de identitate, §3.1, „Documente asociate”); conținutul minim al fișei rămâne cel din AVL-201 §7. Fără modificări ale regulilor.</td></tr>
+          <tr><td>0.3.3</td><td>25 noiembrie 2026</td><td>Draft pentru revizuire</td><td>PATCH: trimiterile la politica crawlere (§3.1, dependențele informative, „Documente asociate”) indică „Anexa — Politici tehnice ale site-ului” din AVL-205, unde câmpul a fost mutat în AVL-205 0.3.0 (§15 rămâne titlu cu trimitere). Corectură: „Controlul documentului” numea ca versiune curentă 0.3.1, rămasă în urmă la 0.3.2; acum 0.3.3. Fără modificări ale regulilor.</td></tr>
         </tbody>
       </table>
 

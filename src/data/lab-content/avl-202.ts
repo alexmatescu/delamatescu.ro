@@ -8,18 +8,12 @@ export const avl202CadruMetodologicHtml = `
         <tbody>
         <tr><th scope="row">Document ID</th><td>AVL-202</td></tr>
         <tr><th scope="row">Nivel</th><td>C — Methodology</td></tr>
-        <tr><th scope="row">Versiune</th><td>1.11.0</td></tr>
-          <tr>
-            <td>1.11.0</td>
-            <td>9 noiembrie 2026</td>
-            <td>Activ</td>
-            <td>MINOR: aliniere la activarea AVL-MKT-001 v1.0.0 (9 noiembrie 2026). Statutul și versiunea AVL-MKT-001 sunt actualizate în tabelul de identitate, în arborele documentelor, în §14.1 și în cardul documentului. §14.3 consemnează activarea, pilotul de Market Verification acceptat ca pilot intern și prima rulare oficială a instanței <code>MKT-RO-AIV-2026Q4</code>, în decembrie 2026. Ordinea temporală din §14.3 rămâne neschimbată. Nicio schimbare de principiu și nicio cerință nouă.</td>
-          </tr>
+        <tr><th scope="row">Versiune</th><td>1.11.1</td></tr>
         <tr><th scope="row">Statut</th><td>Activ</td></tr>
         <tr><th scope="row">Autor</th><td><a href="/despre">Alex Matescu</a></td></tr>
         <tr><th scope="row">Organizație</th><td><a href="/lab">AI Visibility Lab</a></td></tr>
         <tr><th scope="row">Data publicării</th><td>14 septembrie 2026</td></tr>
-        <tr><th scope="row">Ultima actualizare</th><td>9 noiembrie 2026</td></tr>
+        <tr><th scope="row">Ultima actualizare</th><td>25 noiembrie 2026</td></tr>
         <tr><th scope="row">Ultima verificare</th><td>9 noiembrie 2026</td></tr>
         <tr><th scope="row">Limbă</th><td>română</td></tr>
         <tr><th scope="row">URL canonic</th><td><a href="https://delamatescu.ro/lab/metodologie">https://delamatescu.ro/lab/metodologie</a></td></tr>
@@ -127,9 +121,9 @@ Cadrul metodologic AI Visibility Lab
    ├── Metodologia de bază (Core Methodology)
    │     ├── AVL-200  Standard dovezi, măsurare și trasabilitate
    │     ├── AVL-201  Tabula Rasa F0 — Baseline
-   │     ├── AVL-203  Protocolul minim de verificare tehnică   (Draft pentru revizuire, v0.6.2)
-   │     ├── AVL-204  Grila de interpretare a verificării tehnice   (Draft pentru revizuire, v0.3.2)
-   │     ├── AVL-205  Fișa entității   (Draft pentru revizuire, v0.2.0)
+   │     ├── AVL-203  Protocolul minim de verificare tehnică   (Draft pentru revizuire, v0.6.3)
+   │     ├── AVL-204  Grila de interpretare a verificării tehnice   (Draft pentru revizuire, v0.3.3)
+   │     ├── AVL-205  Fișa entității   (Draft pentru revizuire, v0.3.0)
    │     └── viitoare documente metodologice / protocoale
    │
    └── Market Measurement — familia AVL-MKT-*
@@ -798,9 +792,9 @@ Market Query Panel + răspunsurile AI</code></pre>
 
       <p><em>Entity Sheet</em></p>
 
-      <p><strong>Versiune 0.2.0 · Draft pentru revizuire</strong></p>
+      <p><strong>Versiune 0.3.0 · Draft pentru revizuire</strong></p>
 
-      <p>Descrie fișa entității, intrarea obligatorie a baseline-ului (AVL-201 §7): rolul ei, cum se completează și cine o completează, stările verificării în etapa de baseline și definiția fiecărui câmp — forma canonică și variantele, rolul și domeniul de activitate, locația, atributele verificabile, activele oficiale, relațiile, harta coliziunilor, prezența distribuită și politica crawlere. Nu introduce cerințe proprii și nu modifică conținutul minim stabilit de AVL-201.</p>
+      <p>Descrie fișa entității, documentul de identitate al entității evaluate și intrarea obligatorie a baseline-ului (AVL-201 §7): rolul ei, cine dă informația, fluxul de la chestionarul clientului la confirmarea clientului și definiția fiecărui câmp — forma canonică și variantele, rolul și domeniul de activitate, locația, atributele verificabile, activele oficiale, relațiile, harta coliziunilor, prezența distribuită și, în anexa de politici tehnice, politica crawlere. Fișa nu conține măsurarea: stările verificării se înregistrează în documentele <code>T0</code>. Nu introduce cerințe proprii și nu modifică conținutul minim stabilit de AVL-201.</p>
 
       <p><strong>Rol:</strong> instrument al etapei de baseline în ramura Core Methodology; detaliază AVL-201 §7, fără a-l înlocui.</p>
 
@@ -812,7 +806,7 @@ Market Query Panel + răspunsurile AI</code></pre>
 
       <p><em>Core Technical Web Measurement Protocol</em></p>
 
-      <p><strong>Versiune 0.6.2 · Draft pentru revizuire</strong></p>
+      <p><strong>Versiune 0.6.3 · Draft pentru revizuire</strong></p>
 
       <p>Setul minim și repetabil de verificări tehnice care documentează ce livrează un server în condiții declarate: accesibilitatea HTTP și redirecturile, variantele de host și protocol, robots.txt, descoperirea sitemap-ului, semnalele raw HTML, conținutul important prezent în HTML-ul brut, paritatea răspunsurilor pentru User-Agent-uri declarate și integritatea dovezilor. Definește și compoziția planului de măsurare și trecerea de la observații la diagnostic și recomandări, după grila AVL-204. Nu confundă accesibilitatea tehnică cu indexarea, citarea sau recomandarea.</p>
 
@@ -826,7 +820,7 @@ Market Query Panel + răspunsurile AI</code></pre>
 
       <p><em>Technical Diagnostic Interpretation Grid</em></p>
 
-      <p><strong>Versiune 0.3.2 · Draft pentru revizuire</strong></p>
+      <p><strong>Versiune 0.3.3 · Draft pentru revizuire</strong></p>
 
       <p>Regulile publice prin care observațiile AVL-203 devin diagnostic și recomandări: stările diagnosticului, zonele verificate, regulile de diagnostic, prioritizarea recomandărilor, afirmațiile excluse și aplicarea identică pentru orice entitate evaluată. Regulile se fixează înaintea rulării, ca diagnosticul să poată fi verificat și să nu poată fi ajustat după rezultat.</p>
 
@@ -910,7 +904,7 @@ Market Query Panel + răspunsurile AI</code></pre>
 
       <h2 id="citare-recomandata">Citare recomandată</h2>
 
-      <p>Matescu, Alex. „Cadrul metodologic AI Visibility Lab”. <em>AI Visibility Lab Documentation</em>, AVL-202, versiunea 1.11.0, 2026. https://delamatescu.ro/lab/metodologie</p>
+      <p>Matescu, Alex. „Cadrul metodologic AI Visibility Lab”. <em>AI Visibility Lab Documentation</em>, AVL-202, versiunea 1.11.1, 2026. https://delamatescu.ro/lab/metodologie</p>
 
       <h2 id="istoricul-versiunilor">Istoricul versiunilor</h2>
 
@@ -1002,6 +996,18 @@ Market Query Panel + răspunsurile AI</code></pre>
             <td>9 noiembrie 2026</td>
             <td>Activ</td>
             <td>MINOR: aliniere la AVL-MKT-001 v0.11.0 și la pilotul de Market Verification. §14.3 consemnează starea piloților la 9 noiembrie 2026: cinci piloți Market Discovery (<code>-PILOT-4</code> declarat invalid) și pilotul de Market Verification pe cei 278 de candidați ai reuniunii, al cărui set eligibil nu este Market Reference Set; pilotul intern pe cazuri-limită nu a fost executat ca etapă separată. §14.5 trimite la AVL-MKT-001 §21.6 pentru identificatorii artefactelor din interiorul unei instanțe. Versiunea AVL-MKT-001 din tabelul de identitate, din arborele documentelor și din cardul ei, actualizată la v0.11.0; citarea recomandată trimite la versiunea curentă. Ordinea temporală din §14.3 rămâne neschimbată. Nicio schimbare de principiu și nicio cerință nouă.</td>
+          </tr>
+          <tr>
+            <td>1.11.0</td>
+            <td>9 noiembrie 2026</td>
+            <td>Activ</td>
+            <td>MINOR: aliniere la activarea AVL-MKT-001 v1.0.0 (9 noiembrie 2026). Statutul și versiunea AVL-MKT-001 sunt actualizate în tabelul de identitate, în arborele documentelor, în §14.1 și în cardul documentului. §14.3 consemnează activarea, pilotul de Market Verification acceptat ca pilot intern și prima rulare oficială a instanței <code>MKT-RO-AIV-2026Q4</code>, în decembrie 2026. Ordinea temporală din §14.3 rămâne neschimbată. Nicio schimbare de principiu și nicio cerință nouă.</td>
+          </tr>
+          <tr>
+            <td>1.11.1</td>
+            <td>25 noiembrie 2026</td>
+            <td>Activ</td>
+            <td>PATCH: versiunile documentelor din ramura Core Methodology actualizate: AVL-203 trece la v0.6.3 și AVL-204 la v0.3.3 (trimiterile la politica crawlere indică anexa de politici tehnice din AVL-205), iar AVL-205 la v0.3.0 (fișa ca document de identitate, fără măsurare), toate draft pentru revizuire, în arborele documentelor și în cardurile lor; cardul AVL-205 descrie noua structură a fișei. Corectură de afișare: pe pagină, rândul 1.11.0 al istoricului apărea în tabelul de identitate și lipsea din istoric; este mutat la locul lui. Fără alte modificări.</td>
           </tr>
         </tbody>
       </table>

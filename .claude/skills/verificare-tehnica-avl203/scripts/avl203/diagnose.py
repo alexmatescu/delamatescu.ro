@@ -1,4 +1,4 @@
-"""Diagnosticul după grila AVL-204 v0.3.2 (regulile neschimbate de la v0.3.0), aplicat determinist pe observații (AVL204-REQ-002, REQ-007).
+"""Diagnosticul după grila AVL-204 v0.3.3 (regulile neschimbate de la v0.3.0), aplicat determinist pe observații (AVL204-REQ-002, REQ-007).
 
 Regulile sunt cele din AVL-204 §6; textul condiției e reprodus în RULES, iar funcțiile de mai jos
 îl aplică literal. Regulile de succes cer date complete (AVL204-REQ-016); o zonă fără constatări

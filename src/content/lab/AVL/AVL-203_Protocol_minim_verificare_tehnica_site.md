@@ -3,14 +3,14 @@ document_id: "AVL-203"
 title: "Protocolul minim de verificare tehnică a unui site pentru AI Visibility"
 subtitle: "Core Technical Web Measurement Protocol"
 level: "C — Methodology"
-version: "0.6.2"
+version: "0.6.3"
 status: "Draft pentru revizuire"
 author: "Alex Matescu"
 organization: "AI Visibility Lab"
 language: "ro-RO"
 date_created: "2026-10-01"
 date_published: "2026-10-02T16:29:00+03:00"
-date_modified: "2026-11-04"
+date_modified: "2026-11-25"
 last_reviewed: "2026-10-01"
 canonical: "https://delamatescu.ro/lab/metodologie/protocol-verificare-tehnica"
 normative_dependencies:
@@ -45,7 +45,7 @@ keywords:
 
 AVL-203 este un document de nivel C — Methodology în corpusul AI Visibility Lab Documentation, propus ca protocol în ramura Core Methodology descrisă de AVL-202.
 
-Versiunea curentă, **0.6.1**, este un **draft public pentru revizuire** și nu este activă. Documentul este publicat pentru transparență, ca regula să fie vizibilă și datată înainte de activare. Cerințele de conformitate sunt formulate ca cerințe identificate `AVL203-REQ-*`; implementarea de referință nu este încă validată. Deciziile rămase deschise înainte de activare sunt enumerate în §19.
+Versiunea curentă, **0.6.3**, este un **draft public pentru revizuire** și nu este activă. Documentul este publicat pentru transparență, ca regula să fie vizibilă și datată înainte de activare. Cerințele de conformitate sunt formulate ca cerințe identificate `AVL203-REQ-*`; implementarea de referință nu este încă validată. Deciziile rămase deschise înainte de activare sunt enumerate în §19.
 
 Din versiunea 0.4.0, protocolul acoperă și trecerea de la observații la diagnostic și recomandări (§12), pentru că verificarea tehnică este folosită și în evaluări care livrează un diagnostic, de exemplu auditul AI Visibility. Regulile după care observațiile devin diagnostic sunt publicate separat, în grila AVL-204.
 
@@ -57,12 +57,13 @@ Identificatorul AVL-203 a fost alocat la 1 octombrie 2026 ca următorul număr l
 | --- | --- |
 | Document ID | AVL-203 |
 | Nivel | C — Methodology |
-| Versiune | 0.6.2 |
+| Versiune | 0.6.3 |
 | Statut | Draft pentru revizuire |
 | Autor | Alex Matescu |
 | Organizație | AI Visibility Lab |
 | Data creării | 1 octombrie 2026 |
 | Data publicării | 2 octombrie 2026 |
+| Ultima actualizare | 25 noiembrie 2026 |
 | Ultima verificare | 1 octombrie 2026 |
 | Limbă | română |
 | URL canonic | https://delamatescu.ro/lab/metodologie/protocol-verificare-tehnica |
@@ -115,7 +116,7 @@ Categoriile suplimentare pentru fiecare tip de entitate sunt definite în AVL-20
 
 Pagina de contact sau de date de identitate face excepție: este obligatorie în orice plan și nu se notează `NOT_APPLICABLE`. Ea arată cine răspunde de site și cum poate fi identificată entitatea, deci este necesară pentru transparența evaluării. Dacă site-ul nu are nicio pagină cu datele de identitate ale entității, planul înregistrează absența ei, iar absența se raportează ca rezultat al evaluării, nu ca limită a eșantionului.
 
-Planul mai declară, înainte de rulare, textele-cheie căutate de TC-08 pentru fiecare URL (§8.1) și politica de acces pe care entitatea o intenționează pentru crawlere (de exemplu permiterea crawlerelor de căutare și blocarea celor de antrenare), necesară diagnosticului din §12. Politica se preia din fișa entității („Politica crawlere”, AVL-201 §7; câmpul e descris în [AVL-205 §15](/lab/metodologie/fisa-entitatii)), completată de reprezentantul entității. AI Visibility Lab recomandă accesul total pentru toate crawlerele; dacă reprezentantul nu declară o politică diferită, planul înregistrează accesul total, cu sursa acestei valori (AVL-204 §3.1).
+Planul mai declară, înainte de rulare, textele-cheie căutate de TC-08 pentru fiecare URL (§8.1) și politica de acces pe care entitatea o intenționează pentru crawlere (de exemplu permiterea crawlerelor de căutare și blocarea celor de antrenare), necesară diagnosticului din §12. Politica se preia din fișa entității („Politica crawlere”, AVL-201 §7; câmpul e descris în [AVL-205 §15, anexa „Politici tehnice ale site-ului”](/lab/metodologie/fisa-entitatii#anexa-politica-crawlere)), completată de reprezentantul entității. AI Visibility Lab recomandă accesul total pentru toate crawlerele; dacă reprezentantul nu declară o politică diferită, planul înregistrează accesul total, cu sursa acestei valori (AVL-204 §3.1).
 
 Planul declară și limitele cererilor auxiliare pe care captura le poate face după primul request, de exemplu captura țintei canonicalului unei pagini: tipurile de cereri permise, hosturile permise și numărul maxim. O țintă din afara acestor limite nu se capturează și se raportează ca atare; cererile auxiliare se marchează separat și nu extind eșantionul.
 
@@ -651,6 +652,7 @@ Referințele externe susțin terminologia tehnică și descrierea crawlerelor. R
 | 0.6.0 | 26 octombrie 2026 | Draft pentru revizuire | MINOR: deciziile Alex Matescu din 26 octombrie 2026, după prima rulare `T0`. §6: agenții de antrenare și de fetch pentru care fișa entității declară o politică intră în planul de măsurare; grila AVL-204 0.3.0 aplică zona Z2 crawlerelor de antrenare și raportează agenții de fetch numai ca observație (AVL204-REQ-018). §19.4: implementarea candidată v0.5.0 și prima rulare `T0`. §19.6: `Claude-SearchBot` rămâne `DOAR_TOKEN` (Anthropic nu publică șiruri complete, verificat la 26 octombrie 2026), iar regula pentru versiunea Chrome din șirul Googlebot e fixată; rămâne deschis doar șirul `bingbot`. Fără cerințe noi. |
 | 0.6.1 | 28 octombrie 2026 | Draft pentru revizuire | PATCH: §17 — subsecțiune nouă „Exemplu aplicat”, cu trimitere la studiul de caz CS-002 (prima rulare `T0`, delamatescu.ro); trimitere la același exemplu în „Controlul documentului”. Fără modificări ale cerințelor. |
 | 0.6.2 | 4 noiembrie 2026 | Draft pentru revizuire | PATCH: trimiteri directe la AVL-205 — Fișa entității (dependență informativă, tabelul de identitate, §1.1 la politica crawlere, „Documente asociate”); conținutul minim al fișei rămâne cel din AVL-201 §7. §17 „Exemplu aplicat”: fișa entității pentru delamatescu.ro, completată și publicată ulterior rulării `T0` (4 noiembrie 2026), fără să-i schimbe rezultatele. Fără modificări ale cerințelor. |
+| 0.6.3 | 25 noiembrie 2026 | Draft pentru revizuire | PATCH: trimiterea din §1.1 la politica crawlere indică „Anexa — Politici tehnice ale site-ului” din AVL-205, unde câmpul a fost mutat în AVL-205 0.3.0 (§15 rămâne titlu cu trimitere). Corectură: „Controlul documentului” numea ca versiune curentă 0.6.1, rămasă în urmă la 0.6.2; acum 0.6.3. Tabelul de identitate din sursă primește rândul „Ultima actualizare”, prezent deja pe pagină. Fără modificări ale cerințelor sau ale procedurii. |
 
 ---
 

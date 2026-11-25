@@ -1,5 +1,5 @@
 {
-  "generat": "2026-11-24",
+  "generat": "2026-11-25",
   "pragReverificareZile": 180,
   "totalIntrari": 193,
   "totalAnomalii": 2,
@@ -32,7 +32,7 @@
       "imagine": "https://delamatescu.ro/images/lab/clientul-ajunge-pe-site-dupa-selectia-ai.webp",
       "jsonLd": "@graph",
       "nrCitari": 20,
-      "zileDeLaVerificare": 10,
+      "zileDeLaVerificare": 11,
       "anomalii": []
     },
     {
@@ -62,7 +62,7 @@
       "imagine": "https://delamatescu.ro/images/lab/viitorul-pare-evident-abia-dupa-ce-s-a-intamplat.webp",
       "jsonLd": "@graph",
       "nrCitari": 19,
-      "zileDeLaVerificare": 10,
+      "zileDeLaVerificare": 11,
       "anomalii": []
     },
     {
@@ -92,7 +92,7 @@
       "imagine": "https://delamatescu.ro/images/lab/scrisul-de-mana-si-ai-visibility.webp",
       "jsonLd": "@graph",
       "nrCitari": 5,
-      "zileDeLaVerificare": 11,
+      "zileDeLaVerificare": 12,
       "anomalii": []
     },
     {
@@ -122,7 +122,7 @@
       "imagine": "https://delamatescu.ro/images/lab/de-departe-totul-pare-perfect-de-aproape-incepe-realitatea.webp",
       "jsonLd": "@graph",
       "nrCitari": 4,
-      "zileDeLaVerificare": 15,
+      "zileDeLaVerificare": 16,
       "anomalii": []
     },
     {
@@ -152,7 +152,7 @@
       "imagine": "https://delamatescu.ro/images/lab/de-unde-isi-iau-informatiile-ai-surse-citari-romania/00-traseul-informatiei.webp",
       "jsonLd": "@graph",
       "nrCitari": 19,
-      "zileDeLaVerificare": 17,
+      "zileDeLaVerificare": 18,
       "anomalii": []
     },
     {
@@ -182,7 +182,7 @@
       "imagine": "https://delamatescu.ro/images/lab/cum-aleg-furnizorul-de-servicii.webp",
       "jsonLd": "@graph",
       "nrCitari": 3,
-      "zileDeLaVerificare": 21,
+      "zileDeLaVerificare": 22,
       "anomalii": []
     },
     {
@@ -212,7 +212,7 @@
       "imagine": "https://delamatescu.ro/images/lab/reclame-chatgpt-google-social-media.webp",
       "jsonLd": "@graph",
       "nrCitari": 27,
-      "zileDeLaVerificare": 26,
+      "zileDeLaVerificare": 27,
       "anomalii": []
     },
     {
@@ -242,7 +242,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 10,
-      "zileDeLaVerificare": 27,
+      "zileDeLaVerificare": 28,
       "anomalii": []
     },
     {
@@ -272,7 +272,7 @@
       "imagine": "https://delamatescu.ro/images/lab/costurile-ai-variatii-finantari-plata-la-cine.webp",
       "jsonLd": "@graph",
       "nrCitari": 16,
-      "zileDeLaVerificare": 27,
+      "zileDeLaVerificare": 28,
       "anomalii": []
     },
     {
@@ -302,7 +302,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 8,
-      "zileDeLaVerificare": 32,
+      "zileDeLaVerificare": 33,
       "anomalii": []
     },
     {
@@ -332,7 +332,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 6,
-      "zileDeLaVerificare": 33,
+      "zileDeLaVerificare": 34,
       "anomalii": []
     },
     {
@@ -362,7 +362,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 4,
-      "zileDeLaVerificare": 34,
+      "zileDeLaVerificare": 35,
       "anomalii": []
     },
     {
@@ -392,7 +392,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 11,
-      "zileDeLaVerificare": 54,
+      "zileDeLaVerificare": 55,
       "anomalii": []
     },
     {
@@ -422,7 +422,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 12,
-      "zileDeLaVerificare": 54,
+      "zileDeLaVerificare": 55,
       "anomalii": []
     },
     {
@@ -452,7 +452,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 13,
-      "zileDeLaVerificare": 54,
+      "zileDeLaVerificare": 55,
       "anomalii": []
     },
     {
@@ -482,7 +482,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 15,
-      "zileDeLaVerificare": 53,
+      "zileDeLaVerificare": 54,
       "anomalii": []
     },
     {
@@ -512,7 +512,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 20,
-      "zileDeLaVerificare": 55,
+      "zileDeLaVerificare": 56,
       "anomalii": []
     },
     {
@@ -542,7 +542,7 @@
       "imagine": "https://delamatescu.ro/images/blog/ai-oglinda-amplificator.webp",
       "jsonLd": "@graph",
       "nrCitari": 4,
-      "zileDeLaVerificare": 55,
+      "zileDeLaVerificare": 56,
       "anomalii": [
         "imagine în afara `/images/lab/`: `/images/blog/ai-oglinda-amplificator.webp`"
       ]
@@ -574,7 +574,7 @@
       "imagine": "https://delamatescu.ro/images/blog/Subscription_highlights_Ir7y0f1.width-2000.format-webp.webp",
       "jsonLd": "@graph",
       "nrCitari": 10,
-      "zileDeLaVerificare": 89,
+      "zileDeLaVerificare": 90,
       "anomalii": [
         "imagine în afara `/images/lab/`: `/images/blog/Subscription_highlights_Ir7y0f1.width-2000.format-webp.webp`"
       ]
@@ -606,7 +606,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 6,
-      "zileDeLaVerificare": 97,
+      "zileDeLaVerificare": 98,
       "anomalii": []
     },
     {
@@ -636,7 +636,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 7,
-      "zileDeLaVerificare": 97,
+      "zileDeLaVerificare": 98,
       "anomalii": []
     },
     {
@@ -666,7 +666,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 25,
-      "zileDeLaVerificare": 39,
+      "zileDeLaVerificare": 40,
       "anomalii": []
     },
     {
@@ -696,7 +696,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 12,
-      "zileDeLaVerificare": 97,
+      "zileDeLaVerificare": 98,
       "anomalii": []
     },
     {
@@ -726,7 +726,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 8,
-      "zileDeLaVerificare": 97,
+      "zileDeLaVerificare": 98,
       "anomalii": []
     },
     {
@@ -756,7 +756,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 8,
-      "zileDeLaVerificare": 99,
+      "zileDeLaVerificare": 100,
       "anomalii": []
     },
     {
@@ -786,7 +786,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 18,
-      "zileDeLaVerificare": 98,
+      "zileDeLaVerificare": 99,
       "anomalii": []
     },
     {
@@ -936,7 +936,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 13,
-      "zileDeLaVerificare": 53,
+      "zileDeLaVerificare": 54,
       "anomalii": []
     },
     {
@@ -966,7 +966,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 5,
-      "zileDeLaVerificare": 27,
+      "zileDeLaVerificare": 28,
       "anomalii": []
     },
     {
@@ -996,7 +996,7 @@
       "imagine": null,
       "jsonLd": "@graph",
       "nrCitari": 9,
-      "zileDeLaVerificare": 9,
+      "zileDeLaVerificare": 10,
       "anomalii": []
     },
     {
@@ -1010,11 +1010,11 @@
       "tip": "Document normativ",
       "status": "publicat",
       "statusNormativ": "Draft pentru revizuire",
-      "versiune": "0.2.0",
+      "versiune": "0.3.0",
       "dataCreare": "2026-11-04",
       "dataPublicare": "2026-11-04",
-      "dataModificare": "2026-11-04",
-      "ultimaVerificare": "2026-11-04",
+      "dataModificare": "2026-11-25",
+      "ultimaVerificare": "2026-11-25",
       "fisierMd": "src/content/lab/AVL/AVL-205_Fisa_entitatii.md",
       "fisierTs": "src/data/lab-content/avl-205.ts",
       "wiring": {
@@ -1025,7 +1025,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 20,
+      "zileDeLaVerificare": 0,
       "anomalii": []
     },
     {
@@ -1039,10 +1039,10 @@
       "tip": "Document normativ",
       "status": "publicat",
       "statusNormativ": "Draft pentru revizuire",
-      "versiune": "0.3.2",
+      "versiune": "0.3.3",
       "dataCreare": "2026-10-22",
       "dataPublicare": "2026-10-26",
-      "dataModificare": "2026-11-04",
+      "dataModificare": "2026-11-25",
       "ultimaVerificare": "2026-10-26",
       "fisierMd": "src/content/lab/AVL/AVL-204_Grila_interpretare_verificare_tehnica.md",
       "fisierTs": "src/data/lab-content/avl-204.ts",
@@ -1054,7 +1054,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 29,
+      "zileDeLaVerificare": 30,
       "anomalii": []
     },
     {
@@ -1068,10 +1068,10 @@
       "tip": "Document normativ",
       "status": "publicat",
       "statusNormativ": "Draft pentru revizuire",
-      "versiune": "0.6.2",
+      "versiune": "0.6.3",
       "dataCreare": "2026-10-01",
       "dataPublicare": "2026-10-02",
-      "dataModificare": "2026-11-04",
+      "dataModificare": "2026-11-25",
       "ultimaVerificare": "2026-10-01",
       "fisierMd": "src/content/lab/AVL/AVL-203_Protocol_minim_verificare_tehnica_site.md",
       "fisierTs": "src/data/lab-content/avl-203.ts",
@@ -1083,7 +1083,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 54,
+      "zileDeLaVerificare": 55,
       "anomalii": []
     },
     {
@@ -1112,7 +1112,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 15,
+      "zileDeLaVerificare": 16,
       "anomalii": []
     },
     {
@@ -1141,7 +1141,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 39,
+      "zileDeLaVerificare": 40,
       "anomalii": []
     },
     {
@@ -1155,10 +1155,10 @@
       "tip": "Document normativ",
       "status": "publicat",
       "statusNormativ": "Activ",
-      "versiune": "1.11.0",
+      "versiune": "1.11.1",
       "dataCreare": "2026-09-14",
       "dataPublicare": "2026-09-14",
-      "dataModificare": "2026-11-09",
+      "dataModificare": "2026-11-25",
       "ultimaVerificare": "2026-11-09",
       "fisierMd": "src/content/lab/AVL/AVL-202_Cadrul-metodologic-AI-Visibility-Lab.md",
       "fisierTs": "src/data/lab-content/avl-202.ts",
@@ -1170,7 +1170,7 @@
       },
       "sitemapLastmod": null,
       "imagine": null,
-      "zileDeLaVerificare": 15,
+      "zileDeLaVerificare": 16,
       "anomalii": []
     },
     {
@@ -1549,7 +1549,7 @@
       },
       "sitemapLastmod": "2026-11-22",
       "imagine": "/images/blog/nu-ne-am-pierdut-memoria-am-uitat-sa-privim-contextul.webp",
-      "zileDeLaVerificare": 2,
+      "zileDeLaVerificare": 3,
       "anomalii": []
     },
     {
@@ -1605,7 +1605,7 @@
       },
       "sitemapLastmod": "2026-11-13",
       "imagine": "/images/blog/toata-lumea-stie-toata-lumea-poate.webp",
-      "zileDeLaVerificare": 12,
+      "zileDeLaVerificare": 13,
       "anomalii": []
     },
     {
@@ -1633,7 +1633,7 @@
       },
       "sitemapLastmod": "2026-11-07",
       "imagine": "/images/blog/am-crezut-ca-lucrurile-au-un-singur-sens.webp",
-      "zileDeLaVerificare": 17,
+      "zileDeLaVerificare": 18,
       "anomalii": []
     },
     {
@@ -1661,7 +1661,7 @@
       },
       "sitemapLastmod": "2026-10-26",
       "imagine": "/images/blog/ai-schimba-lumea-eu-ce-fac-intre-timp.webp",
-      "zileDeLaVerificare": 29,
+      "zileDeLaVerificare": 30,
       "anomalii": []
     },
     {
@@ -1689,7 +1689,7 @@
       },
       "sitemapLastmod": "2026-10-26",
       "imagine": "/images/blog/imbatraneste-si-sufletul-odata-cu-trupul.webp",
-      "zileDeLaVerificare": 29,
+      "zileDeLaVerificare": 30,
       "anomalii": []
     },
     {
